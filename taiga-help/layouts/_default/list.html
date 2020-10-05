@@ -1,1 +1,7 @@
-This is the list template
+{{ define "main" }}
+    This is the default list template
+
+    {{ range .Pages }}
+        <li><a href="{{.URL}}">{{.Title}}</a></li>
+    {{ end }}
+{{ end }}

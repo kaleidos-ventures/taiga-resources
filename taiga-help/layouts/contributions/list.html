@@ -1,0 +1,13 @@
+{{ define "main" }}
+    This is the contributions list template <br>
+    {{ range .Pages }}
+        {{ if .Params.contribution_tags }}
+            {{ range .Params.contribution_tags }}
+                {{ . }}
+                <br>
+            {{ end }}
+        {{ else }}
+            <li><a href="{{.URL}}">{{.Title}}</a></li>
+        {{ end }}
+    {{ end }}
+{{ end }}
