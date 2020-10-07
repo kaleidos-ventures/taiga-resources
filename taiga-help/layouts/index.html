@@ -1,1 +1,5 @@
+{{ partial "header.html" }}
 Homepage template
+{{ range .Pages }}
+    <li><a href="{{.URL}}">{{.Title}}</a></li>
+{{ end }}
