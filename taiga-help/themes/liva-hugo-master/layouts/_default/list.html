@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<!-- blog post -->
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="row">
+          {{ $paginator := .Paginate .Data.Pages }}
+          {{ range $paginator.Pages }}
+          {{ .Render "post" }}
+          {{ end }}
+        </div>
+      </div>
+      <!-- sidebar -->
+      {{ partial "sidebar.html" . }}
+      <!-- /sidebar -->
+
+      <!-- pagination -->
+      <div class="col-12 mt-5">
+        {{ template "_internal/pagination.html" . }}
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /blog post -->
+
+{{ end }}

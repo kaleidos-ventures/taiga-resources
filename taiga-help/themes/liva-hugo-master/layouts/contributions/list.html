@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>{{ .Title | markdownify }}</h2>
+          <div class="mb-3 post-meta">
+          </div>
+          {{ if .Params.image }}
+          <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
+          {{ end }}
+          <div class="content mb-5">
+            {{ .Content }}
+          </div>
+
+          {{ range .Pages }}
+            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+          {{ end }}
+
+          <h3>Contributions:</h3>
+          {{ $contribution_tags := slice }}
+          {{ range .Site.Data.contributions }}
+              {{ range .contribution_tags }}
+                  {{ if not (in $contribution_tags . ) }}
+                      {{ $contribution_tags = $contribution_tags | append . }}
+                  {{ end }}
+              {{ end }}
+          {{ end }}
+          
+          {{ $contributions_data := .Site.Data.contributions }}
+          {{ range $contribution_tags }}
+              {{ $contribution_tag := . }}
+              <h4>{{ . | title }}</h4>
+              <div class="content mb-5">
+              {{ range $contributions_data }}
+                  {{ if in .contribution_tags $contribution_tag }}
+                      {{ .title }} by {{ .author }}<br>
+                  {{ end }}
+              {{ end }}
+              </div>
+          {{ end }}
+  
+          <!-- comments -->
+          {{ template "_internal/disqus.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}
