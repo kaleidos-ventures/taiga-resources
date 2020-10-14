@@ -1,2 +1,2 @@
-# taiga-help
-Help pages for Taiga
+# taiga-resources
+Resources pages for Taiga
