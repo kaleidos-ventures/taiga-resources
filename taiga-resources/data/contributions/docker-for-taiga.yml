@@ -9,3 +9,4 @@ last_updated_date: 2020-10-05T12:58:11+02:00
 integrated: true
 compatibility: ["taiga5"]
 contribution_tags: ["docker", "integration"]
+url: "/contrib/docker-for-taiga"
