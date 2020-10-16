@@ -23,7 +23,7 @@
     align-items: center;
     display: flex;
     margin-right: auto;
-    width: 50px;
+    width: 60px;
   }
 }
 
@@ -39,27 +39,17 @@
 
 .text-logo{
   font-family: $secondary-font;
-  font-size: 1.7rem;
+  font-size: 1.68rem;
   font-weight: 300;
   margin-left: 1rem;
+  padding-top: 0.6rem;
 
   div {
     color: $primary-color;
     font-family: $primary-font;
     font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 15px;
-  }
-}
-
-.text-logo-mobile{
-  color: #72a114;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-top: auto;
-
-  span {
-    color: #b8b8b8;
+    font-weight: normal;
+    padding-left: 5px;
   }
 }
 
