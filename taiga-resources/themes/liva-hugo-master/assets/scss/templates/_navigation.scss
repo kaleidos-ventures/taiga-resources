@@ -38,13 +38,15 @@
 }
 
 .text-logo{
-  font-size: 2rem;
+  font-family: $secondary-font;
+  font-size: 1.7rem;
   font-weight: 300;
   margin-left: 1rem;
 
   div {
     color: $primary-color;
-    font-size: 1rem;
+    font-family: $primary-font;
+    font-size: 0.8rem;
     font-weight: 400;
     line-height: 15px;
   }
