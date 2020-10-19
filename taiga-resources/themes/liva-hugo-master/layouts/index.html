@@ -89,8 +89,7 @@
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
-          {{ $paginator := .Paginate (where .Site.RegularPages "Type" "feature") }}
-          {{ range $paginator.Pages }}
+          {{ range sort (where (where .Site.RegularPages "Type" "feature") ".Params.main" "==" true) ".Params.order" }}
           <div class="col-md-6 mb-4">
             <article class="card">
               {{ if .Params.Image }}
@@ -115,11 +114,6 @@
       <!-- faqs sidebar -->
       {{ partial "sidebar.html" . }}
       <!-- /faqs sidebar -->
-
-      <!-- pagination -->
-      <div class="col-12 mt-5">
-        {{ template "_internal/pagination.html" . }}
-      </div>
     </div>
   </div>
 </section>
