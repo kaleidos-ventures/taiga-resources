@@ -13,7 +13,7 @@
             {{ .Content }}
           </div>
 
-          {{ range .Pages }}
+          {{ with .Site.GetPage "/how-can-i-contribute" }}
             <li><a href="{{.Permalink}}">{{.Title}}</a></li>
           {{ end }}
 
@@ -34,7 +34,7 @@
               <div class="content mb-5">
               {{ range $contributions_data }}
                   {{ if in .contribution_tags $contribution_tag }}
-                      {{ .title }} by {{ .author }}<br>
+                      <p id="{{.anchor}}">{{ .title }} by {{ .author }}</p>
                   {{ end }}
               {{ end }}
               </div>
