@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <section class="section-sm">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10 featured-post">
+          <article class="card featured-post">
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-5">
+                {{ if .Params.Image }}
+                <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
+                {{ end }}
+              </div>
+              <div class="col-md-6 offset-md-1">
+                <div class="card-body">
+                  <h1 class="card-title-sans">{{ .Title | markdownify }}</h1>
+                  <p class="card-text-second">{{.Summary}}...</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="accordion">
+        {{ range sort (where .Site.RegularPages "Type" "faq") ".Params.order" }}
+          <div class="card">
+            <div class="card-header" id="heading-{{.Params.id}}">
+              <h5 data-toggle="collapse" data-target="#collapse-{{.Params.Id}}" aria-expanded="true" aria-controls="collapse-{{.Params.id}}">
+                {{.Title}}
+              </h5>
+            </div>
+          
+            <div id="collapse-{{.Params.id}}" class="collapse" aria-labelledby="heading-{{.Params.id}}" data-parent="#accordion">
+              <div class="card-body">
+                {{.Summary}}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

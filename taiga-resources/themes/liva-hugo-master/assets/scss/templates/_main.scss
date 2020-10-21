@@ -12,10 +12,25 @@
   }
 }
 
+.card-text-second {
+  width: 350px;
+}
+
 /* /card */
 
 .featured-post {
   .card-title {
+    margin-left: -10%;
+
+    @include tablet {
+      margin-left: 0;
+      font-size: 30px;
+    }
+  }
+
+  .card-title-sans {
+    font-family: $secondary-font;
+    line-height: 61px;
     margin-left: -10%;
 
     @include tablet {

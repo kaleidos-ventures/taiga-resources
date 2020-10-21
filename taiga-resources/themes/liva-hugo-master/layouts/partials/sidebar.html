@@ -16,8 +16,8 @@
   </div>
   <!-- faq -->
   <div class="widget">
-    {{ with .Site.GetPage "/faq" }}
-    <h4 class="widget-title">{{ .Title | markdownify }}</h4>
+    {{ with .Site.GetPage "/faqs" }}
+    <h4 class="widget-title">FAQ</h4>
     <p>{{ .Summary }}</p>
     <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
     {{ end }}
