@@ -12,11 +12,15 @@
   }
 }
 
-.card-text-second {
-  width: 350px;
-}
-
 /* /card */
+
+.accordions-container {
+  padding: 6rem 4rem;
+
+  .accordion {
+    margin-bottom: 2rem;
+  }
+}
 
 .featured-post {
   .card-title {
@@ -37,6 +41,10 @@
       margin-left: 0;
       font-size: 30px;
     }
+  }
+
+  .card-text-second {
+    width: 350px;
   }
 
   &-slider {
