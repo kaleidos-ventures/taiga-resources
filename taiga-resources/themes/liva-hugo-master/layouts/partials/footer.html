@@ -76,3 +76,13 @@
   ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
   ga('send', 'pageview');
 </script>
+
+<!-- This code is for the FAQs page because we need unfold the specific FAQ -->
+<script type="text/javascript">
+  window.addEventListener("load", function(event) {
+    const hash = window.location.hash.substr(1);
+    if (hash){
+      $(`#${hash} .collapse`).collapse('show');
+    }
+  });
+</script>

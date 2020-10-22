@@ -18,8 +18,14 @@
   <div class="widget">
     {{ with .Site.GetPage "/faqs" }}
     <h4 class="widget-title">FAQ</h4>
-    <p>{{ .Summary }}</p>
-    <a href="{{ .Permalink }}" class="btn btn-outline-primary">Know More</a>
+    <ul class="list-unstyled">
+      {{ range sort (where (where .Site.RegularPages "Type" "faq") ".Params.main" "==" true) ".Params.order" }}
+      <li><a
+          href="{{ `faqs/` | relLangURL }}#{{ .Params.Slug }}">{{ .Title }}</a>
+      </li>
+      {{- end }}
+    </ul>
+    <a href="{{ .Permalink }}" class="btn btn-outline-primary">See All FAQs</a>
     {{ end }}
   </div>
 </div>

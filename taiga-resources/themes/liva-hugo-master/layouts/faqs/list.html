@@ -24,14 +24,14 @@
     <div class="container">
       <div class="accordions-container" id="accordion">
         {{ range sort (where .Site.RegularPages "Type" "faq") ".Params.order" }}
-          <div class="card accordion">
-            <div class="card-header pointer" id="heading-{{.Params.id}}">
-              <h5 data-toggle="collapse" data-target="#collapse-{{.Params.Id}}" aria-expanded="true" aria-controls="collapse-{{.Params.id}}">
+          <div id="{{.Params.Slug}}" class="card accordion">
+            <div class="card-header pointer" id="heading-{{.Params.slug}}">
+              <h5 data-toggle="collapse" data-target="#collapse-{{.Params.slug}}" aria-expanded="true" aria-controls="collapse-{{.Params.slug}}">
                 {{.Title}}
               </h5>
             </div>
           
-            <div id="collapse-{{.Params.id}}" class="collapse" aria-labelledby="heading-{{.Params.id}}" data-parent="#accordion">
+            <div id="collapse-{{.Params.slug}}" class="collapse" aria-labelledby="heading-{{.Params.slug}}" data-parent="#accordion">
               <div class="card-body">
                 {{.Summary}}
               </div>

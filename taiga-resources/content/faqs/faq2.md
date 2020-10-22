@@ -1,5 +1,5 @@
 ---
-id: 2
+slug: "question-faq-2" # Unique
 title: "Question FAQ 2?" # Is the question
 date: 2020-10-05T11:27:17+02:00
 draft: false
