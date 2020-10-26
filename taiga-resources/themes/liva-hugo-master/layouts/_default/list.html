@@ -5,10 +5,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
-        {{ printf "%#v" .Permalink }}
-
         <div class="row">
-          {{ $paginator := .Paginate .Data.Pages }}
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "feature") }}
           {{ range $paginator.Pages }}
           {{ .Render "post" }}
           {{ end }}

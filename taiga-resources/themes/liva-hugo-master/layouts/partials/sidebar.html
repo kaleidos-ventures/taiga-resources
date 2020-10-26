@@ -15,17 +15,41 @@
     {{- end }}
   </div>
   <!-- faq -->
-  <div class="widget">
-    {{ with .Site.GetPage "/faqs" }}
-    <h4 class="widget-title">FAQ</h4>
-    <ul class="list-unstyled">
-      {{ range sort (where (where .Site.RegularPages "Type" "faq") ".Params.main" "==" true) ".Params.order" }}
-      <li><a
-          href="{{ `faqs/` | relLangURL }}#{{ .Params.Slug }}">{{ .Title }}</a>
-      </li>
-      {{- end }}
-    </ul>
-    <a href="{{ .Permalink }}" class="btn btn-outline-primary">See All FAQs</a>
-    {{ end }}
-  </div>
+  {{ if eq .Kind "term" }}
+    {{ $category := $.Title }}
+    <div class="widget">
+      {{ with .Site.GetPage "/faqs" }}
+      <h4 class="widget-title">FAQ</h4>
+      <ul class="list-unstyled">
+        {{ range sort (where .Site.RegularPages "Type" "faq") ".Params.order" }}
+          {{ $slug := .Params.Slug }}
+          {{ $title := .Title }}
+          {{ range .Params.categories }}
+            {{ if in . $category }}
+              <li><a
+                href="{{ `faqs/` | relLangURL }}#{{ $slug }}">{{ $title }}</a>
+              </li>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </ul>
+      <a href="{{ .Permalink }}" class="btn btn-outline-primary">See All FAQs</a>
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="widget">
+      {{ with .Site.GetPage "/faqs" }}
+      <h4 class="widget-title">FAQ</h4>
+      <ul class="list-unstyled">
+        {{ range sort (where (where .Site.RegularPages "Type" "faq") ".Params.main" "==" true) ".Params.order" }}
+        <li><a
+            href="{{ `faqs/` | relLangURL }}#{{ .Params.Slug }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      <a href="{{ .Permalink }}" class="btn btn-outline-primary">See All FAQs</a>
+      {{ end }}
+    </div>
+  {{ end }}
+  
 </div>
