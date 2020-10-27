@@ -4,7 +4,13 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div id="search-results"></div>
+        <div id="search-results-count">
+        </div>
+        <div id="search-results">
+        </div>
+        <script id="search-result-count-template" type="text/x-js-template">
+          <div><p>${numResult} results for "${searchQuery}"</p></div>
+        </script>
         <script id="search-result-template" type="text/x-js-template">
           <div class="py-4 border-bottom" id="summary-${key}">
             <h4><a href="${link}">${title}</a></h4>
