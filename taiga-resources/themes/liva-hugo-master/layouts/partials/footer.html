@@ -4,8 +4,6 @@
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Contact Me</h6>
         <ul class="list-unstyled">
-          <li class="mb-3"><a class="text-dark" href="tel:{{ .Site.Params.mobile }}"><i
-                class="ti-mobile mr-3 text-primary"></i>{{ .Site.Params.mobile }}</a></li>
           <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>{{ .Site.Params.location }}</li>
           <li class="mb-3"><a class="text-dark" href="mailto:{{ .Site.Params.email }}"><i
                 class="ti-email mr-3 text-primary"></i>{{ .Site.Params.email }}</a>
@@ -16,7 +14,7 @@
         <h6 class="mb-4">Social Contacts</h6>
         <ul class="list-unstyled">
           {{ range .Site.Params.social }}
-          <li class="mb-3"><a class="text-dark" href="{{ .link | safeURL }}">{{ .title }}</a></li>
+          <li class="mb-3"><a class="text-dark" href="{{ .link | safeURL }}" target="_blank">{{ .title }}</a></li>
           {{ end }}
         </ul>
       </div>
@@ -30,6 +28,9 @@
               href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
           </li>
           {{- end }}
+          <li class="mb-3"><a class="text-dark"
+            href="{{ `faqs/` | relLangURL }}">FAQ</a>
+        </li>
         </ul>
         {{- end }}
         {{- end }}
@@ -38,12 +39,12 @@
         <h6 class="mb-4">Quick Links</h6>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
-          <li class="mb-3"><a class="text-dark" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          <li class="mb-3"><a class="text-dark" href="{{ .URL | absURL }}" target="_blank">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>
       <div class="col-12 border-top py-4 text-center">
-        {{ .Site.Params.copyright | markdownify }}
+        {{ .Site.Params.copyright | markdownify }} <a class="text-dark ml-10" href="#" target="_blank">About Taiga license</a>
       </div>
     </div>
   </div>

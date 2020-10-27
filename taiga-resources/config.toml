@@ -45,45 +45,40 @@ disqusShortname = ""
 
   # main menu
   [[menu.main]]
-  name = "Docs"
-  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  name = "HandBook"
+  URL = "#"
   weight = 1
 
   [[menu.main]]
-  name = "API"
-  URL = "https://taigaio.github.io/taiga-doc/dist/api.html"
+  name = "Blog"
+  URL = "https://blog.taiga.io/"
   weight = 2
-
-  [[menu.main]]
-  name = "Google Groups"
-  URL = "https://groups.google.com/d/forum/taigaio"
-  weight = 3
 
   [[menu.main]]
   name = "Taiga"
   URL = "https://tree.taiga.io"
-  weight = 4
+  weight = 3
 
   # footer menu
   [[menu.footer]]
-  name = "Docs"
-  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  name = "Taiga"
+  URL = "https://tree.taiga.io"
   weight = 1
 
   [[menu.footer]]
-  name = "API"
-  URL = "https://taigaio.github.io/taiga-doc/dist/api.html"
+  name = "Blog"
+  URL = "https://blog.taiga.io/"
   weight = 2
 
   [[menu.footer]]
-  name = "Google Groups"
-  URL = "https://groups.google.com/d/forum/taigaio"
+  name = "Code of conduct"
+  URL = "#"
   weight = 3
 
   [[menu.footer]]
-  name = "Taiga"
-  URL = "https://tree.taiga.io"
-  weight = 4
+  name = "HandBook"
+  URL = "#"
+  weight = 4 
 
 
 #################### default parameters ################################
@@ -96,9 +91,8 @@ author = "Themefisher"
 # Google Analitycs
 googleAnalyticsID = "Your ID"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+email = "info@taiga.io"
+location = "NY, USA / Madrid, Spain"
 # copyright
 copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
 
@@ -113,26 +107,21 @@ copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
 
 ############################# social site ########################
 [[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "twitter"
+title = "Twitter"
 icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://twitter.com/taigaio"
 
 [[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "github"
+title = "Github"
 icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://github.com/taigaio"
 
 [[params.social]]
-title = "linkedin"
+title = "Linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+link = "https://www.linkedin.com/company/taigaio/"
+
+[[params.social]]
+title = "Google Groups"
+icon = "ti-google" # themify icon : https://themify.me/themify-icons
+link = "https://groups.google.com/d/forum/taigaio"
