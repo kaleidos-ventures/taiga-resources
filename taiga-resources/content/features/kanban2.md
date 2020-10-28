@@ -8,7 +8,7 @@ main: false
 
 # taxonomies
 categories:
-  - "KANBAN"
+  - "kanban"
 ---
 
 Page for KANBAN 2

@@ -9,7 +9,7 @@ order: 3
 
 # taxonomies
 categories:
-  - "Issues"
+  - "issues"
 ---
 
 Page for Issues

@@ -9,7 +9,7 @@ order: 1
 
 # taxonomies
 categories:
-  - "KANBAN"
+  - "kanban"
 ---
 
 Answer for faq1

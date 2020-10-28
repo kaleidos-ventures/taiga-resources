@@ -9,7 +9,7 @@ order: 3
 
 # taxonomies
 categories:
-  - "Issues"
+  - "issues"
 ---
 
 Answer for faq3

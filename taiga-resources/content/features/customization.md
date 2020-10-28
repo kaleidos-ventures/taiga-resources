@@ -9,7 +9,7 @@ order: 4
 
 # taxonomies
 categories:
-  - "Customization"
+  - "customization"
 ---
 
 Page for Customization

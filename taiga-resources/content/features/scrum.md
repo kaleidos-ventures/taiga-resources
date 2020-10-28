@@ -9,7 +9,7 @@ order: 2
 
 # taxonomies
 categories:
-  - "SCRUM"
+  - "scrum"
 ---
 
 Page for SCRUM

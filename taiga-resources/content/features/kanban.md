@@ -20,7 +20,7 @@ description: "this is meta description"
 
 # taxonomies
 categories:
-  - "KANBAN"
+  - "kanban"
 ---
 
 Page for KANBAN

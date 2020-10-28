@@ -5,11 +5,26 @@
     {{- if isset .Site.Taxonomies "categories" }}
     {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
     <ul class="list-unstyled">
-      {{- range $name, $items := .Site.Taxonomies.categories }}
-      <li><a
-          href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
-      </li>
-      {{- end }}
+      {{ if eq .Kind "term" }}
+        {{ $category := $.Title }}
+        {{- range $name, $items := .Site.Taxonomies.categories }}
+          {{ if eq $name $category }}
+            <li>
+              <a class="highlighted" href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
+            </li>
+          {{ else }}
+            <li>
+              <a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
+            </li>
+          {{ end }}
+        {{- end }}
+      {{ else }}
+        {{- range $name, $items := .Site.Taxonomies.categories }}
+          <li>
+            <a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a>
+          </li>
+        {{- end }}
+      {{ end }}
     </ul>
     {{- end }}
     {{- end }}
