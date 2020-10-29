@@ -8,8 +8,13 @@
         </div>
         <div id="search-results">
         </div>
+        <script>
+          var hugoOptions = {
+            noResults: "{{ .Site.Params.noResults | absURL }}"
+          };
+        </script>
         <script id="search-result-count-template" type="text/x-js-template">
-          <div><p>${numResult} results for "${searchQuery}"</p></div>
+          <div><p class="num-results">${numResult} ${resultText} for "${searchQuery}"</p></div>
         </script>
         <script id="search-result-template" type="text/x-js-template">
           <div class="py-4 border-bottom" id="summary-${key}">

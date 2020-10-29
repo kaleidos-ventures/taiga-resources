@@ -35,14 +35,18 @@ function executeSearch(searchQuery){
     if(result.length > 0){
       populateResults(result.length, searchQuery, result);
     }else{
-      $('#search-results').append(`<div><h4>No matching search result found with ${searchQuery}</h4><p>Try again using more general search terms</p><img class=\"img-fluid mb-5\" src=\"https://user-images.githubusercontent.com/37659754/64060567-7cece400-cbf0-11e9-9cf9-abac3543ec1f.png\"></div>`);
+      $('#search-results').append(`<div><p class="no-results">No matching search result found with "${searchQuery}"</p><p class="no-results-subtext">Try again using more general search terms</p><img class=\"img-fluid mb-5\" src=\"${hugoOptions.noResults}\"></div>`);
     }
   });
 }
 
 function populateResults(numResult, searchQuery, result){
+  var resultText = "result";
+  if(numResult > 1){
+    resultText = "results";
+  }
   var templateCountDefinition = $('#search-result-count-template').html();
-  var outputCount = render(templateCountDefinition,{numResult:numResult,searchQuery:searchQuery});
+  var outputCount = render(templateCountDefinition,{numResult:numResult,searchQuery:searchQuery,resultText:resultText});
   $('#search-results-count').append(outputCount);
 
   $.each(result,function(key,value){
