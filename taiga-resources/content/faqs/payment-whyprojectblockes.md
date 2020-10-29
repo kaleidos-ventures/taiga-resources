@@ -9,7 +9,8 @@ order: 2
 
 # taxonomies
 categories:
-  - "PAYMENT"
+  - "payment"
+  - "saas"
 ---
 
 We are sorry to hear that. The reason any project would be blocked is because the owner of that project did not subscribe in time to an appropriate paid plan. The project hasn’t been deleted at all, it is simply not accessible for the time being.
