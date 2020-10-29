@@ -30,16 +30,25 @@ function executeSearch(searchQuery){
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);
+    console.log("num of results: ", result.length)
     console.log({"matches":result});
     if(result.length > 0){
-      populateResults(result);
+      populateResults(result.length, searchQuery, result);
     }else{
-      $('#search-results').append("<div class=\"text-center\"><img class=\"img-fluid mb-5\" src=\"https://user-images.githubusercontent.com/37659754/64060567-7cece400-cbf0-11e9-9cf9-abac3543ec1f.png\"><h3>No Search Found</h3></div>");
+      $('#search-results').append(`<div><p class="no-results">No matching search result found with "${searchQuery}"</p><p class="no-results-subtext">Try again using more general search terms</p><img class=\"img-fluid mb-5\" src=\"${hugoOptions.noResults}\"></div>`);
     }
   });
 }
 
-function populateResults(result){
+function populateResults(numResult, searchQuery, result){
+  var resultText = "result";
+  if(numResult > 1){
+    resultText = "results";
+  }
+  var templateCountDefinition = $('#search-result-count-template').html();
+  var outputCount = render(templateCountDefinition,{numResult:numResult,searchQuery:searchQuery,resultText:resultText});
+  $('#search-results-count').append(outputCount);
+
   $.each(result,function(key,value){
     var contents= value.item.contents;
     var snippet = "";
@@ -63,7 +72,7 @@ function populateResults(result){
     if(snippet.length<1){
       snippet += contents.substring(0,summaryInclude*2);
     }
-    //pull template from hugo templarte definition
+    //pull template from hugo template definition
     var templateDefinition = $('#search-result-template').html();
     //replace values
     var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:value.item.tags,categories:value.item.categories,snippet:snippet});

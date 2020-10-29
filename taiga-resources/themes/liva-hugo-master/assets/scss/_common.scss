@@ -217,3 +217,29 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .highlighted{
   color: $primary-color !important;
 }
+
+/* number of results in search */
+.num-results{
+  font-size: 17.5px;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+.no-results{
+  color: $text-color-dark;
+  font-size: 17.5px;
+  line-height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.no-results-subtext{
+  color: $text-color-light;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 2rem;
+}
+
+/* mark word in search results */
+mark{
+  padding: 0;
+}
