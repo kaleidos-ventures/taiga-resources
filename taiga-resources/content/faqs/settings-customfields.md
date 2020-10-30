@@ -17,7 +17,7 @@ Taiga includes optional custom fields in its administration panel. It will provi
 Users with administration permissions will be able to create new custom fields for their project Epics, User Stories, Subtasks and Issues.
 
 
-{{< figure src="/faqs/images/settings-customfields.jpg" caption="Example of the different custom fields options" alt="Example of the different custom fields options" >}}
+{{< figure src="/faqs/images/settings-customfields.jpg" caption="Example of the different custom fields options" alt="Example of the different custom fields options" width="100%" >}}
 
 Simply go to your Project Admin section > Attributes > Custom fields and add, remove or edit any of those for your choice of Taiga entities.
 
