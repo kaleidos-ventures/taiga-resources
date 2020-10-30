@@ -1,6 +1,6 @@
 ---
 slug: "payment-whyprojectblocked" # Unique
-title: "Why is my project blocked?" # Is the question
+title: "Why is my project blocked on taiga.io?" # Is the question
 date: 2020-10-05T11:27:17+02:00
 draft: false
 type: "faq"
