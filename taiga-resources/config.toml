@@ -44,10 +44,10 @@ disqusShortname = ""
 [menu]
 
   # main menu
-  [[menu.main]]
-  name = "HandBook"
-  URL = "#"
-  weight = 1
+  #[[menu.main]]
+  #name = "HandBook"
+  #URL = "#"
+  #weight = 1
 
   [[menu.main]]
   name = "Blog"
@@ -75,10 +75,10 @@ disqusShortname = ""
   URL = "#"
   weight = 3
 
-  [[menu.footer]]
-  name = "HandBook"
-  URL = "#"
-  weight = 4 
+  #[[menu.footer]]
+  #name = "HandBook"
+  #URL = "#"
+  #weight = 4 
 
 
 #################### default parameters ################################
