@@ -8,10 +8,7 @@ main: false
 order: 5
 
 # taxonomies
-categories:
-  - "payment"
-  - "subscription"
-  - "saas"
+categories: null
 ---
 
 Yes, you can cancel at any time. Plans are paid monthly or yearly, so if you cancel, once you do so, the plan will run to the end of the period and not renew. Partial refunds for unused subscription term are available upon request.
