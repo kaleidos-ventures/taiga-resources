@@ -20,7 +20,7 @@ Each module can be run on a unique machine or all of them can be installed to a 
 In this tutorial we will setup everything on a single machine, and will be installing all three main Taiga modules. +
 This type of setup should suffice for small/medium production environments with low traffic.
 
-{{< figure src="/images/30minsetup_test01.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" >}}
+{{< figure src="/images/30minsetup_test01.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" class="articlefigure" >}}
 
 
 # Overview
@@ -30,7 +30,7 @@ This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.0
 Due to the nature of the frontend, Taiga is accessed through a domain/public IP address, because the frontend application runs in your browser.
 The frontend must be able to communicate with the backend/API, therefore both the frontend and the backend must be accessible through a domain/public IP address too.
 
-{{< figure src="/images/30minsetup_test02.jpg" caption="Example of medium screenshot" alt="Example of medium screenshot" width="100%" >}}
+{{< figure src="/images/30minsetup_test02.jpg" caption="Example of medium screenshot" alt="Example of medium screenshot" width="100%" class="articlefigure" >}}
 
 
 **Taiga installation must be done with a "regular" user, never with root!**
@@ -46,7 +46,7 @@ During the tutorial, the following conditions are assumed:
 Changing the user from `taiga` to something else is not recommended at any point during deployment unless you're well aware of what you're doing. +
 Changing user may result in unexpected behavior or failed deployment!
 
-{{< figure src="/images/30minsetup_test03.jpg" caption="Example of small screenshot" alt="Example of small screenshot"  >}}
+{{< figure src="/images/30minsetup_test03.jpg" caption="Example of small screenshot" alt="Example of small screenshot" class="articlefigure" >}}
 
 
 ## Dependencies
@@ -171,4 +171,4 @@ cd taiga-back
 git checkout stable
 ```
 
-{{< figure src="/images/30minsetup_test04.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" >}}
+{{< figure src="/images/30minsetup_test04.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" class="articlefigure"  >}}

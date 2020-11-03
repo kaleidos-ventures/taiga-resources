@@ -18,13 +18,13 @@ Taiga includes optional custom fields in its administration panel. It will provi
 Users with administration permissions will be able to create new custom fields for their project Epics, User Stories, Subtasks and Issues.
 
 
-{{< figure src="/faqs/images/settings-customfields.jpg" caption="Example of the different custom fields options" alt="Example of the different custom fields options" width="100%" >}}
+{{< figure src="/faqs/images/settings-customfields.jpg" caption="Example of the different custom fields options" alt="Example of the different custom fields options" width="100%" class="articlefigure" >}}
 
 Simply go to your Project Admin section > Attributes > Custom fields and add, remove or edit any of those for your choice of Taiga entities.
 
 You will then be able to see the new custom field option within the Epic, User story, Subtask or Issue view, depending on your choice.
 
-{{< figure src="/faqs/images/settings-customfields02.jpg" caption="Example of one URL-type custom field being used in a user story" alt="Example of one URL-type custom field being used in a user story" >}}
+{{< figure src="/faqs/images/settings-customfields02.jpg" caption="Example of one URL-type custom field being used in a user story" alt="Example of one URL-type custom field being used in a user story" class="articlefigure" >}}
 
 
 Please note than custom fields cannot be used to filter Taiga items. We plan to add this capability in the future. However, both the API and the live CSV exports do contain the custom fields information.
