@@ -9,7 +9,8 @@ order: 4
 
 # taxonomies
 categories:
-  - "settings"
+  - "kanban"
+  - "scrum"
 ---
 
 Taiga includes optional custom fields in its administration panel. It will provide teams with a flexible input to fit in their workflow.

@@ -8,9 +8,7 @@ main: true
 order: 1
 
 # taxonomies
-categories:
-  - "payment"
-  - "saas"
+categories: null
 ---
 
 Taiga is an Open Source platform. At the same time, we provide a freemium cloud/SaaS offer so you can use our own infrastructure to host all your projects and teams. Depending on your use, we may charge for this service. But who has to pay actually?

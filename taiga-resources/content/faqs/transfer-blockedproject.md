@@ -8,8 +8,7 @@ main: true
 order: 3
 
 # taxonomies
-categories:
-  - "transfer"
+categories: null
 ---
 
 Transferring the project ownership of a blocked project might be an unexpected burden to the transferee so we would like to avoid that at all costs. The simplest and fastest solution is to simply subscribe to the minimum paid plan on a monthly basis and then do the project ownership transfer normally (the other person would still have to accept clicking on an link sent to them via email).
