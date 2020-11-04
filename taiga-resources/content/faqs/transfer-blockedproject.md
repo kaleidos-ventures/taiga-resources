@@ -1,6 +1,6 @@
 ---
 slug: "transfer-blockedproject" # Unique
-title: "Can I transfer the ownership of my blocked tree.taiga.io project?" # Is the question
+title: "Main: Can I transfer the ownership of my blocked tree.taiga.io project?" # Is the question
 date: 2020-10-05T11:27:17+02:00
 draft: false
 type: "faq"

@@ -1,6 +1,6 @@
 ---
 slug: "settings-customfields" # Unique
-title: "Can I add new custom fields to my project?" # Is the question
+title: "Main: customization - Can I add new custom fields to my project?" # Is the question
 date: 2020-10-05T11:27:17+02:00
 draft: false
 type: "faq"
