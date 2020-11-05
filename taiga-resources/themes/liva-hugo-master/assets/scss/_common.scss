@@ -30,9 +30,10 @@ img {
 .articlefigure {
 
   img{
-  border: 2px;
-  border-style: solid;
+    border: solid 4px #ECEFF4;
+    border-radius: 8px;
   }
+
   figcaption{
     font-style: italic;
   }
@@ -252,4 +253,10 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 /* mark word in search results */
 mark{
   padding: 0;
+}
+
+/* border in img */
+.border-img{
+  border: solid 4px #ECEFF4;
+  border-radius: 8px;
 }

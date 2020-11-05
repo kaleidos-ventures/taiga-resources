@@ -12,7 +12,7 @@
         <div class="mb-3 post-meta">
         </div>
         {{ if .Params.image }}
-        <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4" alt="{{ .Title | markdownify }}">
+        <img src="{{ .Params.Image | absURL }}" class="img-fluid w-100 mb-4 border-img" alt="{{ .Title | markdownify }}">
         {{ end }}
         <div class="content mb-5">
           {{ .Content }}
