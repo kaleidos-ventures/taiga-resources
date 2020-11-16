@@ -157,15 +157,16 @@
 
 /* widget */
 .widget {
-  text-align: center;
+  text-align: left;
+  padding-left: 15px;
   margin-bottom: 50px;
 
   &-title {
     display: inline-block;
-    border-top: .5px solid $primary-color;
     border-bottom: .5px solid $primary-color;
     padding: 10px 0;
     margin-bottom: 20px;
+    width: 100%;
   }
 
   li {
