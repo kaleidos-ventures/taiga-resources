@@ -13,157 +13,87 @@ main: true
 order: 1
 
 # post thumb
-image: "images/post/post-1.jpg"
+image: "images/KANBAN_test10.jpg"
 
 # meta description
-description: "this is meta description"
+description: "Organic flow of work"
 
 # taxonomies
 categories:
   - "kanban"
 ---
 
-Page for KANBAN
+Kanban is a lean method to manage and improve work across human systems. This approach aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks.
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+You can also say that Kanban is an organic flow of tasks that minimize "in progress" time thanks to a clear set of rules and a trustworthy team.
 
-<hr>
+Regardless of how you put it, the reality is that Kanban is a very common way of adopting agile principles because it's relatively easy to grasp and adapt to your unique context. 
 
-##### Emphasis
+### Taiga Kanban module
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+Every Taiga project can activate the Kanban module. This also happens automatically if you chose the Kanban template upon project creation.
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+{{< figure src="/images/KANBAN_test02.jpg" caption="The Kanban module showing an empty initial state" alt="The Kanban module showing an empty initial state" width="100%" class="articlefigure" >}}
 
-Combined emphasis with **asterisks and _underscores_**.
+When you do this the project's toolbar will show the Kanban icon and you will be able to access the Kanban board. By default the Kanban columns or statuses are ones that generally fit the software development process but feel free to change them yourself. You can create your own set of Kanban columns by going to SETTINGS > ATTRIBUTES > STATUSES and change USER STORY STATUSES.
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+{{< figure src="/images/KANBAN_test04.jpg" caption="Project attributes setup" alt="Project attributes setup" width="100%" class="articlefigure" >}}
 
-<hr>
+Scroll down to the USER STORY STATUSES and change the default settings to accomodate your particular use case. If you want your Kanban work items to be considered as done when they reach a particular Kanban status, flag that status as Closed. Also, if you believe a particular Kanban status might end up containing dozens or hundreds of closed Kanban work items, you might want to add an additional status for those and flag it as both Closed and Archived. The Archived property makes a particular Status hide its content by default so you don't have to load no longer relevant content.
 
-##### Link
-[I'm an inline-style link](https://www.google.com)
+Finally, it's a good practice to define the *Work in progress Limit* or *WIP Limit* for some (if not all) Kanban statuses. This means you are allowing Taiga to monitor whether you are exceeding a particular Kanban status capacity. For instance, Taiga will still allow you to add a fourth work item to 3-WIP Limit Kanban status but you'll get a visual warning on the Kanban board. A Kanban heavily rely on optimal WIP Limits and sticking to them so you don't end up with various work items graveyards that cause bottlenecks. It's challenging to get WIP Limits right straight away so you can always change them later.
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+{{< figure src="/images/KANBAN_test03.jpg" caption="Project settings related to Kanban statuses: Closed, Archived and WIP Limits" alt="Project settings related to Kanban statuses: Closed, Archived and WIP Limits" width="100%" class="articlefigure" >}}
 
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
+This is the basic setup. You can now go to the Kanban module and start creating work items and moving them around as they progress in their lifecycle.
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+### Kanban swimlanes
 
-[You can use numbers for reference-style link definitions][1]
+Some teams require advanced features for their Kanban boards. One of the most sought after is the Kanban swimlane. It consists on an independant section that can contain a separate set of work items. Taiga allows you to create as many Kanban swimlanes as you need, effectively distributing your work across different major categorizations. Some example of swimlanes usage are sub-teams, project modules, different priorities, etc.
 
-Or leave it empty and use the [link text itself].
+You can manage Kanban swimlanes under SETTINGS > ATTRIBUTES > KANBAN SWIMLANES.
 
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
+{{< figure src="/images/KANBAN_test05.jpg" caption="Kanban swimlanes configuration" alt="Kanban swimlanes configuration" width="100%" class="articlefigure" >}}
 
-Some text to show that the reference links can follow later.
+By default, a Taiga project comes with no Kanban swimlanes. Once you start creating swimlanes, the top one on the list will act as the default Swimlane for some Taiga project operations.
 
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
+{{< figure src="/images/KANBAN_test06.jpg" caption="Kanban swimlanes view with some sample tasks" alt="Kanban swimlanes view with some sample tasks" width="100%" class="articlefigure" >}}
 
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+Of course, you can move Kanban work items from one swimlane to another and from one status to any other status.
 
 
-<hr>
+### Kanban filters and search options
 
-##### Tables
+A Kanban board might get a bit cluttered at times and therefore filters come in handy.
 
-Colons can be used to align columns.
+{{< figure src="/images/KANBAN_test07.jpg" caption="Kanban with filters applied" alt="Kanban with filters applied" width="100%" class="articlefigure" >}}
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+Simply click on Filters and fiddle with include/exclude  criteria with live reaction from the Kanban board. You can remove them at any time or create a custom filter for future use, one click away.
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.
+You can also combine it with the search box that will try to be as smart as possible and show matching Kanban work items only.
 
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+### Kanban zoom levels
 
-<hr>
+Kanban is very often described as great visual management tool. It radiates information to all team members and, most importantly, everyone shares the same vision.
 
-##### Image
+However, Taiga users are allowed to pick their preferred zoom level for the Kanban board. You can pick from four options: compact, default, detailed and expanded.
 
-![image](../../images/post/post-1.jpg)
+A picture is worth a thousand words, just see how different te same Kanban board can look depending on your zoom level preference.
 
-<hr>
+{{< figure src="/images/KANBAN_test08.jpg" caption="Kanban with compact zoom vs expanded zoom" alt="Kanban with compact zoom vs expanded zoom" width="100%" class="articlefigure" >}}
 
-##### Youtube video
+When you prefer more detailed or expanded zoom levels you are asking Taiga to bring more and more information on the work item to the front, saving you that extra click to view its detail. Compact or default zoom levels make the Kanban board more of a heat map of sorts and can accommodate more work items in one screen.
 
-{{< youtube C0DPdy98e4c >}}
+Of course, you can change your zoom level preferences at any time. And don't worry, this is your personal Kanban view, it does not affect other team members personal preferences.
+
+You will probably find yourself sticking to a preferred zoom level most of the time while also collapsing swimlanes you don't need to see, or Kanban statuses that you don't manage. 
+
+
+### Kanban relationship with Scrum module
+
+Taiga is about choice and lfexibility while still adhering to basic agile and lean principles. We want you to start using either Scrum or Kanban for your project (or neither and stick with Issues) and later change your mind.
+
+In order for Taiga to manage this transition, we decided that a Kanban work item or Kanban card would also be internally considered a Scrum User Story. That way, you can keep all your work regardless of which Agile module you are using.
+
+Actually, you could have both modules, Kanban and Scrum activated and see the same item placed on the Scrum Backlog or a Scrum Sprint and, at the same time, see it on the Kanban board, in a particular swimlane. As the Taiga Team likes to say "if you know what you're doing, we're fine".
+
