@@ -1,0 +1,13 @@
+title: "Taiga contrib SAML auth"
+author: "Jonathan Gianuzzi"
+github_author: "@jgianuzzi"
+license: "AGPLv3"
+description: The Taiga plugin for SAML authentication"
+contribution_url: "https://github.com/jgiannuzzi/taiga-contrib-saml-auth"
+created_date: 2016-10-17T12:58:11+02:00
+last_updated_date: 2018-02-06T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["auth", "integration"]
+url: "/contributions/#taiga-contrib-saml-auth"
+anchor: "taiga-contrib-saml-auth"

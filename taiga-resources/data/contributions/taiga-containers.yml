@@ -1,0 +1,15 @@
+title: "Taiga containers with optional LDAP"
+author: "Hein-Pieter van Braam"
+github_author: "@hpvb"
+license: "??"
+description: "This container runs Taiga from Github release tags on Fedora 31. The container contains the OpenID plugin out of the box, but it's only enabled if an OpenID configuration exists in the environment. There's also an LDAP synchronization that can be ran in a separate container. This is also an optional feature.
+
+The container is used in production by Prehensile Tales running in Podman."
+contribution_url: "https://github.com/PrehensileTales/taiga-containers"
+created_date: 2019-10-30T12:58:11+02:00
+last_updated_date: 2019-01-21T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["docker", "integration", "auth"]
+url: "/contributions/#taiga-containers"
+anchor: "taiga-containers"
