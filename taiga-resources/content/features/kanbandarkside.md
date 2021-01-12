@@ -2,6 +2,7 @@
 title: "Kanban, the dark side"
 date: 2020-10-05T11:27:41+02:00
 draft: false
+slug: "kanbandarkside"
 
 # post type
 type: "feature"
@@ -23,7 +24,7 @@ categories:
   - "kanban"
 ---
 
-This is content that goes a bit beyond Taiga as an Agile platform and tries to convey a self-conscious approach to Kanban. We hope it leads you to a better Taiga experience.
+This is content that goes a bit beyond Taiga as an Agile platform and tries to convey a self-conscious approach to Kanban. We hope it leads you to a better Taiga experience. For a straightforward approach to KANBAN using Taiga please read [The 5-min Kanban module overview](/features/5minkanban) first.
 
 ### Why would we want to do Kanban? What is Kanban’s promise?
 

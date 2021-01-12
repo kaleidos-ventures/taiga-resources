@@ -1,6 +1,7 @@
 ---
 title: "The 5-min Kanban module overview"
 date: 2020-10-05T11:27:41+02:00
+slug: "5minkanban"
 draft: false
 
 # post type
@@ -100,4 +101,6 @@ Taiga is about choice and flexibility while still adhering to basic agile and le
 In order for Taiga to manage this transition, we decided that a Kanban work item or Kanban card would also be internally considered a Scrum User Story. That way, you can keep all your work regardless of which Agile module you are using.
 
 Actually, you could have both modules, Kanban and Scrum activated and see the same item placed on the Scrum Backlog or a Scrum Sprint and, at the same time, see it on the Kanban board, in a particular swimlane. As the Taiga Team likes to say "if you know what you're doing, we're fine".
+
+Be sure to read [KANBAN, the Dark Side](/features/kanbandarkside) to know more about potential pitfalls while using KANBAN.
 
