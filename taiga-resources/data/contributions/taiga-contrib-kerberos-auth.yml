@@ -1,0 +1,13 @@
+title: "Taiga contrib kerberos auth"
+author: "Diego Giovane Pasqualin"
+github_author: ""
+license: "AGPLv3"
+description: "The Taiga plugin for kerberos authentication"
+contribution_url: "https://github.com/dpasqualin/taiga-contrib-kerberos-auth"
+created_date: 2015-02-10T12:58:11+02:00
+last_updated_date: 2016-08-04T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["auth", "integration"]
+url: "/contributions/#taiga-contrib-kerberos-auth"
+anchor: "taiga-contrib-kerberos-auth"
