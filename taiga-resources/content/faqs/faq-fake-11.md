@@ -1,15 +1,29 @@
 ---
-slug: "faqs-fake-11" # Unique
-title: "customization: Mauris maximus bibendum lacus ac auctor?" # Is the question
-date: 2020-10-05T11:27:17+02:00
+slug: "iocaine" # Unique
+title: "What is this Iocaine thing in Taiga and how should I use it?" # Is the question
+date: 2021-01-12T04:27:17+02:00
 draft: false
 type: "faq"
 main: false
-order: 16
+order: 5
 
 # taxonomies
 categories:
   - "customization"
 ---
 
-Mauris maximus bibendum lacus ac auctor. Cras euismod nisl vel dolor mollis, id malesuada sapien condimentum. Aliquam eget nunc eu justo placerat pellentesque et vel quam. Sed at malesuada metus. Pellentesque elementum tellus a ex mollis scelerisque vitae in risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam sodales purus magna, sed pellentesque sem congue quis. Aenean rutrum, nunc eu convallis elementum, est augue pulvinar risus, eu ullamcorper mi metus ac nisi. Cras a massa elementum, molestie dolor ac, fringilla turpis.
+Taiga includes optional custom fields in its administration panel. It will provide teams with a flexible input to fit in their workflow.
+
+Users with administration permissions will be able to create new custom fields for their project Epics, User Stories, Subtasks and Issues.
+
+
+{{< figure src="/faqs/images/settings-customfields.jpg" caption="Example of the different custom fields options" alt="Example of the different custom fields options" width="100%" class="articlefigure" >}}
+
+Simply go to your Project Admin section > Attributes > Custom fields and add, remove or edit any of those for your choice of Taiga entities.
+
+You will then be able to see the new custom field option within the Epic, User story, Subtask or Issue view, depending on your choice.
+
+{{< figure src="/faqs/images/settings-customfields02.jpg" caption="Example of one URL-type custom field being used in a user story" alt="Example of one URL-type custom field being used in a user story" class="articlefigure" >}}
+
+
+Please note than custom fields cannot be used to filter Taiga items. We plan to add this capability in the future. However, both the API and the live CSV exports do contain the custom fields information.

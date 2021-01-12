@@ -76,8 +76,8 @@ The Sprint Taskboard is quite flexible and it's a good example of "visual manage
 
 Please note that whenever all tasks belonging to a user story are in a Closed state, such user story counts as closed for metrics and velocity regardless of the particular user story status. Speaking of which, the Taskboard has its particular Burndown chart, which keeps track of how fast the team is closing user stories before the end of the Sprint and the traditional Sprint Demo event. It's hidden by default but you can expand it clicking on the histogram icon.
 
-What is always visible is the Sprint stats. For that Taiga uses a simple bar section at the top. It is pretty self-explanatory but there are two icons that are worth mentioning.
-The opposed arrows icon [icono] allows a team to send any sprint unfinished work to any other open sprint. It's quite handy although we hope you don't use it very often. The poison icon keeps track of the number of tasks labelled as Iocaine by their assignees.
+What is always visible is the Sprint stats. For that, Taiga uses a simple bar section at the top. It is pretty self-explanatory but there are two icons that are worth mentioning.
+The opposed arrows icon [icono] allows a team to send any sprint's unfinished work to any other open sprint, effectively closing the origin sprint. It's quite handy although we hope you don't need to use it very often. The poison icon [icono] keeps track of the number of tasks labelled as Iocaine by their assignees.
 
 
 Team members can collapse both user stories and tasks statuses so that they are pleased with a better use of their screen real estate.
