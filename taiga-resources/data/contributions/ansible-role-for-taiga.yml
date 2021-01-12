@@ -1,0 +1,13 @@
+title: "Ansible Role for Taiga"
+author: "Chris Olstrom"
+github_author: "@colstrom"
+license: "??"
+description: "Ansible Role for Taiga"
+contribution_url: "https://github.com/colstrom/ansible-taiga"
+created_date: 2015-02-01T12:58:11+02:00
+last_updated_date: 2015-02-21T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["ansible", "integration"]
+url: "/contributions/#ansible-role-for-taiga"
+anchor: "ansible-role-for-taiga"

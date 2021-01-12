@@ -1,0 +1,13 @@
+title: "Taiga contrib FAS OpenID auth"
+author: "Ralph Bean"
+github_author: "@ralphbean"
+license: "??"
+description: "The Taiga plugin for FAS (Fedora Account System) authentication."
+contribution_url: "https://github.com/fedora-infra/taiga-contrib-fas-openid-auth"
+created_date: 2016-11-01T12:58:11+02:00
+last_updated_date: 2016-11-21T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["auth", "integration"]
+url: "/contributions/#taiga-contrib-fas-openid-auth"
+anchor: "taiga-contrib-fas-openid-auth"

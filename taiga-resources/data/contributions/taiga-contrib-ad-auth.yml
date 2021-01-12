@@ -1,0 +1,13 @@
+title: "Taiga contrib Active Directory auth"
+author: "Stefan Midjich"
+github_author: "@stemid"
+license: "AGPLv3"
+description: "Taiga plugin for Active Directory authentication"
+contribution_url: "https://github.com/stemid/taiga-contrib-ad-auth"
+created_date: 2016-11-01T12:58:11+02:00
+last_updated_date: 2016-11-09T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["auth", "integration"]
+url: "/contributions/#taiga-contrib-ad-auth"
+anchor: "taiga-contrib-ad-auth"

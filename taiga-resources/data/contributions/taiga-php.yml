@@ -1,0 +1,13 @@
+title: "pythonphp"
+author: "Thibault"
+github_author: ""
+license: "MIT"
+description: "TaigaPHP is a PHP wrapper used to handle the Taiga.io API easily"
+contribution_url: "https://github.com/TZK-/TaigaPHP"
+created_date: 2016-12-01T12:58:11+02:00
+last_updated_date: 2019-07-21T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
+contribution_tags: ["API", "integration", "php"]
+url: "/contributions/#taiga-php"
+anchor: "taiga-php"

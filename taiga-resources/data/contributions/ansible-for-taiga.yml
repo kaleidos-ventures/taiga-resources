@@ -1,13 +1,13 @@
 title: "Ansible for Taiga"
 author: "Justin Scott"
 github_author: "@JScott"
-license: "Licencia"
+license: "AGPL3"
 description: "Ansible for Taiga"
 contribution_url: "https://github.com/JScott/ansible-taiga"
-created_date: 2020-10-05T12:58:11+02:00
-last_updated_date: 2020-10-05T12:58:11+02:00
-integrated: true
-compatibility: ["taiga5", "taiga6"]
+created_date: 2015-05-01T12:58:11+02:00
+last_updated_date: 2015-05-07T12:58:11+02:00
+integrated: false
+compatibility: ["taiga5"]
 contribution_tags: ["ansible", "integration"]
 url: "/contributions/#ansible-for-taiga"
 anchor: "ansible-for-taiga"
