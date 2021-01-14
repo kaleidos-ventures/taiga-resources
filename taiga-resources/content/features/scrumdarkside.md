@@ -14,7 +14,7 @@ main: false
 order: 1
 
 # post thumb
-image: "images/KANBAN_test11.jpg"
+image: "images/Scrum_backlog_dark.jpg"
 
 # meta description
 description: "Organic flow of work"
@@ -24,54 +24,91 @@ categories:
   - "scrum"
 ---
 
-This is content that goes a bit beyond Taiga as an Agile platform and tries to convey a self-conscious approach to Kanban. We hope it leads you to a better Taiga experience. For a straightforward approach to KANBAN using Taiga please read [The 5-min Kanban module overview](/features/5minkanban) first.
+This is content that goes a bit beyond Taiga as an Agile platform and tries to convey a self-conscious approach to Scrum. We hope it leads you to a better Taiga experience. For a straightforward approach to Scrum using Taiga please read [Scrum quick intro](/features/introscrum) first.
 
-### Why would we want to do Kanban? What is Kanban’s promise?
+### Why would we want to do Scrum? What is Scrum’s promise?
 
-Kanban's promise is simple "if you can achieve individual empowerment *(lean)* and clear policies, I can deliver organic succession of finished work while avoiding bottle-necks". 
+It’s always important to remind ourselves the reasons we chose certain behavioural patterns. We're supposed to be testing an hypothesis. Without self-consciousness we're just following some recipes and tools and hoping to improve magically. 
 
-Kanban's promise is deceptively simple and it’s considered to be one of the most challenging Agile methods. The reason is that for a team to fulfill Kanban’s promise, the team has to be much more mature than what is required for Scrum.
-Actually, it is often seen that some Scrum liturgies are borrowed by Kanban teams as a way to establish a safety net. 
-
-### What is Kanban and what purpose it serves
-
-At first glance, Kanban is a set of columns or states and cards that go from left (initial states) to right (final states). When we picture it, we can instinctively see ourselves creating a Kanban for a personal project, like a book we are writing. We are the sole master of the whole Kanban, we don’t need to ask anyone whether we add a new chapter or a new commissioned illustration. We know when things can move to the next step, we know when things have to be cancelled or restarted and we know when things are done.
-
-{{< figure src="/images/kanbanworkflow.gif" caption="The simplest Kanban is not the most common either..." alt="The simplest Kanban is not the most common either..." width="100%" class="articlefigure" >}}
-
-Kanban tries to solve this at scale, when instead of one person, you have a team of, say, 8 people, and you are all writing the same book. With one key difference, most often you’re writing another person’s book.
-
-### Kanban critical challenges
-
-The main challenges Kanban implementations face are no real individual autonomy and no clear policies. 
-
-Individual empowerment in a team is almost always required to have functional Kanban method.
-
-By individual empowerment we don’t mean that every individual is the master, can make any decision and knows it all. Taking from the lean approach, we mean that every individual is trusted with the most autonomy that is possible within a specific workflow. In Kanban, autonomy comes with responsibility but also with freedom. This makes sense, without some degree of freedom, the concept of responsibility is devoid of any purpose.
-
-This freedom is individually exercised and collectively enjoyed.
-
-### What is the waste issue and how Kanban deals with it?
-
-In Agile (and so it applies to Kanban) *waste* is undesired sub-product of a development process that reduces future delivered value, increments technical debt and introduces friction in team dynamics. It leads to frustration, disorientation and lack of predictability.
-
-**Examples of waste:** meetings with almost no value for at least one participant. Many and undistinguishable communication channels. Context switching. Rushed work item closure. Chinese whispers around key decisions. Fine-grain work item effort estimation. Lack of peer review or leaving all quality controls to a team member. Long term planning.
-
-Kanban is also faced with the **waste issue**. The way Kanban tackles with it is to have a clear set of policies that can be enforced by any individual at any time without giving it much thought. Kanban streamlines the decision making process and functions as a set of triggers and reactions.
-
-A policy is a rule or a set of rules that determines what to do with a Kanban work item **depending on a particular state or event**. We say it is a clear policy not simply when it is deterministic (this is very difficult to achieve) but when **any individual would implement it the same way in the future**.
-
-You have autonomous individuals when they are **free to interpret the best way** to apply a policy.
+Scrum's promise is simple **"if you can achieve team commitment, I can deliver minimum waste and high predictability"**.
+Now, what is team commitment? First, what's not. Team commitment is not "best effort" approach or wishful thinking. Also, team commitment is not a collection of individual commitments. For the Taiga founders, **team commitment is the ability to fulfill a promise under tolerable uncertainty conditions and minimum external context switching while doing it as a unity**.
 
 
-#### Isn’t this a contradiction?
+### What is Scrum and what purpose it serves
 
-No, a clear policy embodies a path to deal with the **present certainty**, while autonomous individuals embody the **future uncertainty**. Team members in Kanban are like judges. They know the law, they apply it to new cases **to their best of their knowledge**.
+Scrum provides a number of [artifacts](https://en.wikipedia.org/wiki/Scrum_(software_development)#Artifacts) to achieve this. Those artifacts can be relatively abstract (retrospective) or more tangible (user story) and can be adapted to the project and team's needs.
 
-Good clear policies evolve based on team members feedback.
+Most people **misunderstand Scrum with those artifacts** and they believe that by following those recipes, they are doing Scrum and being Agile. The vast majority of the Scrum users fall into this sad category, where Scrum is equivalent to short iteration cycles *plus dailies, demos and retros*. 
+
+{{< figure src="/images/scrumbacklog.gif" caption="The simplest Scrum action, to move a suer story up in the backlog's priority" alt="The simplest Scrum action, to move a suer story up in the backlog's priority" width="100%" class="articlefigure" >}}
+
+It's true, though, that through form you *may* achieve soul but there's no reason why you couldn't start with soul and then achieve appropriate form. In fact, many teams start just with Scrum artifacts and through practice they begin to work towards a higher level of "enlightenment". They do so **as long as they realise they are still far from Scrum’s promise**. "If you can achieve team commitment, I can deliver minimum waste and high predictability".
+
+
+#### "If you can achieve team commitment [...]"
+
+Earlier we said Team commitment is the ability to fulfill a promise under tolerable uncertainty conditions and minimum external context switching while doing it as a unity. Let's break that down.
+
+- **Promise**: the selected user stories from a prioritized backlog that go into a sprint.
+- **tolerable uncertainty conditions**: user stories are well defined and estimated within reasonable error margins.
+- **minimum external context switching**: the sprint content is respected by all stakeholders. 
+- **while doing it as a unity**: the team finds solutions for the team, no one is left behind. Either the team "wins or loses" as a whole. Shared responsibility **is not** diluted responsibility.
+
+{{< figure src="/images/sprint_closetask.gif" caption="Team members should be entitled to close their own tasks" alt="Team members should be entitled to close their own tasks" width="100%" class="articlefigure" >}}
+
+#### "[...] I can deliver minimum waste [...]"
+
+- **deliver**: working software, closed user stories, tangible value.
+- **minimum**: structurally low quantity. By design. Acceptable. Sustainable.
+- **waste**: the main enemy to defeat with Scrum (and Agile). **Waste is not exactly the opposite of efficiency**. Waste is a much more complex concept. Waste can be operational tactical and strategic. Efficiency tends to be mostly operational. A set of efficient behaviours can still lead to waste.
+
+**There are tolerable levels of waste, but what is not tolerable is not monitoring it**.
+
+##### Waste in Scrum (and Agile)
+
+It represents the undesired sub-product of a development process that reduces future delivered value, increments technical debt and introduces friction in team dynamics. It leads to frustration, disorientation and lack of predictability.
+
+It’s tricky to identify what behaviours or actions lead to waste because, sometimes, a meeting can apparently be a waste generator but turn out to be a waste destructor.
+
+**Example:** "Aki: I don’t want to go to yet another meeting about frontend for this feature, it’s a waste of my time" but later... "Ryu: it was great that Aki was in the meeting, *it helped us change our approach, it saved us lots of time!*"
+
+
+#### "[...] and high predictability [...]"
+
+- **high**: extraordinary. Not seen elsewhere. Desirable. Statistically meaningful.
+- **predictability**: chance of enjoying a satisfactory sprint. Deriving team's average velocity after a number of sprints. Being able to roughly predict when a user story in the backlog, based on its priority (position), will be finished.
+
+Predictability is such a desirable state... it gives sense of control since we can answer all typical and uncomfortable questions like *"when will this be...", "how we will be able to..." "who should do this..."*. 
+
+Every single software development methodology swears it will deliver predictability. Old methodologies did this by fixing the future. *"This is the future, by decree"*, they would say. Agile doesn't dear to do this, instead it says *"I promise that, at any point, you will have the biggest value and the smallest waste but I am humble enough not to say WHAT exactly your project will contain as finished user stories"*.
+
+**The more waste, the less predictability. The more waste, the more "We can't know".**
+
+Actually, Scrum might actually be able to predict WHAT exactly your project will contain as finished user stories, but for that you need to have gone through some sprints already and learned about your metrics. Which leads us to the last section of this article.
+
+#### Predictable rhythm based on team commitment
+
+Rhythm speaks of an activity that enjoys and can sustain a particular velocity or rate. Rhythm speaks of order and not of chaos. Rhythm speaks also of necessary unison and collective coalescence. There is hardly any rhythm if every member of a team acts on their own and for their own sake. 
+
+{{< figure src="/images/sprint_burndown.gif" caption="Even a sprint burndown can tell us how likely are we to close all user stories by the end of it" alt="Even a sprint burndown can tell us how likely are we to close all user stories by the end of it" width="100%" class="articlefigure" >}}
+
+
+When we say predictable rhythm we mean we can **identify the core elements of that rhythm and project them into the future**. And we can do this because it is sustainable. A rhythm cannot derive from rush work, or if it can, like a super high rhythm, it won’t be sustainable and **could lead to sudden bursts of waste**. 
+
+We can achieve predictable rhythm when there is a sense of purpose because purpose allows teams to anticipate challenges and be ready to sort them out with little effort.
+
+While purpose is always a key ingredient of team commitment, **we need to start with team commitment first**.
+
+We already talked about team commitment in terms of its essence but Scrum has a clear process to achieve it.
+
+**"The backlog is the Product Owner's property, the sprint is the team’s property"**. This means that while the Product Owner is expected to have a good quality backlog, the sprint content is a decision made by the team. When a team says "this can go into the sprint" it must mean "there is a very high chance that we will have this done at Product Owner's satisfaction by the time of the sprint's demo".
+
+A team can commit to what they have **freely and responsibly aligned themselves to*. If they have no say in what goes into a sprint, team commitment doesn't exist and we will simply speak of "best-effort".
+
+Although this is very tempting for Product Owners as "best-effort" could work and requires fewer meetings and explanations, in the absence of team commitment, there is a high risk for a team of alienation and distancing from their results.
 
 
 ##### Further reading
 
-We would encourage you to read the Taiga Blog's article ["Why is Kanban not working for me?"](https://blog.taiga.io/why-is-kanban-not-working-for-me.html) where you will see particular antipatterns that lead to a disastrous experience with Kanban. Your ability to avoid them will surely contribute to not only feel but **know** you and your team are in control.
+We would encourage you to read the Taiga Blog's article ["Four Agile Antipatterns and a big fat lie"](https://blog.taiga.io/four-agile-antipatterns-and-a-big-fat-lie.html) where you will see particular antipatterns that lead to a disastrous experience with Scrum. Your ability to avoid them will surely contribute to not only feel but **know** you and your team are in control.
 
