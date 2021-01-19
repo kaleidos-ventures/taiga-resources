@@ -79,8 +79,15 @@ Every team and every individual decided how to make the most out a flexible tool
 
 Issues Module is definetly a team player and works like a charm as a companion to KANBAN or Scrum (or both!) modules.
 
-First, you can put aside whatever doesn't feel right as a user story or a KANBAN card or needs to go through a very different workflow. Issues can help the backlog or the KANBAN board to be less cluttered for the good reasons. This is one the main reasons Issues Module is so used by the Taiga community.
+First, you can put aside whatever doesn't feel right as a user story or a KANBAN card or needs to go through a very different workflow. Issues can help the backlog or the KANBAN board to remain less cluttered *for the good reasons*. This is one the main reasons Issues Module is so often used by the Taiga community.
 
-Second, any issue can be promoted to a user story (or a KANBAN card). You can find that button on the issue's right pane next to some other available actions such as block or delete. This allows for more complex workflows, where some petitions can start a humble issue and fight to become a proper user story or KANBAN card. Or perhaps they were wrongly assumed to be an issue and you don't want to create a new user story or KANBAN card and copy the contents, just promote it. Promoting an issue carries over as much information as it is possible so even if it happens well into the issue's lifecycle, you can keep
+Second, any issue can be *promoted to a user story* (or a KANBAN card). You can find that button on the issue's right pane, next to some other available actions such as *block* or *delete*. This allows for more fine-tuned workflows, where some petitions can start as a *humble* issue and fight to become a *proper* user story or KANBAN card. Or perhaps they were *wrongly assumed to be an issue (of any type)* and you don't want to create a new user story or KANBAN card and copy the contents, just promote it. Promoting an issue carries over as much information as it is possible so even if it happens well into the issue's lifecycle, you are encouraged to do so with minimal content loss.
 
+Finally, Sprints can list a selection of attached issues if the team wants to have them handy during the sprint's lifecycle. Not only the team can bring forward existing issues to also show them on the sprint taskboard's view but they can create them here and still find them under Issues. Some teams do this to laser focus what a sprint is about regardless of the dozens of pending issues waiting to be taken care of. It's a filter of sorts, if you think about it. 
+
+{{< figure src="/images/taskboard_issues.jpg" caption="A sprint can, at the discretion of the team, host a selection of issues" alt="A sprint can, at the discretion of the team, host a selection of issues" width="100%" class="articlefigure" >}}
+
+### Further reading
+
+Taiga Issues Module has enough intrinsic value to be used alone as the key Module for a particular Taiga project but its true potential arises when used it as a great Scrum or KANBAN companion. There are other Taiga Modules we would briefly cover so you know what you might be missing out. We suggest you read [The Epic, The Wiki and the Meetup](/kaka).
 
