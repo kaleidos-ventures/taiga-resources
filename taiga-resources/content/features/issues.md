@@ -30,17 +30,17 @@ So, what makes Issues Module so successful? For one, it puts screen real estate 
 
 ### The simplicity of Issues
 
-At first glance, Issues is just a long list of stuff where pagination reigns. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the navigation bar. 
+At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the navigation bar. 
 
-First of all, Issues can contain any type of work item. Don't be limited to "bugs", that's not how we see things here at Taiga. You get a default setup for three Issue types you can always change under SETTINGS > ATTRIBUTES > TYPES. An Issue Type could be a "Threat", "Purchase order" or "Sales call", it could be anything as long as it feels like a big enough category for the team. For the rest of this article let's assume you are happy with Bugs, Questions and Enhancements, which is quite common in Engineering Projects.
+First of all, Issues can **contain any type of work item**. Don't be limited to "bugs", that's not how we see things here at Taiga. You get a default setup for three Issue types **you can always change** under SETTINGS > ATTRIBUTES > TYPES. An Issue Type could be a "Threat", "Purchase order" or "Sales call", it could be anything as long as it feels like a **big enough category** for the team. For the rest of this article let's assume you are happy with Bugs, Questions and Enhancements, which is quite common in Engineering Projects.
 
-Issues is not afraid of super long lists, it's meant to cope with that with 30 items per page. So be happy to bulk-add issues if they fit into the default Issue TYPE category. What Issues needs to be useful for teams is to have some input per issue. Type is mandatory but so it's Severity and Priority, so wisely choose default values for them under SETTINGS > ATTRIBUTES > [SEVERITIES or PRIORITIES].
+Issues is not afraid of super long lists, **it's meant to cope with that thanks to its 30 items per page**. So be free to bulk-add issues if they fit into the default Issue TYPE category. What Issues requires to be useful for teams is to have some attribute setting per issue. **Type** is mandatory but so it's **Severity** and **Priority**, so wisely choose default values for them under SETTINGS > ATTRIBUTES > [SEVERITIES or PRIORITIES].
 
-The default ordering mechanism for Issues unless you click on the other columns is "Modified". Any time you create or change an issue, it will bubble up through the list. This means that more active or newer issues appear at the top while long forgotten or closed issues naturally sink in the pagination layout. However, you're one click away to order your zillion issues by Severity or Assigned team member, for example.
+The default ordering mechanism for Issues unless you click on the other columns is "Modified". **Any time you create or change an issue, it will bubble up through the list**. This means that more active or newer issues appear at the top while long forgotten or closed issues naturally sink in the pagination layout. However, you're one click away to order your zillion issues by Severity or Assigned team member, for example.
 
 ### Type, Severity and Priority
 
-A Task is a task, a User Story is a user story and an Epic is an epic, but an **Issue has issue types**. At Taiga we think an issue as a simple container that is enriched by type, severity and priority. 
+A Task is a *task*, a User Story is a *user story* and an Epic is an *epic*, but an **Issue has issue types**. At Taiga we think an issue as a simple container that is enriched by type, severity and priority. 
 
 {{< figure src="/images/issues_types_sev_prio.jpg" caption="Project settings example for types, severities and priorities" alt="Project settings example for types, severities and priorities" width="100%" class="articlefigure" >}}
 
@@ -53,9 +53,9 @@ Please note that you can tweak which are the default selected values for all thr
 
 ### Filters
 
-Taiga Issues module doesn't sport burndown charts or metrics. Teams that need specific reporting capabilities can use the wonderful live CSV export under SETTINGS > PROJECT > REPORTS or the world-class Taiga API and integrate them into their favourite reporting tool (many use simple spreadsheets and their built-in charts for that).
+Taiga Issues module doesn't sport burndown charts or metrics. **Teams that need specific reporting capabilities can use the wonderful live CSV export** under SETTINGS > PROJECT > REPORTS or the world-class Taiga API and integrate them into their favourite reporting tool (many use simple spreadsheets and their built-in charts for that).
 
-What Taiga Issues focus on is being able to quickly extract the relevant list of issues for every team member. That's why we have filters box visible by default with all its include/exclude glory. It's here, compared to KANBAN and Scrum, where it's more typical to save custom filters for personal later use. When combined with column ordering you get an extremely fast way to find what you need 
+What Taiga Issues focus on is being able **to quickly extract the relevant list of issues for every team member**. That's why we have filters box visible by default with all its include/exclude glory. It's here, compared to KANBAN and Scrum, where it's more typical to save custom filters for personal later use. When combined with column ordering you get **an extremely fast way to find what you need**.
 
 [{{< figure src="/images/issues_list.jpg" caption="Hundreds of issues become just a handful. Click to enlarge." alt="Hundreds of issues become just a handful. Click to enlarge." width="100%" class="articlefigure" >}}](/images/issues_list.jpg)
 
