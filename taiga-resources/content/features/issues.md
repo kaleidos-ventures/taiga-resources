@@ -30,7 +30,7 @@ So, what makes Issues Module so successful? For one, it puts screen real estate 
 
 ### The simplicity of Issues
 
-At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the navigation bar. 
+At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the side navigation bar. 
 
 First of all, Issues can **contain any type of work item**. Don't be limited to "bugs", that's not how we see things here at Taiga. You get a default setup for three Issue types **you can always change** under SETTINGS > ATTRIBUTES > TYPES. An Issue Type could be a "Threat", "Purchase order" or "Sales call", it could be anything as long as it feels like a **big enough category** for the team. For the rest of this article let's assume you are happy with Bugs, Questions and Enhancements, which is quite common in Engineering Projects.
 
