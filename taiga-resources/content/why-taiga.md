@@ -3,6 +3,7 @@ title: "Why Taiga?"
 date: 2020-10-05T11:27:52+02:00
 draft: false
 image: "images/whytaiga_test01.jpg"
+thumbnail: "images/whytaiga_test01.jpg"
 ---
 
 This a fair question every agile team should ask themselves. It's not like there are no options out there, if anything, there are *too many* project management tools available.
