@@ -45,9 +45,9 @@ A Task is a task, a User Story is a user story and an Epic is an epic, but an **
 {{< figure src="/images/issues_types_sev_prio.jpg" caption="Project settings example for types, severities and priorities" alt="Project settings example for types, severities and priorities" width="100%" class="articlefigure" >}}
 
 
-- Issue Type is a simple major categorisation. Teams tend to pick between 3 and 5 different issue types. This makes early distinction easy and can help manage assignees or workflows. Try to come up with unambiguous issue types that have almost no overlap. Also, it pays off to carefully pick their individual colours.
-- Issue Severity conveys how relevant the issue is. It's the importance ranking. Issues of any type can be minute stuff or game changers. 
-- Issue Priority deals with urgency. Regardless of type or severity, how fast should the team be on top of an issue? Teams often mistake Severity with Priority but they are different. Something massive (high severity) could enjoy a fairly low priority and something trivial could need immediate attention.
+- **Issue Type** is a simple major *categorisation*. Teams tend to pick between 3 and 5 different issue types. This makes early distinction easy and can help manage assignees or workflows. Try to come up with unambiguous issue types that have almost no overlap. Also, it pays off to carefully pick their individual colours.
+- **Issue Severity** conveys how *relevant* the issue is. It's the importance ranking. Issues of any type can be minute stuff or game changers. 
+- **Issue Priority** deals with *urgency*. Regardless of type or severity, how fast should the team be on top of an issue? Teams often mistake Severity with Priority but they are different. Something massive (high severity) could enjoy a fairly low priority and something trivial could need immediate attention.
 
 Please note that you can tweak which are the default selected values for all three attributes under SETTINGS > PROJECT > DEFAULT VALUES.
 
