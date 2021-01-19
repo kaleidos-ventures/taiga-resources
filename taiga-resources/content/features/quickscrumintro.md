@@ -15,6 +15,7 @@ order: 2
 
 # post thumb
 image: "images/Scrum_backlog.png"
+thumbnail: "images/Scrum_backlog.png"
 
 # meta description
 description: "Predictable rhythm based on team commitment"

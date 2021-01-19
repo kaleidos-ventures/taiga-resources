@@ -9,7 +9,9 @@
         <article class="card featured-post">
           <div class="row no-gutters align-items-center">
             <div class="col-md-5">
-              {{ if .Params.Image }}
+              {{ if .Params.Thumbnail }}
+              <img src="{{ .Params.Thumbnail | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
+              {{ else }}
               <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
               {{ end }}
             </div>
@@ -36,7 +38,9 @@
       {{ with .Site.GetPage "/getting-started" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Image }}
+          {{ if .Params.Thumbnail }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
+          {{ else }}
           <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
           {{ end }}
           <div class="media-body">
@@ -51,7 +55,9 @@
       {{ with .Site.GetPage "/30min-setup" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Image }}
+          {{ if .Params.Thumbnail }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
+          {{ else }}
           <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
           {{ end }}
           <div class="media-body">
@@ -66,7 +72,9 @@
       {{ with .Site.GetPage "/contributions" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Image }}
+          {{ if .Params.Thumbnail }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
+          {{ else }}
           <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
           {{ end }}
           <div class="media-body">
@@ -92,7 +100,9 @@
           {{ range sort (where (where .Site.RegularPages "Type" "feature") ".Params.main" "==" true) ".Params.order" }}
           <div class="col-md-6 mb-4">
             <article class="card">
-              {{ if .Params.Image }}
+              {{ if .Params.Thumbnail }}
+              <img src="{{ .Params.Thumbnail | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
+              {{ else }}
               <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
               {{ end }}
               <div class="card-body px-0">
