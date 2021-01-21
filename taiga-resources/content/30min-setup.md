@@ -21,6 +21,10 @@ Additionally, it's necessary to have familiarity with Docker, docker-compose and
 ### Get repository
 
 Clone [this repository](https://github.com/taigaio/taiga-docker).
+
+[{{< figure src="/images/dockerrepo.png" caption="Screenshot of Taiga's docker repo" alt="Screenshot of Taiga's docker repo" width="100%" class="articlefigure"  >}}](https://github.com/taigaio/taiga-docker)
+
+
 ```
 $ cd taiga-docker/
 $ git checkout stable
