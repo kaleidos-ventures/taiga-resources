@@ -12,6 +12,9 @@ categories:
   - "customisation"
 ---
 
+No two teams, projects or organisations are alike. Learn how we elegantly crushed the one-size-fits-all curse.Welcome to a lean method to manage and improve work across human systems, welcome to Kanban. This approach aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks.
+
+
 Page for Customisation
 
 # Heading 1
