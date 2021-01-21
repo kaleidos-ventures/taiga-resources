@@ -26,11 +26,11 @@ $ cd taiga-docker/
 $ git checkout stable
 ```
 
-### Configuration
+### 1. Configuration
 
-There are two options to configurate taiga-docker, a simple and a complex configuration:
+There are two options to configurate taiga-docker, a simple and a more advanced configuration. Pick one of the two.
 
-#### Simple configuration:
+#### 1.1 Simple configuration
 
 This configuration is likely to suit what you need. Edit environment variables in **docker-compose.yml** and **docker-compose-inits.yml**. Have in mind that some of the variables are in both files, and you need to edit both.
 
@@ -172,9 +172,9 @@ Configure this service to generate messages from rabbitmq for **taiga-events**.
 `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
 
 
-#### Complex configuration:
+#### 1.2 Advanced configuration
 
-In a complex configuration you ignore the environment variables in **docker-compose.yml** or **docker-compose-inits.yml**.
+In an advanced configuration you ignore the environment variables in **docker-compose.yml** or **docker-compose-inits.yml**.
 
 ##### Map a config.py file
 
@@ -206,7 +206,7 @@ mv dist/config.example.json dist/config.json
 
 Edit it with your own configuration and map the file into **/taiga-front/dist/config.py**.
 
-### Configure an admin user
+### 2. Configure an admin user
 
 ```
 $ docker-compose up -d
@@ -214,7 +214,7 @@ $ docker-compose up -d
 $ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
 ```
 
-### Up and running
+### 3. Up and running
 
 Once everything has been installed, launch all the services and check the result:
 
@@ -224,7 +224,7 @@ $ docker-compose up -d
 
 Go to **http://localhost:9000** and check your Taiga Platform is available.
 
-### Configure the proxy
+### 4. Configure the proxy
 
 Your host configuration needs to make a proxy to **http://localhost:9000**. Example:
 
