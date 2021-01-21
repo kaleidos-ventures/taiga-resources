@@ -40,7 +40,7 @@ Scrum provides a number of [artifacts](https://en.wikipedia.org/wiki/Scrum_(soft
 
 Most people **misunderstand Scrum with those artifacts** and they believe that by following those recipes, they are doing Scrum and being Agile. The vast majority of the Scrum users fall into this sad category, where Scrum is equivalent to short iteration cycles *plus dailies, demos and retros*. 
 
-{{< figure src="/images/scrumbacklog.gif" caption="The simplest Scrum action, to move a suer story up in the backlog's priority" alt="The simplest Scrum action, to move a suer story up in the backlog's priority" width="100%" class="articlefigure" >}}
+{{< figure src="/images/scrumbacklog.gif" caption="The simplest Scrum action, to move a user story up in the backlog's priority" alt="The simplest Scrum action, to move a user story up in the backlog's priority" width="100%" class="articlefigure" >}}
 
 It's true, though, that through form you *may* achieve soul but there's no reason why you couldn't start with soul and then achieve appropriate form. In fact, many teams start just with Scrum artifacts and through practice they begin to work towards a higher level of "enlightenment". They do so **as long as they realise they are still far from Scrum’s promise**. "If you can achieve team commitment, I can deliver minimum waste and high predictability".
 
