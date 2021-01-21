@@ -8,8 +8,7 @@ main: false
 order: 13
 
 # taxonomies
-categories:
-  - "main"
+categories: null
 ---
 There are important considerations governing the [Affero GPL license](http://www.gnu.org/licenses/agpl-3.0.html) in use by Taiga. Please be sure you are familiar with your rights and obligations before starting to work on the Taiga code.
 
