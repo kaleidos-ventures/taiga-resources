@@ -2,8 +2,8 @@
 title: "30min Setup"
 date: 2020-10-05T11:22:38+02:00
 draft: false
-image: "/images/30minsetup_test04.jpg"
-thumbnail: "/images/30minsetup_test04.jpg"
+image: "/images/scrumdarkside.jpeg"
+thumbnail: "/images/30m.png"
 ---
 
 # Introduction
