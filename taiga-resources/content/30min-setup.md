@@ -6,170 +6,242 @@ image: "/images/scrumdarkside.jpeg"
 thumbnail: "/images/30m.png"
 ---
 
-# Introduction
+This is the easiest and **recommended** way to run Taiga in production.
+This document explains how to deploy a full Taiga service for a production environment with **docker**.
 
-This document explains how to deploy a full Taiga service for a production environment. A Taiga service consists of multiple Taiga modules which altogether make the Taiga platform.
+### Requirements and caveats
 
-The standard Taiga platform consists of three main modules, 
-and each one has its own dependencies both at compile time and runtime:
+Prior to start the installation, ensure you have installed:
 
-- **taiga-back** (backend/API)
-- **taiga-front-dist** (frontend)
-- **taiga-events** (websockets gateway) (optional)
+- **docker**
+- **docker-compose**
 
-Each module can be run on a unique machine or all of them can be installed to a different machine as well.
-In this tutorial we will setup everything on a single machine, and will be installing all three main Taiga modules. +
-This type of setup should suffice for small/medium production environments with low traffic.
+Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
 
-{{< figure src="/images/30minsetup_test01.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" class="articlefigure" >}}
+### Get repository
 
-
-# Overview
-
-This tutorial assumes that you are using a clean, recently updated **Ubuntu 16.04** image.
-
-Due to the nature of the frontend, Taiga is accessed through a domain/public IP address, because the frontend application runs in your browser.
-The frontend must be able to communicate with the backend/API, therefore both the frontend and the backend must be accessible through a domain/public IP address too.
-
-{{< figure src="/images/30minsetup_test02.jpg" caption="Example of medium screenshot" alt="Example of medium screenshot" width="100%" class="articlefigure" >}}
-
-
-**Taiga installation must be done with a "regular" user, never with root!**
-
-During the tutorial, the following conditions are assumed:
-
-- **IP:** `80.88.23.45`
-- **Hostname:** `example.com` (which points to 80.88.23.45)
-- **Username:** `taiga`
-- **System memory:** `>=1GB` (needed for compilation of lxml)
-- **Working directory:** `/home/taiga/` (default for user `taiga`)
-
-Changing the user from `taiga` to something else is not recommended at any point during deployment unless you're well aware of what you're doing. +
-Changing user may result in unexpected behavior or failed deployment!
-
-{{< figure src="/images/30minsetup_test03.jpg" caption="Example of small screenshot" alt="Example of small screenshot" class="articlefigure" >}}
-
-
-## Dependencies
-
-The typical Taiga setup described in this documentation depends on the following standalone major software installed separately from Taiga:
-
-- https://www.python.org/[Python 3] - programming language and runtime environment of **taiga-back**
-- https://www.nginx.com/[NGINX] - web server and reverse proxy
-- https://www.postgresql.org[PostgreSQL] - database
-- https://gunicorn.org[Gunicorn] - Python WSGI HTTP server
-- https://www.rabbitmq.com[RabbitMQ] - message broker
-- https://redis.io[Redis] - in-memory key-value database
-- https://nodejs.org/en[Node.js] - JavaScript runtime (required if **taiga-events** is present)
-- https://virtualenv.pypa.io/[Virtualenv] and https://virtualenvwrapper.readthedocs.io[virtualenvwrapper] - Python virtual environment managers
-
-
-[NOTE]
-This list does not contain libraries and the Python dependencies required by **taiga-back**. For Python dependencies, refer to https://github.com/taigaio/taiga-back/blob/stable/requirements.txt[taiga-back/stable/requirements.txt].
-
-## System Architecture Description
-
-This is a short system architecture description to help you understand the way Taiga is built and works.
-Before you go any further in the installation procedure, make sure you read this description to get a high-level overview of the architecture.
-
-Taiga consists of 2 core modules:
-
-- **taiga-back**
-- **taiga-front**
-
-**taiga-back** is built with https://www.djangoproject.com[Django] and written in Python 3. This serves the API endpoints for the frontend. +
-**taiga-front** is written mostly in https://angularjs.org[AngularJS] and https://coffeescript.org[CoffeeScript]. This consumes the API endpoints provided by the backend.
-
-The Python backend is exposed by gunicorn (port `8001/tcp`), which is a https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface[Python WSGI HTTP server]. The process manager is https://systemd.io[systemd], which runs gunicorn and taiga-back together.
-Technically the backend communicates with the https://en.wikipedia.org/wiki/Relational_database[RDBMS], and through the frontend it allows the user to use the features of Taiga.
-The communication between the front- and backend is done using REST APIs.
-
-The **backend** is publicly exposed by NGINX which acts as a reverse-proxy in this case. +
-The **frontend** is located in the `dist` folder and is also exposed publicly by NGINX which acts as a static webserver in this case.
-
-# Prerequisites
-
-This guide describes a configuration of Taiga which consists of three Taiga modules. Each module has its own dependencies on various packages. +
-The following subsections list the required packages and provide instructions on their installation and configuration for a successful Taiga deployment.
-
-## Installing Dependencies
-
-Execute the following commands to install all dependencies for all modules. Optional dependencies are marked with an inline comment, i.e.: `# Optional: taiga-events`.
-
-#### Essential packages:
-
+Clone [this repository](https://github.com/taigaio/taiga-docker).
 ```
-sudo apt-get update
-sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
-sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
-sudo apt-get install -y automake libtool curl git tmux gettext
-sudo apt-get install -y nginx
-sudo apt-get install -y rabbitmq-server redis-server  # Optional: taiga-events or async tasks
+$ cd taiga-docker/
+$ git checkout stable
 ```
 
-#### The **taiga-back** module depends on PostgreSQL (>= 9.4) as its database:
+### Configuration
+
+There are two options to configurate taiga-docker, a simple and a complex configuration:
+
+#### Simple configuration:
+
+This configuration is likely to suit what you need. Edit environment variables in **docker-compose.yml**.
+
+##### taiga-db
+
+This service is for configuring the database.
+
+`POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` vars will be used to create the database for Taiga.
+
+---
+
+These vars should have the same values as **taiga-back** vars.
+
+---
+
+##### taiga-back and taiga-async
+
+This services are for the REST API endpoints and the async tasks respectively.
+
+###### Database settings:
+
+`POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` will be used to connect to the Taiga database.
+
+---
+
+These vars should have the same values as **taiga-db** service vars.
+
+---
+
+`POSTGRES_HOST` is where the database is set. By default, it's meant to be in the same host as the database service so it uses internal docker names.
+
+###### Taiga settings:
+
+`TAIGA_SECRET_KEY` is the secret key of Taiga. Should be the same as this var in **taiga-events** and **taiga-async**.
+Besides, this should have the same value of `SECRET_KEY` in **taiga-protected**.
+
+`TAIGA_SITES_SCHEME`, `TAIGA_SITES_DOMAIN` should have the url where this is served: https[://]taiga.mycompany.com
+
+###### Registration Settings:
+
+`PUBLIC_REGISTER_ENABLED` to allow a public register when you configure this variable to "True". By default is "False".
+Should be the same as this var in **taiga-front**.
+
+###### Telemetry Settings:
+
+Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.
+`ENABLE_TELEMETRY` could be opt out by setting this variable to "False". By default is "True".
+
+###### Email Settings:
+
+By default, email is configured with the console backend, which means that the emails will be shown in the stdout.
+If you have an smtp service, uncomment the "Email settings" section in **docker-compose.yml** and configure those environment variables:
+
+`DEFAULT_FROM_EMAIL`, `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD`, `EMAIL_USE_TLS`, `EMAIL_USE_SSL`.
+Uncomment `EMAIL_BACKEND` variable, but do not modify unless you know what you're doing.
+
+###### Rabbit settings:
+
+`RABBITMQ_USER`, `RABBITMQ_PASS` are used to leave messages in the rabbitmq services. Those variables should be the same as in **taiga-async-rabbitmq** and **taiga-events-rabbitmq**.
+
+###### Github settings:
+
+`GITHUB_API_CLIENT_ID`, `GITHUB_API_CLIENT_SECRET` used for login with Github.
+Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
+
+###### Gitlab settings:
+
+`GITLAB_API_CLIENT_ID`, `GITLAB_API_CLIENT_SECRET`, `GITLAB_URL` used for login with GitLab.
+Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
+
+###### Importers:
+
+It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both taiga-back (x-environment) and taiga-front. In taiga-back environment variables, it's also necessary to configure different settings depending on the importer.
+
+
+##### taiga-async-rabbitmq
+
+Configure this service to generate messages from rabbitmq for **taiga-async**.
+
+`RABBITMQ_ERLANG_COOKIE` is the secret erlang cookie.
+
+`RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` will be used to connect to rabbitmq.
+
+
+##### taiga-front
+
+This service is for configuring the frontend application.
+
+###### Taiga settings:
+
+`TAIGA_URL` is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME`://`TAIGA_SITES_DOMAIN`.
+
+`TAIGA_WEBSOCKETS_URL` to connect to the events. This should have the same value as `TAIGA_SITES_DOMAIN`, ie: ws://taiga.mycompany.com
+
+###### Registration Settings:
+
+`PUBLIC_REGISTER_ENABLED` to allow a public register, configure this variable to "true". By default is "false".
+Should be the same as this var in **taiga-back**.
+
+###### Github settings:
+
+`GITHUB_CLIENT_ID` used for login with Github.
+Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
+
+###### Gitlab settings:
+
+`GITLAB_CLIENT_ID`, `GITLAB_URL` used for login with GitLab.
+Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
+
+###### Importers:
+
+It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both **taiga-back** (x-environment) and **taiga-front**.
+
+
+##### taiga-protected
+
+Configure this service and protects the attachments from external downloads.
+
+`SECRET_KEY` should be the same as this var in **taiga-back**.
+
+`MAX_AGE` variable does that the attachments will be accesible with a token during a maximum (in seconds). After that, the token will expire.
+
+
+##### taiga-events
+
+Configure this service for Taiga websocket server which allows taiga-front to show realtime changes in the backlog, taskboard, kanban and issues listing.
+
+`RABBITMQ_USER`, `RABBITMQ_PASS` are used to read messages from rabbitmq.
+
+`TAIGA_SECRET_KEY` should be the same as this var in **taiga-back**.
+
+
+##### taiga-events-rabbitmq
+
+Configure this service to generate messages from rabbitmq for **taiga-events**.
+
+`RABBITMQ_ERLANG_COOKIE` is the secret erlang cookie.
+
+`RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
+
+
+#### Complex configuration:
+
+In a complex configuration you ignore the environment variables in **docker-compose.yml**.
+
+##### Map a config.py file
+
+From [taiga-back](https://github.com/taigaio/taiga-back) download the file **settings/config.py.prod.example** and rename it:
+
 ```
-sudo apt-get install -y postgresql-9.5 postgresql-contrib-9.5
-sudo apt-get install -y postgresql-doc-9.5 postgresql-server-dev-9.5
+mv settings/config.py.prod.example settings/config.py
 ```
 
-#### Python 3 must be installed along with a few third-party libraries:
-```
-sudo apt-get install -y python3 python3-pip python3-dev virtualenvwrapper
-sudo apt-get install -y libxml2-dev libxslt-dev
-sudo apt-get install -y libssl-dev libffi-dev
-```
+Edit it with your own configuration:
 
+- connection to PostgreSQL
+- connection to RabbitMQ for **taiga-events** and **taiga-async**
+- credentials for email
+- Enable/disable anonymous telemetry
+- Enable/disable public registration
 
-> **virtualenvwrapper** helps keeping the system clean of third party libraries, installed
-with the language package manager by installing these packages in an isolated virtual environment.
+Check as well the rest of the configuration if you need to enable some advanced features.
 
-Restart the shell or type `bash` and press `Enter` to reload the shell environment with the new virtualenvwrapper variables and functions.
+Map the file into **/taiga-back/settings/config.py**. You can check the **x-volumes** section in **docker-compose.yml** with an example.
 
+##### Map a conf.json file
 
-**This step is mandatory before continuing with the deployment!**
-
-
-#### Create a user with root privileges named `taiga`:
-```
-sudo adduser taiga
-sudo adduser taiga sudo
-sudo su taiga
-cd ~
-```
-
-> Do **not** change to the root user (`uid=0`) at this point! +
-Taiga deployment must be finished with the `taiga` user!
-
-## Configuring Dependencies
-
-#### Configure PostgreSQL with the initial user and database:
-```
-sudo -u postgres createuser taiga
-sudo -u postgres createdb taiga -O taiga --encoding='utf-8' --locale=en_US.utf8 --template=template0
-```
-
-#### Create a user named `taiga`, and a virtualhost for RabbitMQ (Optional: taiga-events or async tasks)
-```
-sudo rabbitmqctl add_user taiga PASSWORD_FOR_EVENTS
-sudo rabbitmqctl add_vhost taiga
-sudo rabbitmqctl set_permissions -p taiga taiga ".*" ".*" ".*"
-```
-
-> As the password will be used inside an URL later, please use only web safe
-characters: a-z, A-Z, 0-9, and  - . _ ~
-
-# Backend Setup
-
-This section describes the installation and configuration of the *taiga-back* module which serves the REST API endpoints.
-
-### Download the code:
+From [taiga-front](https://github.com/taigaio/taiga-front) download the file **dist/config.example.json** and rename it:
 
 ```
-cd ~
-git clone https://github.com/taigaio/taiga-back.git taiga-back
-cd taiga-back
-git checkout stable
+mv dist/config.example.json dist/config.json
 ```
 
-{{< figure src="/images/30minsetup_test04.jpg" caption="Example of big screenshot" alt="Example of big screenshot" width="100%" class="articlefigure"  >}}
+Edit it with your own configuration and map the file into **/taiga-front/dist/config.py**.
+
+### Configure an admin user
+
+```
+$ docker-compose up -d
+
+$ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
+```
+
+### Up and running
+
+Once everything has been installed, launch all the services and check the result:
+
+```
+$ docker-compose up -d
+```
+
+Go to **http://localhost:9000** and check your Taiga Platform is available.
+
+### Configure the proxy
+
+Your host configuration needs to make a proxy to **http://localhost:9000**. Example:
+
+```
+server {
+  server_name taiga.mycompany.com;
+
+  ...
+
+  location / {
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Scheme $scheme;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_redirect off;
+    proxy_pass http://localhost:9000/;
+  }
+}
+```
