@@ -72,7 +72,7 @@ disqusShortname = ""
 
   [[menu.footer]]
   name = "Code of conduct"
-  URL = "#"
+  URL = "https://www.taiga.io/code-of-conduct"
   weight = 3
 
   #[[menu.footer]]

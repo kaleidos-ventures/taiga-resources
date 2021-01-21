@@ -9,7 +9,7 @@ order: 5
 
 # taxonomies
 categories:
-  - "customization"
+  - "customisation"
 ---
 
 Taiga includes optional custom fields in its administration panel. It will provide teams with a flexible input to fit in their workflow.

@@ -30,4 +30,9 @@ We could go on and on about some Taiga exclusive perks, like it being translated
 
 {{< figure src="/images/whytaiga_test02.jpg" caption="Taiga's core team" alt="Taiga's core team" width="100%" class="articlefigure"  >}}
 
+### What if I stop loving you? Can I take my data and go?
+
+Sure you can! You have the option of export your project, package it, and take it elsewhere, or import it to any other Taiga instance, managed by you or by another service provider.
+
+
 You can [download Taiga](#) or register online for our [Free Trial](#).

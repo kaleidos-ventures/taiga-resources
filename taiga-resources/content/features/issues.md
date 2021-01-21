@@ -21,12 +21,12 @@ description: "Your effective filtered list of lots of things to do"
 
 # taxonomies
 categories:
-  - "issues"
+  - "modules"
 ---
 
 If you're after a multipurpose and flexible to-do list Taiga module, check Issues. Some teams love Taiga Issues Module so much that they are fine using it **without** KANBAN or Scrum modules. Actually, Issues Module is clearly the most used Taiga Module, whether it shares room with Scrum or KANBAN modules, to name the two main Taiga pillars. In other words, Scrum and KANBAN modules somehow compete with each other while Issues is happy to work with any of them.
 
-So, what makes Issues Module so successful? For one, it puts screen real estate to good use. Its compact yet visual listing allows team members to quickly decide what to do next. Also, filtering and ordering capabilities are handy and quite powerful. Finally, it's very fast and customizable. 
+So, what makes Issues Module so successful? For one, it puts screen real estate to good use. Its compact yet visual listing allows team members to quickly decide what to do next. Also, filtering and ordering capabilities are handy and quite powerful. Finally, it's very fast and customisable. 
 
 ### The simplicity of Issues
 

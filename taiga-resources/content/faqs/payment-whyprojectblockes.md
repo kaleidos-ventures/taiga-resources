@@ -11,7 +11,7 @@ order: 2
 categories: null
 ---
 
-We are sorry to hear that. The reason any project would be blocked is because the owner of that project did not subscribe in time to an appropriate paid plan. The project hasn’t been deleted at all, it is simply not accessible for the time being.
+We are sorry to hear that. The most probable reason any project would be blocked is because the owner of that project did not subscribe in time to an appropriate paid plan. The project hasn’t been deleted at all, it is simply not accessible for the time being.
 
 Taiga.io does not immediately block projects upon unsuccessful payment, it will continue to attempt the payment three more times during the subsequent 5 days after the first failed attempt. Taiga will also send an email for every unsuccessful payment attempt but the only recipient of those emails is the project owner.
 
