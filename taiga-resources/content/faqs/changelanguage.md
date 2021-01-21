@@ -4,8 +4,8 @@ title: "Can I use Taiga in my language?" # Is the question
 date: 2021-01-01T00:27:17+02:00
 draft: false
 type: "faq"
-main: false
-order: 6
+main: true
+order: 2
 
 # taxonomies
 categories:

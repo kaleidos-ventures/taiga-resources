@@ -4,8 +4,8 @@ title: "What's Taiga's Open Source License?" # Is the question
 date: 2021-01-05T00:27:17+02:00
 draft: false
 type: "faq"
-main: false
-order: 13
+main: true
+order: 1
 
 # taxonomies
 categories: null
