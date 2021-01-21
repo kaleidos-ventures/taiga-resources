@@ -12,150 +12,38 @@ categories:
   - "customisation"
 ---
 
-No two teams, projects or organisations are alike. Learn how we elegantly crushed the one-size-fits-all curse.Welcome to a lean method to manage and improve work across human systems, welcome to Kanban. This approach aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks.
+No two teams, projects or organisations are alike. Learn how we elegantly crushed the one-size-fits-all curse. Both lack of flexibility and extreme configurability plague the project management arena. Taiga's approach is simple: keep consistency throughout projects, regardless of their simple or advanced status, and outsource some ad-hoc decision to the team's real-world interactions.
 
+
+### Tier 1: Modules selection
+
+At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the side navigation bar. 
+
+First of all, Issues can **contain any type of work item**. Don't be limited to "bugs", that's not how we see things here at Taiga. You get a default setup for three Issue types **you can always change** under SETTINGS > ATTRIBUTES > TYPES. An Issue Type could be a "Threat", "Purchase order" or "Sales call", it could be anything as long as it feels like a **big enough category** for the team. For the rest of this article let's assume you are happy with Bugs, Questions and Enhancements, which is quite common in Engineering Projects.
+
+Issues is not afraid of super long lists, **it's meant to cope with that thanks to its 30 items per page**. So be free to bulk-add issues if they fit into the default Issue TYPE category. What Issues requires to be useful for teams is to have some attribute setting per issue. **Type** is mandatory but so it's **Severity** and **Priority**, so wisely choose default values for them under SETTINGS > ATTRIBUTES > [SEVERITIES or PRIORITIES].
+
+The default ordering mechanism for Issues unless you click on the other columns is "Modified". **Any time you create or change an issue, it will bubble up through the list**. This means that more active or newer issues appear at the top while long forgotten or closed issues naturally sink in the pagination layout. However, you're one click away to order your zillion issues by Severity or Assigned team member, for example.
+
+### Tier 2: Workflows editing
+Type, Severity and Priority
 
 Page for Customisation
 
-# Heading 1
-## Heading 2
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
 
-<hr>
+### Tier 3: Permission & Roles configuration 
+Type, Severity and Priority
 
-##### Emphasis
-
-Emphasis, aka italics, with *asterisks* or _underscores_.
-
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
-
-Combined emphasis with **asterisks and _underscores_**.
-
-Strikethrough uses two tildes. ~~Scratch this.~~
-
-<hr>
-
-##### Link
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-<hr>
-
-##### Paragraph
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.
-
-<hr>
-
-##### List
-
-1. List item
-2. List item
-3. List item
-4. List item
-5. List item
-
-##### Unordered List
-
-* List item
-* List item
-* List item
-* List item
-* List item
-
-<hr>
-
-##### Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-<hr>
-
-##### Blockquote
-
-> This is a blockquote example.
-
-<hr>
-
-##### Inline HTML
-
-You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
+Page for Customisation
 
 
-<hr>
+### Tier 4: 3rd party integrations 
+Type, Severity and Priority
 
-##### Tables
+Page for Customisation
 
-Colons can be used to align columns.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+### Tier 5: Custom fields and Due Dates 
+Type, Severity and Priority
 
-There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don't need to make the
-raw Markdown line up prettily. You can also use inline Markdown.
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
-
-<hr>
-
-##### Image
-
-![image](../../images/post/post-1.jpg)
-
-<hr>
-
-##### Youtube video
-
-{{< youtube C0DPdy98e4c >}}
+Page for Customisation
