@@ -1,0 +1,22 @@
+name: Publish Site
+
+on:
+  push:
+    branches:
+      - stable
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+        with:
+          submodules: true
+      - name: Publish Site
+        uses: chabad360/hugo-gh-pages@master
+        with:
+          githubToken: ${{ secrets.PERSONAL_TOKEN }}
+          cname: resources.taiga.io
+          args: -b https://resources.taiga.io --gc --minify --cleanDestinationDir
