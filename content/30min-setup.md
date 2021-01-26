@@ -180,6 +180,9 @@ Configure this service to generate messages from rabbitmq for **taiga-events**.
 
 `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
 
+{{< figure src="/images/docker-up.png" caption="What you want to see in the console" alt="What you want to see in the console" width="100%" class="articlefigure"  >}}
+
+
 
 #### 1.2 Advanced configuration
 

@@ -72,12 +72,12 @@ Every team and every individual decided how to make the most out a flexible tool
 {{< figure src="/images/cycle.png" caption="Wonderful previous and next shortcuts with the original list as a protected context" alt="Wonderful previous and next shortcuts with the original list as a protected context" width="100%" class="articlefigure" >}}
 
 - **Due Date**: When you need a fixed due date on top of an issue's priority you can make use of Due Date. Issues have their dedicated custom Due Date entries under SETTINGS > ATTRIBUTES > DUE DATES. We are planning to add Due Dates as a filtering option but, for now, picking quite distinct due date configuration colours allows for immediate attention-seeking issue spotting.
-- **Don't be afraid of tags**: A bit of discipline while creating tags (and their matching colours) is an amazing investment for an tidy future. Tags can contain emojis and stand out more easily. Try not to add many tags to any single issue, three or four should be enough, so that you don't add cognitive load to what should always be a straightforward list to take action on.
+- **Don't be afraid of tags**: A bit of discipline while creating tags (and their matching colours) is an amazing investment for a tidy future. Tags can contain emojis and stand out more easily. Try not to add many tags to any single issue, three or four should be enough, so that you don't add cognitive load to what should always be a straightforward list to take action on.
 
 
 ### Issues relationship with KANBAN or Scrum modules
 
-Issues Module is definetly a team player and works like a charm as **a companion to KANBAN or Scrum** (or both!) modules.
+Issues Module is definitely a team player and works like a charm as **a companion to KANBAN or Scrum** (or both!) modules.
 
 First, you can put aside whatever **doesn't feel right as a user story** or a KANBAN card or needs to go through a **very different workflow**. Issues can help the backlog or the KANBAN board to remain less cluttered *for the good reasons*. This is one the main reasons Issues Module is so often used by the Taiga community.
 
