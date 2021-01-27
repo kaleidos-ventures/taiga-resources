@@ -11,7 +11,7 @@ type: "feature"
 main: true
 
 # Order in Home
-order: 2
+order: 3
 
 # post thumb
 image: "images/issues.jpg"
