@@ -6,19 +6,18 @@ image: "/images/scrumdarkside.jpeg"
 thumbnail: "/images/30m.png"
 ---
 
-This is the easiest and **recommended** way to run Taiga in production.
-This document explains how to deploy a full Taiga service for a production environment with **docker**.
+This is the easiest and **recommended** way to run Taiga in production. This document explains how to deploy a full Taiga service for a production environment with **docker**.
 
-### Requirements and caveats
+### Requirements
 
 Prior to start the installation, ensure you have installed:
 
 - **docker**
 - **docker-compose**
 
-Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
+If you don't have docker installed, please follow installation instructions from docker.com: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/) Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
 
-### Get repository
+### Getting started
 
 Clone [this repository](https://github.com/taigaio/taiga-docker).
 
@@ -29,6 +28,33 @@ Clone [this repository](https://github.com/taigaio/taiga-docker).
 $ cd taiga-docker/
 $ git checkout stable
 ```
+
+### Start the application
+
+```
+$ ./launch-all.sh
+```
+
+After some instants, when the application is started you can proceed to create the superuser with the following script:
+
+```
+$ ./taiga-manage.sh createsuperuser
+```
+
+The `taiga-manage.sh` script lets launch manage.py commands on the
+back instance:
+
+```
+$ ./taiga-manage.sh [COMMAND]
+```
+
+Default access for the application is **http://localhost:9000**.
+
+As **EXTRA**: the default `launch-all.sh` script comes with [penpot](https://penpot.app), the open-source solution for design and prototyping. The default access for the penpot application is **http://locahost:9001**
+
+It's developed by the same team behind Taiga. If you want to give it a try, you can go to [penpot's github](https://github.com/penpot/penpot/tree/develop/docs) to review its own configuration variables.
+
+If you just want to launch Taiga standalone, you can use the `launch-taiga.sh` script instead of the `launch-all.sh`.
 
 ### 1. Configuration
 
@@ -114,7 +140,6 @@ Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your 
 
 It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both taiga-back (x-environment) and taiga-front. In taiga-back environment variables, it's also necessary to configure different settings depending on the importer.
 
-
 ##### taiga-async-rabbitmq
 
 Configure this service to generate messages from rabbitmq for **taiga-async**.
@@ -122,7 +147,6 @@ Configure this service to generate messages from rabbitmq for **taiga-async**.
 `RABBITMQ_ERLANG_COOKIE` is the secret erlang cookie.
 
 `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` will be used to connect to rabbitmq.
-
 
 ##### taiga-front
 
@@ -153,7 +177,6 @@ Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your 
 
 It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both **taiga-back** (x-environment) and **taiga-front**.
 
-
 ##### taiga-protected
 
 Configure this service and protects the attachments from external downloads.
@@ -162,7 +185,6 @@ Configure this service and protects the attachments from external downloads.
 
 `MAX_AGE` variable does that the attachments will be accessible with a token during a maximum (in seconds). After that, the token will expire.
 
-
 ##### taiga-events
 
 Configure this service for Taiga websocket server which allows taiga-front to show realtime changes in the backlog, taskboard, kanban and issues listing.
@@ -170,7 +192,6 @@ Configure this service for Taiga websocket server which allows taiga-front to sh
 `RABBITMQ_USER`, `RABBITMQ_PASS` are used to read messages from rabbitmq.
 
 `TAIGA_SECRET_KEY` should be the same as this var in **taiga-back**.
-
 
 ##### taiga-events-rabbitmq
 
@@ -181,8 +202,6 @@ Configure this service to generate messages from rabbitmq for **taiga-events**.
 `RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
 
 {{< figure src="/images/docker-up.png" caption="What you want to see in the console" alt="What you want to see in the console" width="100%" class="articlefigure"  >}}
-
-
 
 #### 1.2 Advanced configuration
 
@@ -217,24 +236,6 @@ mv dist/config.example.json dist/config.json
 ```
 
 Edit it with your own configuration and map the file into **/taiga-front/dist/config.py**.
-
-### 2. Configure an admin user
-
-```
-$ docker-compose up -d
-
-$ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
-```
-
-### 3. Up and running
-
-Once everything has been installed, launch all the services and check the result:
-
-```
-$ docker-compose up -d
-```
-
-Go to **http://localhost:9000** and check your Taiga Platform is available.
 
 ### 4. Configure the proxy
 
