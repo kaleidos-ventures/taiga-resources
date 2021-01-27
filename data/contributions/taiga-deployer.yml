@@ -8,6 +8,6 @@ created_date: 2015-11-01T12:58:11+02:00
 last_updated_date: 2015-11-11T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
-contribution_tags: ["vagrant", "integration"]
+contribution_tags: ["vagrant", "ansible", "integration"]
 url: "/contributions/#taiga-deployer"
 anchor: "taiga-deployer"

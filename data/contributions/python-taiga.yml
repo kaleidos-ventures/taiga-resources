@@ -3,7 +3,7 @@ author: "Nephila"
 github_author: "@nephila"
 license: "??"
 description: "A Python module for communicating with the Taiga API"
-contribution_url: "https://github.com/PrehensileTales/taiga-containers"
+contribution_url: "https://github.com/nephila/python-taiga"
 created_date: 2015-05-01T12:58:11+02:00
 last_updated_date: 2020-12-01T12:58:11+02:00
 integrated: false
