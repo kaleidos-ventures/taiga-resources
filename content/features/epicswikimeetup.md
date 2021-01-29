@@ -14,7 +14,7 @@ main: false
 order: 3
 
 # post thumb
-image: "images/issues.jpg"
+image: "images/wiki.jpg"
 
 # meta description
 description: "Those little extras that can make a huge different to you project"
@@ -44,26 +44,36 @@ This is important so we will explain a bit how it works. The WIKI module allows 
 
 Now, keeping track of all these WIKI pages could be tough so usually what team members do is to create those pages through internal links within other WIKI pages. If you are using the HTML mode, simply add a compact title (no spaces) to the link reference. If you prefer to use markdown mode, it's just the standard [text for a page title](pageslug) snippet.
 
-Taiga will know if the destination page exists already or not. If it doesn't, you'll be prompted with the above message. Edit that page, save it and you're done, that WIKI page is now "solid".
+Taiga will know if the destination page exists already or not. If it doesn't, you'll be prompted with the above message. **Edit that page (just click on it), save it and you're done, that WIKI page is now "solid"**.
 
-If during your creative process, you feel like you would like to have some WIKI pages readily available as bookmarks, you can simply create a new bookmark and start typing already. Or, if the WIKI page already exists and you want it to be somehow *promoted* to the Bookmarks sidebar, still create the bookmark and enter the WIKI page slug you chose (what appears at the end of the URL), Taiga will understand.
+If during your creative process, you feel like you would like to have some WIKI pages readily available as bookmarks, **you can simply create a new bookmark and start typing already**. Or, if the WIKI page already exists and you want it to be somehow *promoted* to the Bookmarks sidebar, still create the bookmark and enter the WIKI page slug you chose (what appears at the end of the URL), Taiga will understand.
 
-[IMAGEN chula de un wiki page curiosete]
+{{< figure src="/images/wikipagesample.jpg" caption="A sample WIKI page by a The Princess Bride fan. Images, text, tables, code, attachments and a bit of activity" alt="A sample WIKI page by a The Princess Bride fan. Images, text, tables, code, attachments and a bit of activity" width="100%" class="articlefigure" >}}
+
 
 WIKI pages can be **very useful to write documentation, technical or otherwise**. We suggest you break down your content to be very modular and have **many WIKI pages linked together instead of a few textwalls**. Images and other files can be attached to any WIKI Page through drag & drop but also as simple attachments to have handy **below the page content itself**.
 
-What is hidden by default is the WIKI page's changelog. Taiga keeps a fairly comprehensive audit trail of every change for every Taiga item. WIKI pages are no exception and you can inspect all the activity by clicking on the **Activity** banner at the bottom.
+What is hidden by default is the WIKI page's changelog. **Taiga keeps a fairly comprehensive audit trail** of every change for every Taiga item. WIKI pages are no exception and you can inspect all the activity by clicking on the **Activity** banner at the bottom.
 
 That's really all that there is for the WIKI Module. The same Markdown syntax rules or the fantastic Taiga HTML editor make up for the rest of the story, to be honest.
 
-Don't be afraid to deactivate the WIKI Module at any time, it's a non-destructive action. Taiga simply hides all that content from the team but does not delete anything.
+Don't be afraid to deactivate the WIKI Module at any time, **it's a non-destructive action**. Taiga simply hides all that content from the team but does not delete anything.
 
 ### Taiga Epics Module, a powerful tool in the right hands
 
-bla bla
+Many teams have the need for broader context around user stories. This can be a **release, a milestone, a subproject or any abstraction that covers and tracks progress of user stories**. This bird's eye view can be very useful to monitor these collections of user stories and we made sure that you are not constrained to pick them from one project, any Epic can keep track or user stories from any of the projects you have adequate permissions for.
 
+This way, a project could even have just the Epics Module activated, no KANBAN, no Scrum, no issues, just Epics, and have **a summary view of multiple projects across the organisation** thanks to the multi-project user story support for Epics. For instance, you could have a Quarter objective in terms of certain brand designs being finished where that brand design work is spread out several more "operational" projects. 
 
-### Further reading
+Having said that, the most typical use of Epics is simply to contain **high level project achievements**, impossible to be operated on but relevant **strategy-wise**.
 
-Taiga Issues Module has enough intrinsic value to be used alone as the key Module for a particular Taiga project but its true potential arises when used it as a great Scrum or KANBAN companion. There are other Taiga Modules we would briefly cover so you know what you might be missing out. We suggest you read [The Epic, The Wiki and the Meetup](/kaka).
+{{< figure src="/images/epics.jpg" caption="A very straightforwad major goal oriented Epic list. Partial progress is shown for both Epics and related user stories" alt="A very straightforwad major goal oriented Epic list. Partial progress is shown for both Epics and related user stories" width="100%" class="articlefigure" >}}
+
+We borrowed the term Epic from Epic User Story in Scrum, where teams define **broader value oriented goals that will later be split into proper user stories**, much more manageable and that can be assigned, tracked and added to a Sprint. Thanks to the KANBAN support in Taiga, you are free to combine Epics with KANBAN cards as well. And in case you were wondering, yes, one user story can be related to many different Epics. If it makes sense to you, **that's fine by us**.
+
+You activate Epics Module the same way as the rest of modules, simply go to SETTINGS > PROJECT > MODULES and turn on the Epics toggle.
+
+**Pro-tip:** It pays off to pick a nice and iconic project icon (see SETTINGS > PROJECT) and a distinct colour for each Epic. Taiga's listings and detail views make use of this allowing far more intuitive assessmenet at a glance.
+
+Finally, don't forget to pick your choice of options to be visible under the **view options** drop down.
 
