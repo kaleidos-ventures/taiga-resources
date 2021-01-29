@@ -202,7 +202,7 @@ The Taiga plugin for FAS (Fedora Account System) authentication.
 **Tags**: auth, integration
 
 
-## pythonphp
+## taiga-php
 
 TaigaPHP is a PHP wrapper used to handle the Taiga.io API easily
 

@@ -14,8 +14,8 @@ From the beginning, Taiga has aimed to be beautiful as well as useful for develo
 
 taiga-php and taiga-python are both excellent examples of how the API enables new ways of using Taiga, and both are community driven:
 
-- [taiga-php]() is a wrapper made in PHP to handle the Taiga API.
-- [taiga-python]() is a library, written in Python, to interact with the API.
+- [taiga-php](https://github.com/TZK-/TaigaPHP) is a wrapper made in PHP to handle the Taiga API.
+- [python-taiga](https://github.com/nephila/python-taiga) is a library, written in Python, to interact with the API.
 
 You can check all the [community contributions]({{< ref "contributions" >}}) which add functionalities over Taiga's.
 

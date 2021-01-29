@@ -1,11 +1,9 @@
 ---
 title: "Frequently Asked Questions"
-slug: faq
+slug: faqs
 date: 2020-10-05T11:27:17+02:00
 draft: false
-
-# faq thumb
-image: "images/featured-post/post-1.jpg"
+image: "images/faqs.jpg"
 
 description: "Frequently Asked Questions"
 ---
