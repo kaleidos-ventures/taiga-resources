@@ -45,12 +45,30 @@ All the magic happend under **SETTINGS > ATTRIBUTES > STATUSES** where you can e
 
 A key configuration choice for all four entities is the "closed" status. If you decide that a particular state means that item is "closed" (regardless of the status label you choose), Taiga will use that information for metrics and some features might behave differently. For instance, if a User Story is considered closed if it reaches the "Rejected" status, Taiga will count any estimated user story points for that user story as "done" as well as making the user story less visible on sprints and lists.
 
-Likewise, user stories statuses that have the Archived flag ticked, will mean that those statuses are collapsed by default on the KANBAN board. It's a very handy way to keep a massive historical list of user stories out of sight.
+Likewise, user stories statuses that have the Archived flag ticked, will mean that those statuses are collapsed by default on the KANBAN board. It's a very handy way to keep a massive list of user stories out of sight.
+
+{{< figure src="/images/collapsed.png" caption="This is how an archived Upcoming User Story state looks like by default on KANBAN" alt="This is how an archived Upcoming User Story state looks like by default on KANBAN" width="100%" class="articlefigure" >}}
+
 
 ### Tier 3: Permission & Roles configuration 
-Type, Severity and Priority
 
-Page for Customisation
+At Taiga we like to say that this is the perfect agile platform for cross-domain teams. It's important to highlight the different team members' backgrounds and make it count somehow.
+
+Taiga addresses this in various ways. Different roles may enjoy different permissions, but they are also eligible for the user story points estimation break down. On top of that, you can use roles to filter against or multiple-assign as if they were macros.
+
+Taiga does come with a heavily inspired digital product roles proposal, but you can get rid of it in no time. Just go, as an Admin project member, to SETTINGS > PERMISSIONS and delete or create any role. When deleting a role you'll be given a choice to reassign content owned by that role. You must have at least one role apart from the External User special role.
+
+{{< figure src="/images/permissionsexample.png" caption="The Weird Old Couple role has all permissions for Epics but would not be able to add, delete or modify existing Sprints, just view them. Also, they don't have a say on user points estimation." alt="The Weird Old Couple role has all permissions for Epics but would not be able to add, delete or modify existing Sprints, just view them. Also, they don't have a say on user points estimation." width="100%" class="articlefigure" >}}
+
+#### External User, what is this?
+
+You might have noticed there is no way to delete the special External User role. This role represents both an anonymous user and a Taiga user not belonging to this project. There is a subtile difference between the two, mostly consisting on the Taiga user benefitting from the add/delete/modify permissions as well as view permission while the anonymous user (including search engines) only has view permission applied to them.
+
+This is useful when you don't want to add someone to the team and still be able to point them to a project's resource. In large organisations, where you only care about your project team members, the rest of Taiga users, as long as they are logged in, can interact with the project based on what the External User role allows.
+
+For **Public Projects** (see SETTINGS), the External User role has to have **at least View permissions** for all project entities **and they are listed under the Discover page**. **Private projects** are not listed publicly but they still use the External User role. We see many Private Projects enabling some permissions for the External User role to sort out their stakeholders' interaction. If there is any relevant risk in potential information leaks, we strongly suggest you keep the Project Private and a no-permissions External User role.
+
+{{< figure src="/images/discover.png" caption="The Discover page for the tree.taiga.io site" alt="The Discover page for the tree.taiga.io site" width="100%" class="articlefigure" >}}
 
 
 ### Tier 4: 3rd party integrations 
