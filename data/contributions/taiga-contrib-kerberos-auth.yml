@@ -1,6 +1,6 @@
 title: "Taiga contrib kerberos auth"
 author: "Diego Giovane Pasqualin"
-github_author: ""
+github_author: "dpasqualin"
 license: "AGPLv3"
 description: "The Taiga plugin for kerberos authentication"
 contribution_url: "https://github.com/dpasqualin/taiga-contrib-kerberos-auth"
