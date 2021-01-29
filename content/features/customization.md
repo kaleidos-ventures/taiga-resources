@@ -14,8 +14,19 @@ categories:
 
 No two teams, projects or organisations are alike. Learn how we elegantly crushed the one-size-fits-all curse. Both lack of flexibility and extreme configurability plague the project management arena. Taiga's approach is simple: keep consistency throughout projects, regardless of their simple or advanced status, and outsource some ad-hoc decision to the team's real-world interactions.
 
+This content is specially useful for any Taiga user that has at least admin rights on any project, since most of what we will cover do require ADMIN status. You can give ADMIN status to anyone in your project under PROJECT > MEMBERS regardless of their project role. 
 
-### Tier 1: Modules selection
+### Tier 1: Modules selection and Default values
+
+This might seem obvious but it's worth mentioning. One of the most profound ways to customise a project is to select which modules are available. Depending on this, a team might lean towards one way or another regarding project management. 
+
+The Modules that are available are Epics, Scrum, KANBAN, Issues, Wiki and Meetup. Scrum and Meetup require some minimum configuration but the rest are fine just being activated.
+
+{{< figure src="/images/modulesactivation.png" caption="Module activation panel under PROJECT > SETTINGS > MODULES" alt="Module activation panel under PROJECT > SETTINGS > MODULES" width="100%" class="articlefigure" >}}
+
+
+{{< figure src="/images/defaultvalues.jpg" caption="A sample WIKI page by a The Princess Bride fan. Images, text, tables, code, attachments and a bit of activity" alt="A sample WIKI page by a The Princess Bride fan. Images, text, tables, code, attachments and a bit of activity" width="100%" class="articlefigure" >}}
+
 
 At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the side navigation bar. 
 
