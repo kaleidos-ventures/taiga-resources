@@ -8,7 +8,8 @@ thumbnail: "images/contributions.png"
 
 Those are the contributions community developed that boost your Taiga's environment with features, authentication or automation.
 
-## Ansible for Taiga
+
+### Ansible for Taiga
 
 Ansible for Taiga
 
@@ -19,7 +20,9 @@ Ansible for Taiga
 - **Compatible with**: taiga5
 - **Tags**: ansible, integration
 
-## Ansible Role for Taiga
+{{< break_line >}}
+
+### Ansible Role for Taiga
 
 Ansible Role for Taiga
 
@@ -30,7 +33,9 @@ Ansible Role for Taiga
 - **Compatible with**: taiga5
 - **Tags**: ansible, integration
 
-## Docker image for Taiga
+{{< break_line >}}
+
+### Docker image for Taiga
 
 This Docker repository provides custom taiga-front and taiga-back docker images with additional plugins and a production ready docker-compose.
 
@@ -41,7 +46,9 @@ This Docker repository provides custom taiga-front and taiga-back docker images 
 - **Compatible with**: taiga5
 - **Tags**: docker, integration
 
-## python-taiga
+{{< break_line >}}
+
+### python-taiga
 
 A Python module for communicating with the Taiga API
 
@@ -52,7 +59,9 @@ A Python module for communicating with the Taiga API
 - **Compatible with**: taiga5
 - **Tags**: API, integration, python
 
-## Taiga containers with optional LDAP
+{{< break_line >}}
+
+### Taiga containers with optional LDAP
 
 This container runs Taiga from Github release tags on Fedora 31. The container contains the OpenID plugin out of the box, but it's only enabled if an OpenID configuration exists in the environment. There's also an LDAP synchronization that can be ran in a separate container. This is also an optional feature.  The container is used in production by Prehensile Tales running in Podman.
 
@@ -63,7 +72,9 @@ This container runs Taiga from Github release tags on Fedora 31. The container c
 - **Compatible with**: taiga5
 - **Tags**: docker, integration, auth
 
-## Taiga contrib Active Directory auth
+{{< break_line >}}
+
+### Taiga contrib Active Directory auth
 
 Taiga plugin for Active Directory authentication
 
@@ -74,7 +85,9 @@ Taiga plugin for Active Directory authentication
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## Taiga contrib kerberos auth
+{{< break_line >}}
+
+### Taiga contrib kerberos auth
 
 The Taiga plugin for kerberos authentication
 
@@ -85,7 +98,9 @@ The Taiga plugin for kerberos authentication
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## Taiga contrib ldap auth
+{{< break_line >}}
+
+### Taiga contrib ldap auth
 
 Extended Taiga.io plugin for LDAP authentication
 
@@ -96,7 +111,9 @@ Extended Taiga.io plugin for LDAP authentication
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## Taiga contrib OpenID auth
+{{< break_line >}}
+
+### Taiga contrib OpenID auth
 
 An OpenID / Keycloak Authentication Plugin. Heavily based off of taiga-contrib-github-auth
 
@@ -107,7 +124,9 @@ An OpenID / Keycloak Authentication Plugin. Heavily based off of taiga-contrib-g
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## Taiga contrib SAML auth
+{{< break_line >}}
+
+### Taiga contrib SAML auth
 
 The Taiga plugin for SAML authentication
 
@@ -118,7 +137,9 @@ The Taiga plugin for SAML authentication
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## Taiga deployer
+{{< break_line >}}
+
+### Taiga deployer
 
 A deployer tool for Taiga.io project
 
@@ -129,7 +150,9 @@ A deployer tool for Taiga.io project
 - **Compatible with**: taiga5
 - **Tags**: vagrant, ansible, integration
 
-## Taiga contrib FAS OpenID auth
+{{< break_line >}}
+
+### Taiga contrib FAS OpenID auth
 
 The Taiga plugin for FAS (Fedora Account System) authentication.
 
@@ -140,7 +163,9 @@ The Taiga plugin for FAS (Fedora Account System) authentication.
 - **Compatible with**: taiga5
 - **Tags**: auth, integration
 
-## taiga-php
+{{< break_line >}}
+
+### taiga-php
 
 TaigaPHP is a PHP wrapper used to handle the Taiga.io API easily
 
@@ -151,7 +176,9 @@ TaigaPHP is a PHP wrapper used to handle the Taiga.io API easily
 - **Compatible with**: taiga5
 - **Tags**: API, integration, php
 
-## Taiga.pm
+{{< break_line >}}
+
+### Taiga.pm
 
 On Taiga PM you can read about some of the features of Taiga 5
 
