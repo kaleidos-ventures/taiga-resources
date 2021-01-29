@@ -96,11 +96,8 @@ If you're enjoying Taiga, you can always migrate your projects from other platfo
 
 Check our documentation on how to import projects from other platforms:
 
-- Import from [Trello]()
-- Import from [Jira]()
-- Import from [Github]()
+- Import from [Trello]({{< ref "trello.md" >}})
+- Import from [Jira]({{< ref "jira.md" >}})
+- Import from [Github]({{< ref "github.md" >}})
 
 If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://taigaio.github.io/taiga-doc/dist/#importers).
-
-
-
