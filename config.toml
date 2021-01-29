@@ -6,6 +6,8 @@ theme = "liva-hugo-master"
 summaryLength = "10"
 paginate = 6
 disqusShortname = ""
+[markup.goldmark.renderer]
+unsafe= true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

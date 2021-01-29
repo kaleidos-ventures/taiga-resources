@@ -97,7 +97,7 @@ An [example-one](https://tree.taiga.io/example-project/wiki/example-one "example
 ```
 ![alt text](circle1.svg "Title")
 ```
-![alt text](circle1.svg "Title")
+{{< figure src="/images/circle1.svg" alt="Title" width="20%" >}}
 
 **Reference-style**
 
@@ -106,16 +106,15 @@ An [example-one](https://tree.taiga.io/example-project/wiki/example-one "example
 
 [id]: /static/images/circle1.svg "Title"
 ```
-![alt text][id]
 
-[id]: circle1.svg "Title"
+{{< figure src="/images/circle1.svg" alt="Title" width="20%" >}}
 
 **Emoticons**
 
 ```
 An example emoticon :smile:
 ```
-An example emoticon ![:smile:](smile.png ":smile:")
+An example emoticon <img src="/images/smile.png" alt=":smile:" />
 
 See a complete list of emoticons at this [Emoji Cheatsheet](http://www.emoji-cheat-sheet.com/).
 
