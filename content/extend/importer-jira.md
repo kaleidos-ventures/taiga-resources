@@ -6,7 +6,7 @@ categories:
   - "extend taiga"
 ---
 
-## Important notice about Jira releases and Taiga compatibility
+### Important notice about Jira releases and Taiga compatibility
 
   * Taiga support Jira releases up to 8.3.5. It has been tested and should work out of the box.
   * Taiga might support Jira releases from 8.3.5 to 8.5.x. Most probably it works.
@@ -15,7 +15,7 @@ categories:
 If you encounter any issues with the Jira to Taiga importer please write to support@taiga.io. We are always happy to find challenging Jira projects to polish our importer.
 It is important that you always use the latest Taiga release to perform Jira projects imports so we can more easily reproduce the issue you might be facing.
 
-## What I need to import from Jira?
+### What I need to import from Jira?
 
 1. You need to configure in your Jira the access from Taiga that allows you to give access with the rights of your users. To do this, you have to go to the applications settings in your Jira server.
 
@@ -55,7 +55,7 @@ It is important that you always use the latest Taiga release to perform Jira pro
 
 {{< figure src="/images/import-jr-cert-step7.png" caption="New project creation" alt="New project creation" class="articlefigure" width="100%" >}}
 
-## How do I import a project from Jira?
+### How do I import a project from Jira?
 
 1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
 
@@ -99,7 +99,7 @@ It is important that you always use the latest Taiga release to perform Jira pro
 
 {{< figure src="/images/import-jr-step9.png" caption="Imported project" alt="Imported project" class="articlefigure" >}}
 
-## Wich data is imported, and how?
+### Wich data is imported, and how?
 
   - Jira Project or Jira Board as Taiga Scrum/Kanban/Issues Project.
   - Statuses.

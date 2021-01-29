@@ -7,7 +7,7 @@ categories:
 ---
 
 
-## How I import a project from Trello?
+### How I import a project from Trello?
 
 1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
 
@@ -51,7 +51,7 @@ categories:
 
 {{< figure src="/images/import-tr-step9.png" caption="Importer project" alt="Importer project" class="articlefigure" width="100%" >}}
 
-## Wich data is imported, and how?
+### Wich data is imported, and how?
 
   - Trello Board as Taiga Kanban Project.
   - Board avatar as Project avatar.

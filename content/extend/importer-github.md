@@ -6,7 +6,7 @@ categories:
   - "extend taiga"
 ---
 
-## How I import a project from Github?
+### How I import a project from Github?
 
 1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
 
@@ -51,7 +51,7 @@ categories:
 {{< figure src="/images/import-gh-step9.png" caption="Imported project" alt="Imported project" class="articlefigure" width="100%" >}}
 
 
-## Wich data is imported, and how?
+### Wich data is imported, and how?
 
   - Github Project as Taiga Project (Kanban, Scrum or Issues project).
   - Organization avatar as project avatar.
