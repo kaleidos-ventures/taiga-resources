@@ -4,11 +4,7 @@ date: 2020-10-05T11:27:41+02:00
 slug: "5minkanban"
 draft: false
 
-# post type
-type: "feature"
-
-# Main feature
-main: true
+type: "featured"
 
 # Order in Home
 order: 1
@@ -28,7 +24,7 @@ Welcome to a lean method to manage and improve work across human systems, welcom
 
 You can also say that Kanban is an organic flow of tasks that minimize "in progress" time thanks to a clear set of rules and a trustworthy team.
 
-Regardless of how you put it, the reality is that Kanban is a very common way of adopting agile principles because it's relatively easy to grasp and adapt to your unique context. 
+Regardless of how you put it, the reality is that Kanban is a very common way of adopting agile principles because it's relatively easy to grasp and adapt to your unique context.
 
 ### Taiga Kanban module
 
@@ -91,7 +87,7 @@ When you prefer more detailed or expanded zoom levels you are asking Taiga to br
 
 Of course, you can change your zoom level preferences at any time. And don't worry, this is your personal Kanban view, it does not affect other team members personal preferences.
 
-You will probably find yourself sticking to a preferred zoom level most of the time while also collapsing swimlanes you don't need to see, or Kanban statuses that you don't manage. 
+You will probably find yourself sticking to a preferred zoom level most of the time while also collapsing swimlanes you don't need to see, or Kanban statuses that you don't manage.
 
 
 ### Kanban relationship with Scrum module

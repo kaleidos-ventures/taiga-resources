@@ -3,8 +3,8 @@ title: "Import/Export Projects"
 slug: import-export-projects
 date: 2020-10-05T11:27:09+02:00
 draft: false
-image: "images/post/post-3.jpg"
-thumbnail: "images/contributions.png"
+categories:
+  - "extend taiga"
 ---
 
 Taiga import/export feature allows you to extract all your data from one Taiga instance and move it to another one.

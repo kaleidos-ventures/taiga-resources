@@ -4,15 +4,6 @@ date: 2020-10-05T11:27:41+02:00
 draft: false
 slug: "kanbandarkside"
 
-# post type
-type: "feature"
-
-# Main feature
-main: false
-
-# Order in Home
-order: 1
-
 # post thumb
 image: "images/KANBAN_test11.jpg"
 
@@ -28,10 +19,10 @@ This is content that goes a bit beyond Taiga as an Agile platform and tries to c
 
 ### Why would we want to do Kanban? What is Kanban’s promise?
 
-Kanban's promise is simple "if you can achieve individual empowerment *(lean)* and clear policies, I can deliver organic succession of finished work while avoiding bottle-necks". 
+Kanban's promise is simple "if you can achieve individual empowerment *(lean)* and clear policies, I can deliver organic succession of finished work while avoiding bottle-necks".
 
 Kanban's promise is deceptively simple and it’s considered to be one of the most challenging Agile methods. The reason is that for a team to fulfill Kanban’s promise, the team has to be much more mature than what is required for Scrum.
-Actually, it is often seen that some Scrum liturgies are borrowed by Kanban teams as a way to establish a safety net. 
+Actually, it is often seen that some Scrum liturgies are borrowed by Kanban teams as a way to establish a safety net.
 
 ### What is Kanban and what purpose it serves
 
@@ -43,7 +34,7 @@ Kanban tries to solve this at scale, when instead of one person, you have a team
 
 ### Kanban critical challenges
 
-The main challenges Kanban implementations face are no real individual autonomy and no clear policies. 
+The main challenges Kanban implementations face are no real individual autonomy and no clear policies.
 
 Individual empowerment in a team is almost always required to have functional Kanban method.
 

@@ -5,10 +5,7 @@ draft: false
 slug: "introissues"
 
 # post type
-type: "feature"
-
-# Main feature
-main: true
+type: "featured"
 
 # Order in Home
 order: 3
@@ -26,11 +23,11 @@ categories:
 
 If you're after a multipurpose and flexible to-do list Taiga module, check Issues. Some teams love Taiga Issues Module so much that they are fine using it **without** KANBAN or Scrum modules. Actually, Issues Module is clearly the most used Taiga Module, whether it shares room with Scrum or KANBAN modules, to name the two main Taiga pillars. In other words, Scrum and KANBAN modules somehow compete with each other while Issues is happy to work with any of them.
 
-So, what makes Issues Module so successful? For one, it puts screen real estate to good use. Its compact yet visual listing allows team members to quickly decide what to do next. Also, filtering and ordering capabilities are handy and quite powerful. Finally, it's very fast and customisable. 
+So, what makes Issues Module so successful? For one, it puts screen real estate to good use. Its compact yet visual listing allows team members to quickly decide what to do next. Also, filtering and ordering capabilities are handy and quite powerful. Finally, it's very fast and customisable.
 
 ### The simplicity of Issues
 
-At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the side navigation bar. 
+At first glance, **Issues is just a long list of stuff where pagination reigns**. It's when you start using it that you find all the hidden gems. You can activate Issues going to SETTINGS > PROJECT > MODULES and clicking on the Issues toggle. You will immediately see the Issues icon pop up at the upper section of the side navigation bar.
 
 {{< figure src="/images/issues_module.png" caption="Issues module is activated" alt="Issues module is activated" width="100%" class="articlefigure" >}}
 
@@ -42,13 +39,13 @@ The default ordering mechanism for Issues unless you click on the other columns 
 
 ### Type, Severity and Priority
 
-A Task is a *task*, a User Story is a *user story* and an Epic is an *epic*, but an **Issue has issue types**. At Taiga we think an issue as a simple container that is enriched by type, severity and priority. 
+A Task is a *task*, a User Story is a *user story* and an Epic is an *epic*, but an **Issue has issue types**. At Taiga we think an issue as a simple container that is enriched by type, severity and priority.
 
 {{< figure src="/images/issues_types_sev_prio.jpg" caption="Project settings example for types, severities and priorities" alt="Project settings example for types, severities and priorities" width="100%" class="articlefigure" >}}
 
 
 - **Issue Type** is a simple major *categorisation*. Teams tend to pick between 3 and 5 different issue types. This makes early distinction easy and can help manage assignees or workflows. Try to come up with unambiguous issue types that have almost no overlap. Also, it pays off to carefully pick their individual colours.
-- **Issue Severity** conveys how *relevant* the issue is. It's the importance ranking. Issues of any type can be minute stuff or game changers. 
+- **Issue Severity** conveys how *relevant* the issue is. It's the importance ranking. Issues of any type can be minute stuff or game changers.
 - **Issue Priority** deals with *urgency*. Regardless of type or severity, how fast should the team be on top of an issue? Teams often mistake Severity with Priority but they are different. Something massive (high severity) could enjoy a fairly low priority and something trivial could need immediate attention.
 
 Please note that you can tweak which are the default selected values for all three attributes under SETTINGS > PROJECT > DEFAULT VALUES.
@@ -85,7 +82,7 @@ First, you can put aside whatever **doesn't feel right as a user story** or a KA
 
 Second, any issue can be **promoted to a user story** (or a KANBAN card). You can find that button on the issue's right pane, next to some other available actions such as *block* or *delete*. This allows for more fine-tuned workflows, where some petitions can start as a *humble* issue and fight to become a *proper* user story or KANBAN card. Or perhaps they were *wrongly assumed to be an issue (of any type)* and you don't want to create a new user story or KANBAN card and copy the contents, just promote it. **Promoting an issue carries over as much information as it is possible** so even if it happens well into the issue's lifecycle, you are encouraged to do so with minimal content loss.
 
-Finally, **Sprints can list a selection of attached issues** if the team wants to have them handy during the sprint's lifecycle. Not only the team can bring forward existing issues to also show them on the sprint taskboard's view but they can create them here and still find them under Issues. Some teams do this to laser focus what a sprint is about regardless of the dozens of pending issues waiting to be taken care of. **It's a filter of sorts**, if you think about it. 
+Finally, **Sprints can list a selection of attached issues** if the team wants to have them handy during the sprint's lifecycle. Not only the team can bring forward existing issues to also show them on the sprint taskboard's view but they can create them here and still find them under Issues. Some teams do this to laser focus what a sprint is about regardless of the dozens of pending issues waiting to be taken care of. **It's a filter of sorts**, if you think about it.
 
 {{< figure src="/images/taskboard_issues.jpg" caption="A sprint can, at the discretion of the team, host a selection of issues" alt="A sprint can, at the discretion of the team, host a selection of issues" width="100%" class="articlefigure" >}}
 

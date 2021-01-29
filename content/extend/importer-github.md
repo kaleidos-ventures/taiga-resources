@@ -2,8 +2,8 @@
 title: "Github Importer"
 date: 2020-10-05T11:27:09+02:00
 draft: false
-image: "images/post/post-3.jpg"
-thumbnail: "images/contributions.png"
+categories:
+  - "extend taiga"
 ---
 
 ## How I import a project from Github?

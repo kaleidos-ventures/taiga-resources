@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://resources.taiga.io"
 languageCode = "en-us"
 title = "Taiga Resources"
 theme = "liva-hugo-master"
@@ -43,12 +43,6 @@ disqusShortname = ""
 ############################## navigation ###############################
 [menu]
 
-  # main menu
-  #[[menu.main]]
-  #name = "HandBook"
-  #URL = "#"
-  #weight = 1
-
   [[menu.main]]
   name = "Blog"
   URL = "https://blog.taiga.io/"
@@ -71,14 +65,9 @@ disqusShortname = ""
   weight = 2
 
   [[menu.footer]]
-  name = "Code of conduct"
+  name = "Code of Conduct"
   URL = "https://www.taiga.io/code-of-conduct"
   weight = 3
-
-  #[[menu.footer]]
-  #name = "HandBook"
-  #URL = "#"
-  #weight = 4 
 
 
 #################### default parameters ################################
@@ -87,7 +76,7 @@ logo = "images/logo.png"
 noResults = "images/no-results.png"
 home = "Home"
 # Meta data
-description = "This is meta description"
+description = "Taiga Resources"
 author = "Themefisher"
 # Google Analitycs
 googleAnalyticsID = "Your ID"

@@ -1,9 +1,9 @@
 ---
-title: "Extend Taiga"
+title: "How To Extend Taiga"
 date: 2020-10-05T11:27:09+02:00
 draft: false
-image: "images/post/post-3.jpg"
-thumbnail: "images/contributions.png"
+categories:
+  - "extend taiga"
 ---
 
 Taiga offers lots of features and [customisation options]({{< ref "/categories/customisation" >}}) that cover many different use cases and users. On top of that, Taiga is easily extensible in many ways, and you can work with Taiga information to add extra functionalities to your projects.
@@ -96,8 +96,8 @@ If you're enjoying Taiga, you can always migrate your projects from other platfo
 
 Check our documentation on how to import projects from other platforms:
 
-- Import from [Trello]({{< ref "trello.md" >}})
-- Import from [Jira]({{< ref "jira.md" >}})
-- Import from [Github]({{< ref "github.md" >}})
+- Import from [Trello]({{< ref "importer-trello.md" >}})
+- Import from [Jira]({{< ref "importer-jira.md" >}})
+- Import from [Github]({{< ref "importer-github.md" >}})
 
 If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://taigaio.github.io/taiga-doc/dist/#importers).

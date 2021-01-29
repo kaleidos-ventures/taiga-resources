@@ -3,13 +3,7 @@ title: "Quick intro to Scrum module"
 date: 2021-01-12T07:27:41+02:00
 draft: false
 slug: "introscrum"
-
-# post type
-type: "feature"
-
-# Main feature
-main: true
-
+type: "featured"
 # Order in Home
 order: 2
 
@@ -25,7 +19,7 @@ categories:
   - "scrum"
 ---
 
-Scrum is an agile framework for developing, delivering, and sustaining complex products. Although it had an initial emphasis on software development, it has been used in other fields including research, sales, marketing and advanced technologies. It is designed for teams of ten or fewer members, who break their work into goals that can be completed within timeboxed iterations, called sprints, no longer than one month and most commonly two weeks. 
+Scrum is an agile framework for developing, delivering, and sustaining complex products. Although it had an initial emphasis on software development, it has been used in other fields including research, sales, marketing and advanced technologies. It is designed for teams of ten or fewer members, who break their work into goals that can be completed within timeboxed iterations, called sprints, no longer than one month and most commonly two weeks.
 
 You can also say that Scrum allows teams and stakeholders to make sure they are delivering the optimal partial product every time even if it's hard to predict what a final product would look like.
 
@@ -41,7 +35,7 @@ When you do this the project's toolbar will show the Scrum icon and you will be 
 
 {{< figure src="/images/KANBAN_test04.jpg" caption="Project attributes setup" alt="Project attributes setup" width="100%" class="articlefigure" >}}
 
-Scroll down to the USER STORY STATUSES and ***change the default settings to accomodate your particular use case***. If you want your user stories to be considered as done when they reach a particular status, flag that status as **Closed**. This is very important for Scrum metrics and Taiga makes use of it for various Scrum charts so it's good to give it a thought, you can change this at any time.  In Scrum you won't typically need to use the Archived flag for a status since the benefit of hiding user stories in that state is not needed here, closed Sprints give you that "tidying up" mechanism. 
+Scroll down to the USER STORY STATUSES and ***change the default settings to accomodate your particular use case***. If you want your user stories to be considered as done when they reach a particular status, flag that status as **Closed**. This is very important for Scrum metrics and Taiga makes use of it for various Scrum charts so it's good to give it a thought, you can change this at any time.  In Scrum you won't typically need to use the Archived flag for a status since the benefit of hiding user stories in that state is not needed here, closed Sprints give you that "tidying up" mechanism.
 
 Finally, we suggest you also ***take a look at the TASK STATUSES*** right below USER STORY STATUSES and see if you want to change them. Taiga encourages you to split up user stories into maneagable tasks that are usually assigned to just one team member so it's good to select your particular set for more "hands-on" work items. This has a big impact on how Sprints are managed and viewed as we will later show.
 
@@ -121,7 +115,7 @@ When you prefer more detailed or expanded zoom levels you are asking Taiga to br
 
 Of course, you can change your zoom level preferences at any time. And don't worry, this is your personal Sprint taskboard view, it does not affect other team members personal preferences.
 
-You will probably find yourself sticking to a preferred zoom level most of the time while also collapsing user stories you don't need to see, or tasks statuses that you don't manage. 
+You will probably find yourself sticking to a preferred zoom level most of the time while also collapsing user stories you don't need to see, or tasks statuses that you don't manage.
 
 
 ### Scrum relationship with Kanban module

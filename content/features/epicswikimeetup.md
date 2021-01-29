@@ -4,15 +4,6 @@ date: 2021-01-11T07:27:41+02:00
 draft: false
 slug: "epicswikimeetup"
 
-# post type
-type: "feature"
-
-# Main feature
-main: false
-
-# Order in Home
-order: 3
-
 # post thumb
 image: "images/wiki.jpg"
 
@@ -28,7 +19,7 @@ Those "little" extras that can make a huge different to you project. Part of the
 
 ### Taiga Meetup module
 
-Let's start with least impressive of all three but still a convenient add-on for quick project-based video rooms. Under SETTINGS > PROJECT > MODULES, you get the Meetup module. Once you activate it, you're allowed to pick either one of the available free videocall services with a unique URL o add your own shortcut. This will add the Meetup icon to the project's sidebar.  
+Let's start with least impressive of all three but still a convenient add-on for quick project-based video rooms. Under SETTINGS > PROJECT > MODULES, you get the Meetup module. Once you activate it, you're allowed to pick either one of the available free videocall services with a unique URL o add your own shortcut. This will add the Meetup icon to the project's sidebar.
 
 {{< figure src="/images/meetupconfig.jpg" caption="Meetup module is activated" alt="Meetup module is activated" width="100%" class="articlefigure" >}}
 
@@ -63,7 +54,7 @@ Don't be afraid to deactivate the WIKI Module at any time, **it's a non-destruct
 
 Many teams have the need for broader context around user stories. This can be a **release, a milestone, a subproject or any abstraction that covers and tracks progress of user stories**. This bird's eye view can be very useful to monitor these collections of user stories and we made sure that you are not constrained to pick them from one project, any Epic can keep track or user stories from any of the projects you have adequate permissions for.
 
-This way, a project could even have just the Epics Module activated, no KANBAN, no Scrum, no issues, just Epics, and have **a summary view of multiple projects across the organisation** thanks to the multi-project user story support for Epics. For instance, you could have a Quarter objective in terms of certain brand designs being finished where that brand design work is spread out several more "operational" projects. 
+This way, a project could even have just the Epics Module activated, no KANBAN, no Scrum, no issues, just Epics, and have **a summary view of multiple projects across the organisation** thanks to the multi-project user story support for Epics. For instance, you could have a Quarter objective in terms of certain brand designs being finished where that brand design work is spread out several more "operational" projects.
 
 Having said that, the most typical use of Epics is simply to contain **high level project achievements**, impossible to be operated on but relevant **strategy-wise**.
 
