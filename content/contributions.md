@@ -6,7 +6,9 @@ image: "images/post/post-3.jpg"
 thumbnail: "images/contributions.png"
 ---
 
-Those are the contributions community developed that boost your Taiga's environment with features, authentication or automation.
+There are many different ways to contribute to Taiga's platform, from patches, to documentation and of course, developing new tools Taiga related, just find the one that best fits your skills. Check out our detailed [contribution guide]({{< ref "how-can-i-contribute.md" >}}).
+
+These are the contributions community developed that boost your Taiga's environment with features, authentication or automation.
 
 
 ### Ansible for Taiga
