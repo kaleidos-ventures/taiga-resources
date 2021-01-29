@@ -86,5 +86,21 @@ And on top of these, the community has shared other systems to deploy Taiga, bas
 
 ## Import / Export projects
 
-https://tree.taiga.io/support/admin/import-export-projects/
-https://tree.taiga.io/support/importers/importers/
+Taiga import/export feature allows you to extract all your data from one Taiga instance and move it to another one. You can start working on a self-hosted instance and decide you'd like to migrate to Taiga.io, or viceversa. You can even move project between different Taiga self-hosted instances.
+
+Check our tutorials on how to [import and export projects]({{< ref "import-export-projects.md" >}})
+
+### Importers
+
+If you're enjoying Taiga, you can always migrate your projects from other platforms to Taiga and keep working with all its features. Taiga offers importers for some project mangement tools, like Trello or Jira. If you'd like to migrate your organization's projects to Taiga, [let us know](support@taiga.io)!
+
+Check our documentation on how to import projects from other platforms:
+
+- Import from [Trello]()
+- Import from [Jira]()
+- Import from [Github]()
+
+If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://taigaio.github.io/taiga-doc/dist/#importers).
+
+
+
