@@ -62,7 +62,7 @@ Taiga does come with a heavily inspired digital product roles proposal, but you 
 
 #### External User, what is this?
 
-You might have noticed there is no way to delete the special External User role. This role represents both an anonymous user and a Taiga user not belonging to this project. There is a subtile difference between the two, mostly consisting on the Taiga user benefitting from the add/delete/modify permissions as well as view permission while the anonymous user (including search engines) only has view permission applied to them.
+You might have noticed there is no way to delete the special External User role. This role represents both an anonymous user and a Taiga user not belonging to this project. There is a subtle difference between the two, mostly consisting on the Taiga user benefitting from the add/delete/modify permissions as well as view permission while the anonymous user (including search engines) only has view permission applied to them.
 
 This is useful when you don't want to add someone to the team and still be able to point them to a project's resource. In large organisations, where you only care about your project team members, the rest of Taiga users, as long as they are logged in, can interact with the project based on what the External User role allows.
 
@@ -70,14 +70,31 @@ For **Public Projects** (see SETTINGS), the External User role has to have **at 
 
 {{< figure src="/images/discover.png" caption="The Discover page for the tree.taiga.io site" alt="The Discover page for the tree.taiga.io site" width="100%" class="articlefigure" >}}
 
+### Tier 4: Custom fields and Due Dates 
 
-### Tier 4: 3rd party integrations 
+It's virtually impossible to satisfy everyone's need for a particular set of fields or attributes. Whether it is a User Story or an Issue, an Epic or a Task, the built-in "forms" might lack something you want to express as a dedicated piece of data. This is why we developed Custom Fields.
+
+Custom Fields allow teams to evolve Epics, User Stories, Tasks or Issues into their desired characterisation. Custom Fields come in a variety of types. 
+
+{{< figure src="/images/customfields.jpg" caption="Here we're editing one drop down list custom field wth three options, while showing all other available formats below" alt="Here we're editing one drop down list custom field wth three options, while showing all other available formats below" width="100%" class="articlefigure" >}}
+
+You can choose between a simple text, a multi-line text, rich text, a date, a URL, a dropdown list of choices, a simple checkbox or a number. Depending on your need, you will probably pick a matching custom field type (you can change this later).
+
+Let's see an example with Epics.
+
+{{< figure src="/images/customfieldsepics.jpg" caption="A sample of custom fields for The Princess Bride Epics. Note the Dropdown list of choices." alt="A sample of custom fields for The Princess Bride Epics. Note the Dropdown list of choices." width="100%" class="articlefigure" >}}
+
+This is how it would like on an Epic itself after some quick editing.
+
+{{< figure src="/images/epicwithcstomfields.jpg" caption="An Epic enjoying a handful of Epic-only custom fields. The block is not collapsed by default." alt="An Epic enjoying a handful of Epic-only custom fields. The block is not collapsed by default." width="100%" class="articlefigure" >}}
+
+Custom fields can be great, not only to ask for specific information for which teams don't want to use tags or the description field, but also for integrations. Both the API and the Live CSV exports list them and you could use their content to trigger automated actions or make use of them for specific reports.
+
+Which is a nice segway to the last major customisation tier...
+
+### Tier 5: 3rd party integrations 
 Type, Severity and Priority
 
 Page for Customisation
 
 
-### Tier 5: Custom fields and Due Dates 
-Type, Severity and Priority
-
-Page for Customisation
