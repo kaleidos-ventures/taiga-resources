@@ -5,7 +5,7 @@ draft: false
 slug: "epicswikimeetup"
 
 # post thumb
-image: "images/wiki.jpg"
+image: "images/variousmodules.png"
 
 # meta description
 description: "Those little extras that can make a huge different to you project"
