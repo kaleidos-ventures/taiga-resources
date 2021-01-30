@@ -2,9 +2,8 @@
 title: "Customisation"
 date: 2020-10-05T11:27:41+02:00
 draft: false
-image: "images/customization.png"
-type: "feature"
-main: true
+image: "images/customisation.png"
+type: featured
 order: 4
 
 # taxonomies
