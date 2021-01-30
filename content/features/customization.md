@@ -93,8 +93,15 @@ Custom fields can be great, not only to ask for specific information for which t
 Which is a nice segway to the last major customisation tier...
 
 ### Tier 5: 3rd party integrations 
-Type, Severity and Priority
 
-Page for Customisation
+When we developed Taiga we always had teams in mind. You can of course use Taiga on your own but it really shines when you have more people around you. That also applies to how Taiga thinks of itself regarding other tools and platforms, to be a great team player.
 
+There are multiple options that come out of the box, like Github, Gitlab, Bitbuckets and Gogs. Also, Slack and Hipchat are trivial to link with Taiga. And for the rest, we have webhooks.
 
+You can find the configuration options for all of them under SETTINGS > INTEGRATIONS and SETTINGS > PLUGINS as well as help to make it work.
+
+{{< figure src="/images/gitlabconfig.png" caption="A sample gitlab config, we redacted the tokens and keys." alt="A sample gitlab config, we redacted the tokens and keys." width="100%" class="articlefigure" >}}
+
+These integrations are meant to make Taiga aware of other tools actions as well as make Taiga able to send notifications to those tools so you can react and streamline certain pipelines or processess (manual or automated).
+
+If you are interested in knowing more about how to extend Taiga, please check the wonderful [Extend Taiga section on this](/extend/how-to-extend-taiga/) here at Taiga Resources. You will get pointers to the API, CSV exports, Webhooks, and how to import/export Taiga projects.
