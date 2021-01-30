@@ -4,17 +4,11 @@ date: 2021-01-12T07:27:41+02:00
 draft: false
 slug: "introscrum"
 type: "featured"
-# Order in Home
-order: 2
-
-# post thumb
+order_home: 2
+order: 1
 image: "images/Scrum_backlog.png"
 thumbnail: "images/Scrum_backlog.png"
-
-# meta description
 description: "Predictable rhythm based on team commitment"
-
-# taxonomies
 categories:
   - "scrum"
 ---

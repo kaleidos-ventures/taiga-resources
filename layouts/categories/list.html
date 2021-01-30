@@ -7,7 +7,7 @@
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
           {{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "faq") }}
-          {{ range $paginator.Pages }}
+          {{ range sort $paginator.Pages ".Params.order" }}
           {{ .Render "post" }}
           {{ end }}
         </div>

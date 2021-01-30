@@ -3,14 +3,9 @@ title: "Scrum, the dark side"
 date: 2020-10-05T11:27:41+02:00
 draft: false
 slug: "scrumdarkside"
-
-# post thumb
 image: "images/Scrum_backlog_dark.jpg"
-
-# meta description
 description: "Organic flow of work"
-
-# taxonomies
+order: 2
 categories:
   - "scrum"
 ---

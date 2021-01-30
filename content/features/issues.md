@@ -3,20 +3,11 @@ title: "Your crash course into Issues Module"
 date: 2021-01-12T07:27:41+02:00
 draft: false
 slug: "introissues"
-
-# post type
 type: "featured"
-
-# Order in Home
-order: 3
-
-# post thumb
+order_home: 3
+order: 1
 image: "images/issues.jpg"
-
-# meta description
 description: "Your effective filtered list of lots of things to do"
-
-# taxonomies
 categories:
   - "modules"
 ---

@@ -3,19 +3,10 @@ title: "The 5-min Kanban module overview"
 date: 2020-10-05T11:27:41+02:00
 slug: "5minkanban"
 draft: false
-
 type: "featured"
-
-# Order in Home
-order: 1
-
-# post thumb
+order_home: 1
 image: "images/KANBAN_test10.jpg"
-
-# meta description
 description: "Organic flow of work"
-
-# taxonomies
 categories:
   - "kanban"
 ---

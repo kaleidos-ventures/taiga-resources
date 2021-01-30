@@ -3,14 +3,9 @@ title: "The Epics/Wiki/Meetup, icing on the cake"
 date: 2021-01-11T07:27:41+02:00
 draft: false
 slug: "epicswikimeetup"
-
-# post thumb
 image: "images/variousmodules.png"
-
-# meta description
 description: "Those little extras that can make a huge different to you project"
-
-# taxonomies
+order: 2
 categories:
   - "modules"
 ---
