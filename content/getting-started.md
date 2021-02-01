@@ -78,7 +78,7 @@ What's a tool without account settings where you can personalise your platform e
 
 ### Profile view
 
-Taiga has an additional section to get a **multiproject view** where you can find and list everything that is accessible to you. Simply click on your avatar and you access your personal profile section where you can check from what your personal *bio** looks like for people that might have access to it to all sorts of *information on your activities and relevant content**.
+Taiga has an additional section to get a **multiproject view** where you can find and list everything that is accessible to you. Simply click on your avatar and you access your personal profile section where you can check from what your personal *bio* looks like for people that might have access to it to all sorts of **information on your activities and relevant content**.
 
 {{< figure src="/images/profiletaskswatched.png" caption="One of the many lists and filters under your profile, watched tasks in this case" alt="One of the many lists and filters under your profile, watched tasks in this case" width="100%" class="articlefigure"  >}}
 
