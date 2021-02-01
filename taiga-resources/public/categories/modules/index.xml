@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>modules on Taiga Resources</title>
+    <link>https://taiga-resources.kaleidos.net/categories/modules/</link>
+    <description>Recent content in modules on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Jan 2021 07:27:41 +0200</lastBuildDate><atom:link href="https://taiga-resources.kaleidos.net/categories/modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your crash course into Issues Module</title>
+      <link>https://taiga-resources.kaleidos.net/features/introissues/</link>
+      <pubDate>Tue, 12 Jan 2021 07:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/features/introissues/</guid>
+      <description>If you&amp;rsquo;re after a multipurpose and flexible to-do list Taiga module, check Issues.</description>
+    </item>
+    
+    <item>
+      <title>issues: Nemo enim ipsam voluptatem quia voluptas?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/faqs-fake-5/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/faqs-fake-5/</guid>
+      <description>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</description>
+    </item>
+    
+    <item>
+      <title>issues: Neque porro quisquam est?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/faqs-fake-6/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/faqs-fake-6/</guid>
+      <description>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</description>
+    </item>
+    
+    <item>
+      <title>issues: Sed ut perspiciatis unde omnis?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/faqs-fake-4/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/faqs-fake-4/</guid>
+      <description>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,6 +4,8 @@ date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
   - "Extend Taiga"
+thumbnail: "/images/csv-reports.png"
+thumbnail_home: "/images/csv-reports.png"
 ---
 
 In Taiga you can make reports with some data and graph about your projects. To do that you can use your favorite spreadsheet app and the information about your user stories, tasks and issues in csv (*comma-separated values*) format.

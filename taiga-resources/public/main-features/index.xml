@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Main-features on Taiga Resources</title>
+    <link>https://examplesite.com/main-features/</link>
+    <description>Recent content in Main-features on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 11:27:41 +0200</lastBuildDate>
+    
+	<atom:link href="https://examplesite.com/main-features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Customization</title>
+      <link>https://examplesite.com/main-features/customization/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://examplesite.com/main-features/customization/</guid>
+      <description>Page for Customization</description>
+    </item>
+    
+    <item>
+      <title>Issues</title>
+      <link>https://examplesite.com/main-features/issues/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://examplesite.com/main-features/issues/</guid>
+      <description>Page for Issues</description>
+    </item>
+    
+    <item>
+      <title>KANBAN</title>
+      <link>https://examplesite.com/main-features/kanban/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://examplesite.com/main-features/kanban/</guid>
+      <description>Page for KANBAN</description>
+    </item>
+    
+    <item>
+      <title>SCRUM</title>
+      <link>https://examplesite.com/main-features/scrum/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://examplesite.com/main-features/scrum/</guid>
+      <description>Page for SCRUM</description>
+    </item>
+    
+  </channel>
+</rss>

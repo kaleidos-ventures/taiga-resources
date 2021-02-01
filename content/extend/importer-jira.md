@@ -4,6 +4,8 @@ date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
   - "Extend Taiga"
+thumbnail: "images/import-jira.png"
+thumbnail_home: "images/import-jira.png"
 ---
 
 ### Important notice about Jira releases and Taiga compatibility

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contributions on Taiga Resources</title>
+    <link>https://taiga-resources.kaleidos.net/contributions/</link>
+    <description>Recent content in Contributions on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 11:27:09 +0200</lastBuildDate><atom:link href="https://taiga-resources.kaleidos.net/contributions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Can I Contribute</title>
+      <link>https://taiga-resources.kaleidos.net/contributions/how-can-i-contribute/</link>
+      <pubDate>Mon, 05 Oct 2020 12:56:39 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/contributions/how-can-i-contribute/</guid>
+      <description>How can I contribute</description>
+    </item>
+    
+  </channel>
+</rss>

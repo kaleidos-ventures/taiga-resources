@@ -4,6 +4,8 @@ date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
   - "Extend Taiga"
+thumbnail: "images/import-github.png"
+thumbnail_home: "images/import-github.png"
 ---
 
 ### How I import a project from Github?

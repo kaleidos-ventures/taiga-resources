@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>transfer on Taiga Resources</title>
+    <link>https://taiga-resources.kaleidos.net/categories/transfer/</link>
+    <description>Recent content in transfer on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 11:27:17 +0200</lastBuildDate>
+    
+	<atom:link href="https://taiga-resources.kaleidos.net/categories/transfer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Can I transfer the ownership of my blocked tree.taiga.io project?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/transfer-blockedproject/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/transfer-blockedproject/</guid>
+      <description>Transferring the project ownership of a blocked project might be an unexpected burden to the transferee so we would like to avoid that at all costs.</description>
+    </item>
+    
+  </channel>
+</rss>

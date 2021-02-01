@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Taiga Resources</title>
+    <link>https://taiga-resources.kaleidos.net/categories/</link>
+    <description>Recent content in Categories on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jan 2021 00:27:17 +0200</lastBuildDate><atom:link href="https://taiga-resources.kaleidos.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>customisation</title>
+      <link>https://taiga-resources.kaleidos.net/categories/customisation/</link>
+      <pubDate>Thu, 21 Jan 2021 00:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/categories/customisation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modules</title>
+      <link>https://taiga-resources.kaleidos.net/categories/modules/</link>
+      <pubDate>Tue, 12 Jan 2021 07:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/categories/modules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scrum</title>
+      <link>https://taiga-resources.kaleidos.net/categories/scrum/</link>
+      <pubDate>Tue, 12 Jan 2021 07:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/categories/scrum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kanban</title>
+      <link>https://taiga-resources.kaleidos.net/categories/kanban/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/categories/kanban/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

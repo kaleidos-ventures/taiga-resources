@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Taiga Resources</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="this is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://taiga-resources.kaleidos.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://taiga-resources.kaleidos.net/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://taiga-resources.kaleidos.net">
+        <img class="img-fluid" src="https://taiga-resources.kaleidos.net/images/logo.png" alt="Taiga Resources">
+        <h1 class="text-logo">TAIGA <div>RESOURCES</div></h1>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <a class="navbar-brand desktop-view" href="https://taiga-resources.kaleidos.net">
+          <img class="img-fluid" src="https://taiga-resources.kaleidos.net/images/logo.png" alt="Taiga Resources">
+          <h1 class="text-logo">TAIGA <div>RESOURCES</div></h1>
+        </a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.taiga.io/" target="_blank">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://tree.taiga.io" target="_blank">Taiga</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://taiga-resources.kaleidos.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div id="search-results-count">
+        </div>
+        <div id="search-results">
+        </div>
+        <script>
+          var hugoOptions = {
+            noResults: "https:\/\/taiga-resources.kaleidos.net\/images\/no-results.png"
+          };
+        </script>
+        <script id="search-result-count-template" type="text/x-js-template">
+          <div><p class="num-results">${numResult} ${resultText} for "${searchQuery}"</p></div>
+        </script>
+        <script id="search-result-template" type="text/x-js-template">
+          <div class="py-4 border-bottom" id="summary-${key}">
+            <h4><a href="${link}">${title}</a></h4>
+            <p>${snippet}</p>
+            ${ isset tags }<p>Tags: ${tags}</p>${ end }
+            ${ isset categories }<p>Categories: ${categories}</p>${ end }
+          </div>
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>NY, USA / Madrid, Spain</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:info@taiga.io"><i
+                class="ti-email mr-3 text-primary"></i>info@taiga.io</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/taigaio" target="_blank">Twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/taigaio" target="_blank">Github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/company/taigaio/" target="_blank">Linkedin</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://groups.google.com/d/forum/taigaio" target="_blank">Google Groups</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/customisation">Customisation</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/kanban">Kanban</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/modules">Modules</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/scrum">Scrum</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+            href="/faqs/">FAQ</a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://tree.taiga.io" target="_blank">Taiga</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.taiga.io/" target="_blank">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.taiga.io/code-of-conduct" target="_blank">Code of conduct</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | © Copyright 2020 Taiga Agile LLC. | <a class="text-dark ml-10" href="#" target="_blank">About Taiga license</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://taiga-resources.kaleidos.net/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://taiga-resources.kaleidos.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/slick/slick.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/mark.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://taiga-resources.kaleidos.net/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script type="text/javascript">
+  window.addEventListener("load", function(event) {
+    const hash = window.location.hash.substr(1);
+    if (hash){
+      $(`#${hash} .collapse`).collapse('show');
+    }
+  });
+</script></body>
+</html>

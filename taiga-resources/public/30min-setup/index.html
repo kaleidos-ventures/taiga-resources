@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Taiga Resources</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://taiga-resources.kaleidos.net/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://taiga-resources.kaleidos.net/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://taiga-resources.kaleidos.net/images/favicon.png " type="image/x-icon">
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://taiga-resources.kaleidos.net">
+        <img class="img-fluid" src="https://taiga-resources.kaleidos.net/images/logo.png" alt="Taiga Resources">
+        <h1 class="text-logo">TAIGA <div>RESOURCES</div></h1>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <a class="navbar-brand desktop-view" href="https://taiga-resources.kaleidos.net">
+          <img class="img-fluid" src="https://taiga-resources.kaleidos.net/images/logo.png" alt="Taiga Resources">
+          <h1 class="text-logo">TAIGA <div>RESOURCES</div></h1>
+        </a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://blog.taiga.io/" target="_blank">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://tree.taiga.io" target="_blank">Taiga</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        <div class="search pl-lg-4">
+          <button id="searchOpen" class="search-btn"><i class="ti-search"></i></button>
+          <div class="search-wrapper">
+            <form action="https://taiga-resources.kaleidos.net/search" class="h-100">
+              <input class="search-box px-4" id="search-query" name="s" type="search" placeholder="Type & Hit Enter...">
+            </form>
+            <button id="searchClose" class="search-close"><i class="ti-close text-dark"></i></button>
+          </div>
+        </div>
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        
+        <h2>30min Setup</h2>
+        <div class="mb-3 post-meta">
+        </div>
+        
+        <img src="https://taiga-resources.kaleidos.net/images/scrumdarkside.jpeg" class="img-fluid w-100 mb-4 border-img" alt="30min Setup">
+        
+        <div class="content mb-5">
+          <p>This is the easiest and <strong>recommended</strong> way to run Taiga in production.
+This document explains how to deploy a full Taiga service for a production environment with <strong>docker</strong>.</p>
+<h3 id="requirements-and-caveats">Requirements and caveats</h3>
+<p>Prior to start the installation, ensure you have installed:</p>
+<ul>
+<li><strong>docker</strong></li>
+<li><strong>docker-compose</strong></li>
+</ul>
+<p>Additionally, it&rsquo;s necessary to have familiarity with Docker, docker-compose and Docker repositories.</p>
+<h3 id="get-repository">Get repository</h3>
+<p>Clone <a href="https://github.com/taigaio/taiga-docker">this repository</a>.</p>
+<pre><code>$ cd taiga-docker/
+$ git checkout stable
+</code></pre><h3 id="configuration">Configuration</h3>
+<p>There are two options to configurate taiga-docker, a simple and a complex configuration:</p>
+<h4 id="simple-configuration">Simple configuration:</h4>
+<p>This configuration is likely to suit what you need. Edit environment variables in <strong>docker-compose.yml</strong> and <strong>docker-compose-inits.yml</strong>. Have in mind that some of the variables are in both files, and you need to edit both.</p>
+<h5 id="taiga-db">taiga-db</h5>
+<p>This service is for configuring the database.</p>
+<p><code>POSTGRES_DB</code>, <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code> vars will be used to create the database for Taiga.</p>
+<hr>
+<p>These vars should have the same values as <strong>taiga-back</strong> vars.</p>
+<hr>
+<h5 id="taiga-back-and-taiga-async">taiga-back and taiga-async</h5>
+<p>This services are for the REST API endpoints and the async tasks respectively.</p>
+<h6 id="database-settings">Database settings:</h6>
+<p><code>POSTGRES_DB</code>, <code>POSTGRES_USER</code>, <code>POSTGRES_PASSWORD</code> will be used to connect to the Taiga database.</p>
+<hr>
+<p>These vars should have the same values as <strong>taiga-db</strong> service vars.</p>
+<hr>
+<p><code>POSTGRES_HOST</code> is where the database is set. By default, it&rsquo;s meant to be in the same host as the database service so it uses internal docker names.</p>
+<h6 id="taiga-settings">Taiga settings:</h6>
+<p><code>TAIGA_SECRET_KEY</code> is the secret key of Taiga. Should be the same as this var in <strong>taiga-events</strong> and <strong>taiga-async</strong>.
+Besides, this should have the same value of <code>SECRET_KEY</code> in <strong>taiga-protected</strong>.</p>
+<p><code>TAIGA_SITES_SCHEME</code>, <code>TAIGA_SITES_DOMAIN</code> should have the url where this is served: https[://]taiga.mycompany.com</p>
+<h6 id="registration-settings">Registration Settings:</h6>
+<p><code>PUBLIC_REGISTER_ENABLED</code> to allow a public register when you configure this variable to &ldquo;True&rdquo;. By default is &ldquo;False&rdquo;.
+Should be the same as this var in <strong>taiga-front</strong>.</p>
+<h6 id="telemetry-settings">Telemetry Settings:</h6>
+<p>Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.
+<code>ENABLE_TELEMETRY</code> could be opt out by setting this variable to &ldquo;False&rdquo;. By default is &ldquo;True&rdquo;.</p>
+<h6 id="email-settings">Email Settings:</h6>
+<p>By default, email is configured with the console backend, which means that the emails will be shown in the stdout.
+If you have an smtp service, uncomment the &ldquo;Email settings&rdquo; section in <strong>docker-compose.yml</strong> and configure those environment variables:</p>
+<p><code>DEFAULT_FROM_EMAIL</code>, <code>EMAIL_HOST</code>, <code>EMAIL_PORT</code>, <code>EMAIL_HOST_USER</code>, <code>EMAIL_HOST_PASSWORD</code>, <code>EMAIL_USE_TLS</code>, <code>EMAIL_USE_SSL</code>.
+Uncomment <code>EMAIL_BACKEND</code> variable, but do not modify unless you know what you&rsquo;re doing.</p>
+<h6 id="rabbit-settings">Rabbit settings:</h6>
+<p><code>RABBITMQ_USER</code>, <code>RABBITMQ_PASS</code> are used to leave messages in the rabbitmq services. Those variables should be the same as in <strong>taiga-async-rabbitmq</strong> and <strong>taiga-events-rabbitmq</strong>.</p>
+<h6 id="github-settings">Github settings:</h6>
+<p><code>GITHUB_API_CLIENT_ID</code>, <code>GITHUB_API_CLIENT_SECRET</code> used for login with Github.
+Get these in your profile <a href="https://github.com/settings/apps">https://github.com/settings/apps</a> or in your organization profile <a href="https://github.com/organizations/%7BORGANIZATION-SLUG%7D/settings/applications">https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications</a></p>
+<h6 id="gitlab-settings">Gitlab settings:</h6>
+<p><code>GITLAB_API_CLIENT_ID</code>, <code>GITLAB_API_CLIENT_SECRET</code>, <code>GITLAB_URL</code> used for login with GitLab.
+Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications</p>
+<h6 id="importers">Importers:</h6>
+<p>It&rsquo;s possible to configure different platforms to import projects from them. Make sure that <code>ENABLE_XXXX_IMPORTER</code> envvar is configured in both taiga-back (x-environment) and taiga-front. In taiga-back environment variables, it&rsquo;s also necessary to configure different settings depending on the importer.</p>
+<h5 id="taiga-async-rabbitmq">taiga-async-rabbitmq</h5>
+<p>Configure this service to generate messages from rabbitmq for <strong>taiga-async</strong>.</p>
+<p><code>RABBITMQ_ERLANG_COOKIE</code> is the secret erlang cookie.</p>
+<p><code>RABBITMQ_DEFAULT_USER</code>, <code>RABBITMQ_DEFAULT_PASS</code>, <code>RABBITMQ_DEFAULT_VHOST</code> will be used to connect to rabbitmq.</p>
+<h5 id="taiga-front">taiga-front</h5>
+<p>This service is for configuring the frontend application.</p>
+<h6 id="taiga-settings-1">Taiga settings:</h6>
+<p><code>TAIGA_URL</code> is where this Taiga instance should be served. It should be the same as <code>TAIGA_SITES_SCHEME</code>://<code>TAIGA_SITES_DOMAIN</code>.</p>
+<p><code>TAIGA_WEBSOCKETS_URL</code> to connect to the events. This should have the same value as <code>TAIGA_SITES_DOMAIN</code>, ie: ws://taiga.mycompany.com</p>
+<h6 id="registration-settings-1">Registration Settings:</h6>
+<p><code>PUBLIC_REGISTER_ENABLED</code> to allow a public register, configure this variable to &ldquo;true&rdquo;. By default is &ldquo;false&rdquo;.
+Should be the same as this var in <strong>taiga-back</strong>.</p>
+<h6 id="github-settings-1">Github settings:</h6>
+<p><code>GITHUB_CLIENT_ID</code> used for login with Github.
+Get these in your profile <a href="https://github.com/settings/apps">https://github.com/settings/apps</a> or in your organization profile <a href="https://github.com/organizations/%7BORGANIZATION-SLUG%7D/settings/applications">https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications</a></p>
+<h6 id="gitlab-settings-1">Gitlab settings:</h6>
+<p><code>GITLAB_CLIENT_ID</code>, <code>GITLAB_URL</code> used for login with GitLab.
+Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications</p>
+<h6 id="importers-1">Importers:</h6>
+<p>It&rsquo;s possible to configure different platforms to import projects from them. Make sure that <code>ENABLE_XXXX_IMPORTER</code> envvar is configured in both <strong>taiga-back</strong> (x-environment) and <strong>taiga-front</strong>.</p>
+<h5 id="taiga-protected">taiga-protected</h5>
+<p>Configure this service and protects the attachments from external downloads.</p>
+<p><code>SECRET_KEY</code> should be the same as this var in <strong>taiga-back</strong>.</p>
+<p><code>MAX_AGE</code> variable does that the attachments will be accesible with a token during a maximum (in seconds). After that, the token will expire.</p>
+<h5 id="taiga-events">taiga-events</h5>
+<p>Configure this service for Taiga websocket server which allows taiga-front to show realtime changes in the backlog, taskboard, kanban and issues listing.</p>
+<p><code>RABBITMQ_USER</code>, <code>RABBITMQ_PASS</code> are used to read messages from rabbitmq.</p>
+<p><code>TAIGA_SECRET_KEY</code> should be the same as this var in <strong>taiga-back</strong>.</p>
+<h5 id="taiga-events-rabbitmq">taiga-events-rabbitmq</h5>
+<p>Configure this service to generate messages from rabbitmq for <strong>taiga-events</strong>.</p>
+<p><code>RABBITMQ_ERLANG_COOKIE</code> is the secret erlang cookie.</p>
+<p><code>RABBITMQ_DEFAULT_USER</code>, <code>RABBITMQ_DEFAULT_PASS</code>, <code>RABBITMQ_DEFAULT_VHOST</code> vars will be used to connect to rabbitmq.</p>
+<h4 id="complex-configuration">Complex configuration:</h4>
+<p>In a complex configuration you ignore the environment variables in <strong>docker-compose.yml</strong> or <strong>docker-compose-inits.yml</strong>.</p>
+<h5 id="map-a-configpy-file">Map a config.py file</h5>
+<p>From <a href="https://github.com/taigaio/taiga-back">taiga-back</a> download the file <strong>settings/config.py.prod.example</strong> and rename it:</p>
+<pre><code>mv settings/config.py.prod.example settings/config.py
+</code></pre><p>Edit it with your own configuration:</p>
+<ul>
+<li>connection to PostgreSQL</li>
+<li>connection to RabbitMQ for <strong>taiga-events</strong> and <strong>taiga-async</strong></li>
+<li>credentials for email</li>
+<li>Enable/disable anonymous telemetry</li>
+<li>Enable/disable public registration</li>
+</ul>
+<p>Check as well the rest of the configuration if you need to enable some advanced features.</p>
+<p>Map the file into <strong>/taiga-back/settings/config.py</strong>. Have in mind that you have to map it both in <strong>docker-compose.yml</strong> and <strong>docker-compose-inits.yml</strong>. You can check the <strong>x-volumes</strong> section in <strong>docker-compose.yml</strong> with an example.</p>
+<h5 id="map-a-confjson-file">Map a conf.json file</h5>
+<p>From <a href="https://github.com/taigaio/taiga-front">taiga-front</a> download the file <strong>dist/config.example.json</strong> and rename it:</p>
+<pre><code>mv dist/config.example.json dist/config.json
+</code></pre><p>Edit it with your own configuration and map the file into <strong>/taiga-front/dist/config.py</strong>.</p>
+<h3 id="configure-an-admin-user">Configure an admin user</h3>
+<pre><code>$ docker-compose up -d
+
+$ docker-compose -f docker-compose.yml -f docker-compose-inits.yml run --rm taiga-manage createsuperuser
+</code></pre><h3 id="up-and-running">Up and running</h3>
+<p>Once everything has been installed, launch all the services and check the result:</p>
+<pre><code>$ docker-compose up -d
+</code></pre><p>Go to <strong>http://localhost:9000</strong> and check your Taiga Platform is available.</p>
+<h3 id="configure-the-proxy">Configure the proxy</h3>
+<p>Your host configuration needs to make a proxy to <strong>http://localhost:9000</strong>. Example:</p>
+<pre><code>server {
+  server_name taiga.mycompany.com;
+
+  ...
+
+  location / {
+    proxy_set_header Host $http_host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Scheme $scheme;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_redirect off;
+    proxy_pass http://localhost:9000/;
+  }
+}
+</code></pre>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Contact Me</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><i class="ti-location-pin mr-3 text-primary"></i>NY, USA / Madrid, Spain</li>
+          <li class="mb-3"><a class="text-dark" href="mailto:info@taiga.io"><i
+                class="ti-email mr-3 text-primary"></i>info@taiga.io</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Social Contacts</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://twitter.com/taigaio" target="_blank">Twitter</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://github.com/taigaio" target="_blank">Github</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.linkedin.com/company/taigaio/" target="_blank">Linkedin</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://groups.google.com/d/forum/taigaio" target="_blank">Google Groups</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Categories</h6>
+        <ul class="list-unstyled">
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/customisation">Customisation</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/kanban">Kanban</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/modules">Modules</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+              href="/categories/scrum">Scrum</a>
+          </li>
+          <li class="mb-3"><a class="text-dark"
+            href="/faqs/">FAQ</a>
+        </li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6 mb-5">
+        <h6 class="mb-4">Quick Links</h6>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-dark" href="https://tree.taiga.io" target="_blank">Taiga</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://blog.taiga.io/" target="_blank">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-dark" href="https://www.taiga.io/code-of-conduct" target="_blank">Code of conduct</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-12 border-top py-4 text-center">
+        | © Copyright 2020 Taiga Agile LLC. | <a class="text-dark ml-10" href="#" target="_blank">About Taiga license</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var indexURL = "https://taiga-resources.kaleidos.net/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://taiga-resources.kaleidos.net/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/slick/slick.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/fuse.min.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/mark.js"></script>
+
+<script src="https://taiga-resources.kaleidos.net/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://taiga-resources.kaleidos.net/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+<script type="text/javascript">
+  window.addEventListener("load", function(event) {
+    const hash = window.location.hash.substr(1);
+    if (hash){
+      $(`#${hash} .collapse`).collapse('show');
+    }
+  });
+</script></body>
+</html>

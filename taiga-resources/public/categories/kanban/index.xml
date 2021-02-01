@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kanban on Taiga Resources</title>
+    <link>https://taiga-resources.kaleidos.net/categories/kanban/</link>
+    <description>Recent content in kanban on Taiga Resources</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Oct 2020 11:27:41 +0200</lastBuildDate><atom:link href="https://taiga-resources.kaleidos.net/categories/kanban/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kanban, the dark side</title>
+      <link>https://taiga-resources.kaleidos.net/features/kanbandarkside/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/features/kanbandarkside/</guid>
+      <description>This is content that goes a bit beyond Taiga as an Agile platform and tries to convey a self-conscious approach to Kanban.</description>
+    </item>
+    
+    <item>
+      <title>The 5-min Kanban module overview</title>
+      <link>https://taiga-resources.kaleidos.net/features/5minkanban/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:41 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/features/5minkanban/</guid>
+      <description>Welcome to a lean method to manage and improve work across human systems, welcome to Kanban.</description>
+    </item>
+    
+    <item>
+      <title>kanban: Duis aute irure dolor in reprehenderit?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/faqs-fake-3/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/faqs-fake-3/</guid>
+      <description>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+    </item>
+    
+    <item>
+      <title>kanban: Ut enim ad minim veniam?</title>
+      <link>https://taiga-resources.kaleidos.net/faqs/faqs-fake-2/</link>
+      <pubDate>Mon, 05 Oct 2020 11:27:17 +0200</pubDate>
+      
+      <guid>https://taiga-resources.kaleidos.net/faqs/faqs-fake-2/</guid>
+      <description>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,7 +4,7 @@ date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
   - "extend taiga"
-thumbnail: "images/contributions.png"
+thumbnail: "images/extend-taiga.png"
 thumbnail_home: "images/contributions.png"
 ---
 
