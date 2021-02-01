@@ -6,10 +6,19 @@
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="row">
-          {{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "faq") }}
-          {{ range sort $paginator.Pages ".Params.order" }}
-          {{ .Render "post" }}
+          {{ $var := delimit (slice .URL) "/" }}
+          {{ if eq $var "/categories/" }}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "faq") }}
+            {{ range sort $paginator.Pages ".Params.order" }}
+              {{ .Render "categories" }}
+            {{ end }}
+          {{ else }}
+            {{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "faq") }}
+            {{ range sort $paginator.Pages ".Params.order" }}
+              {{ .Render "post" }}
+            {{ end }}
           {{ end }}
+          
         </div>
       </div>
       <!-- sidebar -->
