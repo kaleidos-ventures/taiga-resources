@@ -4,7 +4,8 @@ date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
   - "Extend Taiga"
-thumbnail: "images/contributions.png"
+thumbnail: "images/contributions-thumbnail.png"
+thumbnail_home: "images/contributions.png"
 ---
 
 There are many different ways to contribute to Taiga's platform, from patches, to documentation and of course, developing new tools Taiga related, just find the one that best fits your skills. Check out our detailed [contribution guide]({{< ref "how-can-i-contribute.md" >}}).
