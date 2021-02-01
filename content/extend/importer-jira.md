@@ -3,7 +3,7 @@ title: "Jira Importer"
 date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
-  - "extend taiga"
+  - "Extend Taiga"
 ---
 
 ### Important notice about Jira releases and Taiga compatibility

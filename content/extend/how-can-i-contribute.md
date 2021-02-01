@@ -3,9 +3,10 @@ title: "How Can I Contribute"
 slug: how-can-i-contribute
 date: 2020-10-05T11:22:38+02:00
 draft: false
+categories:
+  - "Extend Taiga"
 image: ""
 thumbnail: ""
-
 ---
 
 There are many different ways to contribute to Taiga's development, just find the one that best fits with your skills. Examples of contributions we would love to receive include:

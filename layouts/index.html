@@ -31,18 +31,14 @@
 </section>
 <!-- /why taiga -->
 
-<!-- Getting started, 30min setup and contributions -->
+<!-- Getting started, 30min setup and extend taiga-->
 <section>
   <div class="container">
     <div class="row">
       {{ with .Site.GetPage "/getting-started" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Thumbnail }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
-          {{ else }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
-          {{ end }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.thumbnail_home | absURL }}');"></div>
           <div class="media-body">
             <div class="mb-3 post-meta">
             </div>
@@ -55,11 +51,7 @@
       {{ with .Site.GetPage "/30min-setup" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Thumbnail }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
-          {{ else }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
-          {{ end }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.thumbnail_home | absURL }}');"></div>
           <div class="media-body">
             <div class="mb-3 post-meta">
             </div>
@@ -72,11 +64,7 @@
       {{ with .Site.GetPage "/how-to-extend-taiga" }}
       <div class="col-lg-4 small-post-border">
         <article class="media">
-          {{ if .Params.Thumbnail }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Thumbnail | absURL }}');"></div>
-          {{ else }}
-          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.Image | absURL }}');"></div>
-          {{ end }}
+          <div class="recent-post-thumb mr-3" style="background-image: url('{{ .Params.thumbnail_home | absURL }}');"></div>
           <div class="media-body">
             <div class="mb-3 post-meta">
             </div>
@@ -89,7 +77,7 @@
     </div>
   </div>
 </section>
-<!-- /getting started, 30min setup and contributions -->
+<!-- /getting started, 30min setup and extend taiga -->
 
 <!-- Featured posts -->
 <section class="section pb-0">

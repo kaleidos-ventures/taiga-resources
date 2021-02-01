@@ -5,6 +5,7 @@ draft: false
 categories:
   - "extend taiga"
 thumbnail: "images/contributions.png"
+thumbnail_home: "images/contributions.png"
 ---
 
 Taiga offers lots of features and [customisation options]({{< ref "/categories/customisation" >}}) that cover many different use cases and users. On top of that, Taiga is easily extensible in many ways, and you can work with Taiga information to add extra functionalities to your projects.

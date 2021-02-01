@@ -22,7 +22,7 @@ First and foremost, Taiga is **Open Source**. If you value the flexibility this 
 
 Taiga is all about team collaboration where **everyone's voice counts**. Whether you're a hardcore techie, a designer, a lawyer, a comms specialist or just planning your wedding, Taiga makes sure that, as a platform, it stays out of the way, and lets you decide what to use now and what to leave for your future selves. Start simple and see where the project needs lead you and your team.
 
-Taiga tries hard to ensure that whether implicitely or explicitely, the **agile and lean principles** govern your daily work. When we're about to develop any new Taiga feature we always ask ourselves "what could go wrong with this?". If we find it too easy for users to embrace the dark side of a feature, then we go back to the drawing board. Sometimes, the absence of a particular feature brings the most compelling benefit. 
+Taiga tries hard to ensure that whether implicitely or explicitely, the **agile and lean principles** govern your daily work. When we're about to develop any new Taiga feature we always ask ourselves "what could go wrong with this?". If we find it too easy for users to embrace the dark side of a feature, then we go back to the drawing board. Sometimes, the absence of a particular feature brings the most compelling benefit.
 
 After all, Taiga is agile project management made easy, intuitive and effective.
 

@@ -4,6 +4,7 @@ date: 2020-10-05T11:22:38+02:00
 draft: false
 image: "/images/scrumdarkside.jpeg"
 thumbnail: "/images/30m.png"
+thumbnail_home: "/images/30m.png"
 ---
 
 This is the easiest and **recommended** way to run Taiga in production. This document explains how to deploy a full Taiga service for a production environment with **docker**.
