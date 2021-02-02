@@ -13,7 +13,7 @@ categories:
 ---
 Sure! The Taiga community is awesome and helps us translate the Taiga user interface into more than 20 languages.
 
-To see if your language is supported, simply go to [https://tree.taiga.io/user-settings/user-profile](EDIT PROFILE) and pick your choice under **Language** drop down.
+To see if your language is supported, simply go to [EDIT PROFILE](https://tree.taiga.io/user-settings/user-profile) and pick your choice under **Language** drop down.
 
 If the language is meant for Right-To-Left setup, it will also activate this mode.
 
