@@ -55,6 +55,11 @@ unsafe= true
   URL = "https://tree.taiga.io"
   weight = 3
 
+  [[menu.main]]
+  name = "Technical Documentation"
+  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  weight = 4
+
   # footer menu
   [[menu.footer]]
   name = "Taiga"
