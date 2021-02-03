@@ -5,7 +5,7 @@ date: 2021-02-03T14:27:17+02:00
 draft: false
 type: "faq"
 main: false
-order: 4
+order: 3
 
 # taxonomies
 categories: null
