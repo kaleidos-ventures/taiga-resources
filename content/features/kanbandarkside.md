@@ -46,7 +46,7 @@ This freedom is individually exercised and collectively enjoyed.
 
 In Agile (and so it applies to Kanban) *waste* is undesired sub-product of a development process that reduces future delivered value, increments technical debt and introduces friction in team dynamics. It leads to frustration, disorientation and lack of predictability.
 
-**Examples of waste:** meetings with almost no value for at least one participant. Many and undistinguishable communication channels. Context switching. Rushed work item closure. Chinese whispers around key decisions. Fine-grain work item effort estimation. Lack of peer review or leaving all quality controls to a team member. Long term planning.
+**Examples of waste:** meetings with almost no value for at least one participant. Many and undistinguishable communication channels. Context switching. Rushed work item closure. Misalignment around key decisions. Fine-grain work item effort estimation. Lack of peer review or leaving all quality controls to a team member. Long term planning.
 
 Kanban is also faced with the **waste issue**. The way Kanban tackles with it is to have a clear set of policies that can be enforced by any individual at any time without giving it much thought. Kanban streamlines the decision making process and functions as a set of triggers and reactions.
 
