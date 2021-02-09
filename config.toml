@@ -12,6 +12,37 @@ unsafe= true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+noResults = "images/no-results.png"
+home = "Home"
+
+# Meta data
+description = "From Getting Started to How to Extend our agile project management software"
+
+# Contact Information
+email = "info@taiga.io"
+location = "NY, USA / Madrid, Spain"
+# copyright
+copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
+
+########################## Twitter cards ###########################
+# title and description are taken from Meta data section
+  twitterUsername = "@taigaio"
+  socialImage = "/images/twitter-card-resources-generic.png"
+  socialImageAlt = "FAQs and API docs"
+########################## Twitter cards ###########################
+
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
+
+  # search
+  [params.search]
+  enable = true
+
 ############################# Plugins ##############################
 [params.plugins]
 
@@ -75,32 +106,6 @@ unsafe= true
   name = "Code of Conduct"
   URL = "https://www.taiga.io/code-of-conduct"
   weight = 3
-
-
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-noResults = "images/no-results.png"
-home = "Home"
-# Meta data
-description = "Taiga Resources"
-author = "Themefisher"
-# Google Analitycs
-googleAnalyticsID = "Your ID"
-# Contact Information
-email = "info@taiga.io"
-location = "NY, USA / Madrid, Spain"
-# copyright
-copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
-
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = "" # use .png , .svg or .gif format
-
-  # search
-  [params.search]
-  enable = true
 
 ############################# social site ########################
 [[params.social]]

@@ -18,8 +18,11 @@
   <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   <link rel="stylesheet" href="/css/custom.css" media="screen">
 
-  {{ "<!--Favicon-->" | safeHTML }}
+  {{ "<!-- Favicon -->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }} " type="image/x-icon">
+
+  {{ "<!-- Social Metadata -->" | safeHTML }}
+  {{ partial "social_metadata.html" . }}
 
 </head>

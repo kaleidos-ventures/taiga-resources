@@ -1,0 +1,36 @@
+<!-- Configure meta and title tags -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<meta name="twitter:card" content="summary_large_image" key="twcard" />
+<meta name="twitter:creator" content="{{ $.Site.Params.TwitterUsername }}" key="twcard" />
+<meta name="twitter:site" content="{{ $.Site.Params.TwitterUsername }}" key="twhandle" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+
+{{ if .Params.Description }}
+  <meta property="og:description" content="{{ .Params.Description }}">
+  <meta name="twitter:description" content="{{ .Params.Description }}" />
+{{ else }}
+  <meta property="og:description" content="{{ $.Site.Params.Description }}">
+  <meta name="twitter:description" content="{{ $.Site.Params.Description }}" />
+{{ end }}
+
+{{ if .Params.Title }}
+  <meta property="og:title" content="{{ .Params.Title }}" key="ogtitle" />
+  <meta name="twitter:title" content="{{ .Params.Title }}">
+{{ else }}
+  <meta property="og:title" content="{{ $.Site.Title }}" key="ogtitle" />
+  <meta name="twitter:title" content="{{ $.Site.Title }}">
+{{ end }}
+
+{{ if .Params.socialImage }}
+  <meta property="og:image" content="{{ .Params.socialImage | absURL }}">
+  <meta name="twitter:image" content="{{ .Params.socialImage | absURL }}">
+  <meta name="twitter:image:alt" content="{{ .Params.socialImageAlt }}">
+{{ else }}
+  <meta property="og:image" content="{{ $.Site.Params.SocialImage | absURL }}">
+  <meta name="twitter:image" content="{{ $.Site.Params.SocialImage | absURL }}">
+  <meta name="twitter:image:alt" content="{{ $.Site.Params.SocialImageAlt }}">
+{{ end }}
+
+
