@@ -65,6 +65,8 @@ There are two options to configure taiga-docker, a simple and a more advanced co
 
 This configuration is likely to suit what you need. Edit environment variables in **docker-compose.yml** and **docker-compose-inits.yml**. Have in mind that some of the variables are in both files, and you need to edit both.
 
+When it's relevant, you'll find the configuration split into `configuration` and `customisation` sections. In `configuration` there are the mandatory environment variable s that you should take special care as they come with default values. In `customisation` there are the optional modules and configurations, which will be typically disabled by default and it's up to you enable and configure them.
+
 ##### taiga-db
 
 This service is for configuring the database.
@@ -110,6 +112,12 @@ More info about this environment variables [here](https://docs.djangoproject.com
 `PUBLIC_REGISTER_ENABLED` to allow a public register when you configure this variable to "True". By default is "False".
 Should be the same as this var in **taiga-front**.
 
+---
+
+Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn't been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.
+
+---
+
 ###### Telemetry Settings:
 
 Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.
@@ -129,13 +137,17 @@ Uncomment `EMAIL_BACKEND` variable, but do not modify unless you know what you'r
 
 ###### Github settings:
 
-`GITHUB_API_CLIENT_ID`, `GITHUB_API_CLIENT_SECRET` used for login with Github.
+`ENABLE_GITHUB_AUTH`, `GITHUB_API_CLIENT_ID`, `GITHUB_API_CLIENT_SECRET` used for login with Github.
 Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
 
 ###### Gitlab settings:
 
-`GITLAB_API_CLIENT_ID`, `GITLAB_API_CLIENT_SECRET`, `GITLAB_URL` used for login with GitLab.
+`ENABLE_GITLAB_AUTH`, `GITLAB_API_CLIENT_ID`, `GITLAB_API_CLIENT_SECRET`, `GITLAB_URL` used for login with GitLab.
 Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
+
+###### Slack:
+
+Set `ENABLE_SLACK` to "True" to enjoy the integration with Slack.
 
 ###### Importers:
 
@@ -164,14 +176,20 @@ This service is for configuring the frontend application.
 `PUBLIC_REGISTER_ENABLED` to allow a public register, configure this variable to "true". By default is "false".
 Should be the same as this var in **taiga-back**.
 
+---
+
+Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn't been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.
+
+---
+
 ###### Github settings:
 
-`GITHUB_CLIENT_ID` used for login with Github.
+`ENABLE_GITHUB_AUTH`, `GITHUB_CLIENT_ID` used for login with Github.
 Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
 
 ###### Gitlab settings:
 
-`GITLAB_CLIENT_ID`, `GITLAB_URL` used for login with GitLab.
+`ENABLE_GITLAB_AUTH`, `GITLAB_CLIENT_ID`, `GITLAB_URL` used for login with GitLab.
 Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
 
 ###### Importers:
