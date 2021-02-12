@@ -11,5 +11,5 @@ last_updated_date: 2019-01-21T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["docker", "integration", "auth"]
-url: "/contributions/#taiga-containers"
+url: "/extend/contributions/#taiga-containers"
 anchor: "taiga-containers"

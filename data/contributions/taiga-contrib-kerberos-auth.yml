@@ -9,5 +9,5 @@ last_updated_date: 2016-08-04T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["auth", "integration"]
-url: "/contributions/#taiga-contrib-kerberos-auth"
+url: "/extend/contributions/#taiga-contrib-kerberos-auth"
 anchor: "taiga-contrib-kerberos-auth"

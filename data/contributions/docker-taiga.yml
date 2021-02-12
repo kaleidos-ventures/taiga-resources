@@ -9,5 +9,5 @@ last_updated_date: 2020-11-07T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["docker", "integration"]
-url: "/contributions/#docker-image-for-taiga"
+url: "/extend/contributions/#docker-image-for-taiga"
 anchor: "docker-image-for-taiga"

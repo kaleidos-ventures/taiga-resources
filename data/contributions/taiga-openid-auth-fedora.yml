@@ -9,5 +9,5 @@ last_updated_date: 2016-11-21T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["auth", "integration"]
-url: "/contributions/#taiga-contrib-fas-openid-auth"
+url: "/extend/contributions/#taiga-contrib-fas-openid-auth"
 anchor: "taiga-contrib-fas-openid-auth"

@@ -9,5 +9,5 @@ last_updated_date: 2020-12-01T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["API", "integration", "python"]
-url: "/contributions/#python-taiga"
+url: "/extend/contributions/#python-taiga"
 anchor: "python-taiga"

@@ -9,5 +9,5 @@ last_updated_date: 2020-03-11T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["auth", "integration"]
-url: "/contributions/#taiga-contrib-ldap-auth"
+url: "/extend/contributions/#taiga-contrib-ldap-auth"
 anchor: "taiga-contrib-ldap-auth"

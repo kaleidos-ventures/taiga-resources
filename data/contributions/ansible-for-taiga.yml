@@ -9,5 +9,5 @@ last_updated_date: 2015-05-07T12:58:11+02:00
 integrated: false
 compatibility: ["taiga5"]
 contribution_tags: ["ansible", "integration"]
-url: "/contributions/#ansible-for-taiga"
+url: "/extend/contributions/#ansible-for-taiga"
 anchor: "ansible-for-taiga"
