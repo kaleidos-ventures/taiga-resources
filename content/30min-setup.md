@@ -9,7 +9,7 @@ thumbnail_home: "/images/30m.png"
 
 This is the easiest and **recommended** way to run Taiga in production. This document explains how to deploy a full Taiga service for a production environment with **docker**.
 
-### Requirements
+## Requirements
 
 Prior to start the installation, ensure you have installed:
 
@@ -18,7 +18,7 @@ Prior to start the installation, ensure you have installed:
 
 If you don't have docker installed, please follow installation instructions from docker.com: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/) Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
 
-### Getting started
+## Getting started
 
 Clone [this repository](https://github.com/taigaio/taiga-docker).
 
@@ -30,7 +30,7 @@ $ cd taiga-docker/
 $ git checkout stable
 ```
 
-### Start the application
+## Start the application
 
 ```
 $ ./launch-all.sh
@@ -57,176 +57,270 @@ It's developed by the same team behind Taiga. If you want to give it a try, you 
 
 If you just want to launch Taiga standalone, you can use the `launch-taiga.sh` script instead of the `launch-all.sh`.
 
-### 1. Configuration
+## Configuration and Customisation with Environment Variables
 
-There are two options to configure taiga-docker, a simple and a more advanced configuration. Pick one of the two.
+This configuration is likely to suit what you need. Edit environment variables in `docker-compose.yml` and `docker-compose-inits.yml`. Have in mind that some of the variables are in both files, and you need to edit both.
 
-#### 1.1 Simple configuration
+**Configuration** variables are in `docker-compose.yml` with default values that we strongly recommend that you change. Those variables are needed to run Taiga. Apart from this configuration, you can have some **customisation** in Taiga, that add features that are disabled by default. Find those variables in **Customisation** section and add the corresponding environment variables whenever you want to enable them.
 
-This configuration is likely to suit what you need. Edit environment variables in **docker-compose.yml** and **docker-compose-inits.yml**. Have in mind that some of the variables are in both files, and you need to edit both.
+## Configuration
 
-When it's relevant, you'll find the configuration split into `configuration` and `customisation` sections. In `configuration` there are the mandatory environment variable s that you should take special care as they come with default values. In `customisation` there are the optional modules and configurations, which will be typically disabled by default and it's up to you enable and configure them.
+### Database configuration
 
-##### taiga-db
+These vars will be used to create the database for Taiga and connect to it.
 
-This service is for configuring the database.
+**Important**: these vars should have the same values in `taiga-back` and `taiga-db`.
 
-`POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` vars will be used to create the database for Taiga.
+**Service: taiga-db**
+```
+POSTGRES_DB: taiga
+POSTGRES_USER: taiga
+POSTGRES_PASSWORD: taiga
+```
 
----
+**Service: taiga-back**
+```
+POSTGRES_DB: taiga
+POSTGRES_USER: taiga
+POSTGRES_PASSWORD: taiga
+```
 
-These vars should have the same values as **taiga-back** vars.
+### Taiga Settings
 
----
+**Service: taiga-back**
+```
+TAIGA_SECRET_KEY: taiga-back-secret-key
+TAIGA_SITES_SCHEME: http
+TAIGA_SITES_DOMAIN: localhost:9000
+```
 
-##### taiga-back and taiga-async
+**Service: taiga-events**
+```
+TAIGA_SECRET_KEY: taiga-back-secret-key
+```
 
-These services are for the REST API endpoints and the async tasks respectively.
+**Service: taiga-protected**
+```
+TAIGA_SECRET_KEY: taiga-back-secret-key
+```
 
-###### Database settings:
+**Service: taiga-front**
+```
+TAIGA_URL: "http://localhost:9000"
+TAIGA_WEBSOCKETS_URL: "ws://localhost:9000"
+```
 
-`POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD` will be used to connect to the Taiga database.
+`TAIGA_SECRET_KEY` is the secret key of Taiga. Should be the same as this var in `taiga-back`, `taiga-events` and `taiga-protected`.
+`TAIGA_URL` is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME`://`TAIGA_SITES_DOMAIN`.
+`TAIGA_WEBSOCKETS_URL` is used to connect to the events. This should have the same value as `TAIGA_SITES_DOMAIN`, ie: ws://taiga.mycompany.com.
 
----
 
-These vars should have the same values as **taiga-db** service vars.
-
----
-
-`POSTGRES_HOST` is where the database is set. By default, it's meant to be in the same host as the database service so it uses internal docker names.
-
-###### Taiga settings:
-
-`TAIGA_SECRET_KEY` is the secret key of Taiga. Should be the same as this var in **taiga-events** and **taiga-async**.
-Besides, this should have the same value of `SECRET_KEY` in **taiga-protected**.
-
-`TAIGA_SITES_SCHEME`, `TAIGA_SITES_DOMAIN` should have the url where this is served: https[://]taiga.mycompany.com
-
-###### Session Settings:
+### Session Settings
 
 You can add `SESSION_COOKIE_SECURE` and `CSRF_COOKIE_SECURE` to x-environment and change its value. By default is "True", so some browsers only accept https connections.
-More info about this environment variables [here](https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure).
+More info about these environment variables [here](https://docs.djangoproject.com/en/3.1/ref/settings/#csrf-cookie-secure).
 
-###### Registration Settings:
+**Service: taiga-back**
+```
+SESSION_COOKIE_SECURE: "False"
+CSRF_COOKIE_SECURE: "False"
+```
 
-`PUBLIC_REGISTER_ENABLED` to allow a public register when you configure this variable to "True". By default is "False".
-Should be the same as this var in **taiga-front**.
+### Email Settings
 
----
+By default, email is configured with the *console* backend, which means that the emails will be shown in the stdout. If you have an smtp service, uncomment the "Email settings" section in `docker-compose.yml` and configure those environment variables:
 
-Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn't been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.
+**Service: taiga-back**
+```
+EMAIL_BACKEND: "django.core.mail.backends.smtp.EmailBackend"
+DEFAULT_FROM_EMAIL: "no-reply@example.com"
+EMAIL_HOST: "smtp.host.example.com"
+EMAIL_PORT: 587
+EMAIL_HOST_USER: "user"
+EMAIL_HOST_PASSWORD: "password"
+EMAIL_USE_TLS: "True"
+EMAIL_USE_SSL: "True"
+```
 
----
-
-###### Telemetry Settings:
-
-Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.
-`ENABLE_TELEMETRY` could be opt out by setting this variable to "False". By default is "True".
-
-###### Email Settings:
-
-By default, email is configured with the console backend, which means that the emails will be shown in the stdout.
-If you have an smtp service, uncomment the "Email settings" section in **docker-compose.yml** and configure those environment variables:
-
-`DEFAULT_FROM_EMAIL`, `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD`, `EMAIL_USE_TLS`, `EMAIL_USE_SSL`.
 Uncomment `EMAIL_BACKEND` variable, but do not modify unless you know what you're doing.
 
-###### Rabbit settings:
+### Telemetry Settings
 
-`RABBITMQ_USER`, `RABBITMQ_PASS` are used to leave messages in the rabbitmq services. Those variables should be the same as in **taiga-async-rabbitmq** and **taiga-events-rabbitmq**.
+Telemetry anonymous data is collected in order to learn about the use of Taiga and improve the platform based on real scenarios.
 
-###### Github settings:
+**Service: taiga-back**
+```
+ENABLE_TELEMETRY: "True"
+```
 
-`ENABLE_GITHUB_AUTH`, `GITHUB_API_CLIENT_ID`, `GITHUB_API_CLIENT_SECRET` used for login with Github.
+You can opt out by setting this variable to "False". By default is "True".
+
+### Rabbit settings
+
+These variables are used to leave messages in the rabbitmq services. These variables should be the same as in `taiga-back`, `taiga-async`, `taiga-events`, `taiga-async-rabbitmq` and `taiga-events-rabbitmq`.
+
+**Service: taiga-back**
+```
+RABBITMQ_USER: taiga
+RABBITMQ_PASS: taiga
+```
+
+**Service: taiga-events**
+```
+RABBITMQ_USER: taiga
+RABBITMQ_PASS: taiga
+```
+
+**Service: taiga-async-rabbitmq**
+```
+RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
+RABBITMQ_DEFAULT_USER: taiga
+RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_VHOST: taiga
+```
+
+**Service: taiga-events-rabbitmq**
+```
+RABBITMQ_ERLANG_COOKIE: secret-erlang-cookie
+RABBITMQ_DEFAULT_USER: taiga
+RABBITMQ_DEFAULT_PASS: taiga
+RABBITMQ_DEFAULT_VHOST: taiga
+```
+
+### Taiga protected settings
+
+**Service: taiga-protected**
+```
+MAX_AGE: 360
+```
+
+The attachments will be accesible with a token during MAX_AGE (in seconds). After that, the token will expire.
+
+## Customisation
+
+All these features are disabled by default. You should add the corresponding environment variables with a proper value to enable them.
+
+### Registration Settings
+
+**Service: taiga-back**
+```
+PUBLIC_REGISTER_ENABLED: "True"
+```
+
+**Service: taiga-front**
+```
+PUBLIC_REGISTER_ENABLED: "true"
+```
+
+If you want to allow a public register, configure this variable to "True". By default is "False". Should be the same as this var in `taiga-front` and `taiga-back`.
+
+**Important**: Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn't been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.
+
+### Slack Settings
+
+**Service: taiga-back**
+```
+ENABLE_SLACK: "True"
+```
+
+**Service: taiga-front**
+```
+ENABLE_SLACK: "true"
+```
+
+Enable Slack integration in your Taiga instance. By default is "False". Should have the same value as this variable in `taiga-front` and `taiga-back`.
+
+### Github settings
+
+Used for login with Github.
 Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
 
-###### Gitlab settings:
+**Note** `ENABLE_GITHUB_AUTH` and `GITHUB_CLIENT_ID` should have the same value in `taiga-back` and `taiga-front` services.
 
-`ENABLE_GITLAB_AUTH`, `GITLAB_API_CLIENT_ID`, `GITLAB_API_CLIENT_SECRET`, `GITLAB_URL` used for login with GitLab.
+```
+ENABLE_GITHUB_AUTH: "True"
+GITHUB_API_CLIENT_ID: "github-api-client-id"
+GITHUB_API_CLIENT_SECRET: "github-api-client-secret"
+```
+
+**Service: taiga-front**
+```
+ENABLE_GITHUB_AUTH: "true"
+GITHUB_API_CLIENT_ID: "github-api-client-id"
+```
+
+### Gitlab settings
+
+Used for login with GitLab.
 Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
 
-###### Slack:
+**Note** `ENABLE_GITLAB_AUTH`, `GITLAB_CLIENT_ID` and `GITLAB_URL` should have the same value in `taiga-back` and `taiga-front` services.
 
-Set `ENABLE_SLACK` to "True" to enjoy the integration with Slack.
+**Service: taiga-back**
+```
+ENABLE_GITLAB_AUTH: "True"
+GITLAB_API_CLIENT_ID: "gitlab-api-client-id"
+GITLAB_API_CLIENT_SECRET: "gitlab-api-client-secret"
+GITLAB_URL: "gitlab-url"
+```
 
-###### Importers:
+**Service: taiga-front**
+```
+ENABLE_GITLAB_AUTH: "true"
+GITLAB_CLIENT_ID: "gitlab-client-id"
+GITLAB_URL: "gitlab-url"
+```
 
-It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both taiga-back (x-environment) and taiga-front. In taiga-back environment variables, it's also necessary to configure different settings depending on the importer.
+### Github Importer
 
-##### taiga-async-rabbitmq
+**Service: taiga-back**
+```
+ENABLE_GITHUB_IMPORTER: "True"
+GITHUB_IMPORTER_CLIENT_ID: "client-id-from-github"
+GITHUB_IMPORTER_CLIENT_SECRET: "client-secret-from-github"
+```
 
-Configure this service to generate messages from rabbitmq for **taiga-async**.
+**Service: taiga-front**
+```
+ENABLE_GITHUB_IMPORTER: "true"
+```
 
-`RABBITMQ_ERLANG_COOKIE` is the secret erlang cookie.
+### Jira Importer
 
-`RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` will be used to connect to rabbitmq.
+**Service: taiga-back**
+```
+ENABLE_JIRA_IMPORTER: "True"
+JIRA_IMPORTER_CONSUMER_KEY: "consumer-key-from-jira"
+JIRA_IMPORTER_CERT: "cert-from-jira"
+JIRA_IMPORTER_PUB_CERT: "pub-cert-from-jira"
+```
 
-##### taiga-front
+**Service: taiga-front**
+```
+ENABLE_JIRA_IMPORTER: "true"
+```
 
-This service is for configuring the frontend application.
+### Trello Importer
 
-###### Taiga settings:
+**Service: taiga-back**
+```
+ENABLE_TRELLO_IMPORTER: "True"
+TRELLO_IMPORTER_API_KEY: "api-key-from-trello"
+TRELLO_IMPORTER_SECRET_KEY: "secret-key-from-trello"
+```
 
-`TAIGA_URL` is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME`://`TAIGA_SITES_DOMAIN`.
-
-`TAIGA_WEBSOCKETS_URL` to connect to the events. This should have the same value as `TAIGA_SITES_DOMAIN`, ie: ws://taiga.mycompany.com
-
-###### Registration Settings:
-
-`PUBLIC_REGISTER_ENABLED` to allow a public register, configure this variable to "true". By default is "false".
-Should be the same as this var in **taiga-back**.
-
----
-
-Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn't been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.
-
----
-
-###### Github settings:
-
-`ENABLE_GITHUB_AUTH`, `GITHUB_CLIENT_ID` used for login with Github.
-Get these in your profile https://github.com/settings/apps or in your organization profile https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications
-
-###### Gitlab settings:
-
-`ENABLE_GITLAB_AUTH`, `GITLAB_CLIENT_ID`, `GITLAB_URL` used for login with GitLab.
-Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications
-
-###### Importers:
-
-It's possible to configure different platforms to import projects from them. Make sure that `ENABLE_XXXX_IMPORTER` envvar is configured in both **taiga-back** (x-environment) and **taiga-front**.
-
-##### taiga-protected
-
-Configure this service and protects the attachments from external downloads.
-
-`SECRET_KEY` should be the same as this var in **taiga-back**.
-
-`MAX_AGE` variable does that the attachments will be accessible with a token during a maximum (in seconds). After that, the token will expire.
-
-##### taiga-events
-
-Configure this service for Taiga websocket server which allows taiga-front to show realtime changes in the backlog, taskboard, kanban and issues listing.
-
-`RABBITMQ_USER`, `RABBITMQ_PASS` are used to read messages from rabbitmq.
-
-`TAIGA_SECRET_KEY` should be the same as this var in **taiga-back**.
-
-##### taiga-events-rabbitmq
-
-Configure this service to generate messages from rabbitmq for **taiga-events**.
-
-`RABBITMQ_ERLANG_COOKIE` is the secret erlang cookie.
-
-`RABBITMQ_DEFAULT_USER`, `RABBITMQ_DEFAULT_PASS`, `RABBITMQ_DEFAULT_VHOST` vars will be used to connect to rabbitmq.
+**Service: taiga-front**
+```
+ENABLE_TRELLO_IMPORTER: "true"
+```
 
 {{< figure src="/images/docker-up.png" caption="What you want to see in the console" alt="What you want to see in the console" width="100%" class="articlefigure"  >}}
 
-#### 1.2 Advanced configuration
+## Advanced configuration
 
 In an advanced configuration you ignore the environment variables in **docker-compose.yml** or **docker-compose-inits.yml**.
 
-##### Map a config.py file
+### Map a config.py file
 
 From [taiga-back](https://github.com/taigaio/taiga-back) download the file **settings/config.py.prod.example** and rename it:
 
@@ -246,7 +340,7 @@ Check as well the rest of the configuration if you need to enable some advanced 
 
 Map the file into **/taiga-back/settings/config.py**. Have in mind that you have to map it both in **docker-compose.yml** and **docker-compose-inits.yml**. You can check the **x-volumes** section in **docker-compose.yml** with an example.
 
-##### Map a conf.json file
+### Map a conf.json file
 
 From [taiga-front](https://github.com/taigaio/taiga-front) download the file **dist/config.example.json** and rename it:
 
@@ -256,9 +350,9 @@ mv dist/config.example.json dist/config.json
 
 Edit it with your own configuration and map the file into **/taiga-front/dist/config.py**.
 
-### 4. Configure the proxy
+## Configure the proxy
 
-Your host configuration needs to make a proxy to **http://localhost:9000**. Example:
+Finally, your host configuration needs to make a proxy to **http://localhost:9000**. Example:
 
 ```
 server {
