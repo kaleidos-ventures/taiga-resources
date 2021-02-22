@@ -8,6 +8,8 @@ thumbnail: "images/import-jira.png"
 thumbnail_home: "images/import-jira.png"
 ---
 
+***Disclaimer: Some Taiga product screenshots might refer to older Taiga releases. When in doubt, please follow the written instructions.***
+
 ### Important notice about Jira releases and Taiga compatibility
 
   * Taiga support Jira releases up to 8.3.5. It has been tested and should work out of the box.

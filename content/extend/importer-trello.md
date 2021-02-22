@@ -8,6 +8,7 @@ thumbnail: "images/import-trello.png"
 thumbnail_home: "images/import-trello.png"
 ---
 
+***Disclaimer: Some Taiga product screenshots might refer to older Taiga releases. When in doubt, please follow the written instructions.***
 
 ### How I import a project from Trello?
 

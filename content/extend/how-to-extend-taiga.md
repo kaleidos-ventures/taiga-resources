@@ -101,5 +101,7 @@ Check our documentation on how to import projects from other platforms:
 - Import from [Trello]({{< ref "importer-trello.md" >}})
 - Import from [Jira]({{< ref "importer-jira.md" >}})
 - Import from [Github]({{< ref "importer-github.md" >}})
+- Import from [Asana]({{< ref "importer-asana.md" >}})
+
 
 If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://taigaio.github.io/taiga-doc/dist/#importers).
