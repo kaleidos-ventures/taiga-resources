@@ -8,6 +8,8 @@ thumbnail: "images/import-github.png"
 thumbnail_home: "images/import-github.png"
 ---
 
+***Disclaimer: Some Taiga product screenshots might refer to older Taiga releases. When in doubt, please follow the written instructions.***
+
 ### How I import a project from Github?
 
 1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.

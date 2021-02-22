@@ -79,5 +79,5 @@ Finally, **Sprints can list a selection of attached issues** if the team wants t
 
 ### Further reading
 
-Taiga Issues Module has enough intrinsic value to be used alone as the key Module for a particular Taiga project but its true potential arises when used it as a great Scrum or KANBAN companion. There are other Taiga Modules we would briefly cover so you know what you might be missing out. We suggest you read [The Epic, The Wiki and the Meetup](/kaka).
+Taiga Issues Module has enough intrinsic value to be used alone as the key Module for a particular Taiga project but its true potential arises when used it as a great Scrum or KANBAN companion. There are other Taiga Modules we would briefly cover so you know what you might be missing out. We suggest you read [The Epic, The Wiki and the Meetup]({{< ref "/features/epicswikimeetup.md" >}}).
 
