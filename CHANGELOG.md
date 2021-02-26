@@ -1,8 +1,12 @@
 # Changelog
 
-## 6.0.4 (unreleased)
+## 6.0.5 (unreleased)
 
 - ...
+
+## 6.0.4 (2021-03-01)
+
+- Update importers
 
 
 ## 6.0.3 (2021-02-22)

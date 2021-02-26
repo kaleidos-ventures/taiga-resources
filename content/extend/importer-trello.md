@@ -12,7 +12,7 @@ thumbnail_home: "images/import-trello.png"
 
 ### How I import a project from Trello?
 
-1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
+1. To start the importation project, you have to got to your project menu, and click on "New Project" button.
 
 {{< figure src="/images/import-tr-step1.png" caption="New project creation" alt="New project creation" class="articlefigure" >}}
 
@@ -26,7 +26,7 @@ thumbnail_home: "images/import-trello.png"
 
 4. As soon as you select the trello importer, you will be redirected to the Trello authorization page, to allow Taiga to access to your boards (during the next day). You have to click "Allow", to continue the process.
 
-{{< figure src="/images/import-tr-step4.png" caption="Authoriza access to Trello" alt="Authoriza access to Trello" class="articlefigure" >}}
+{{< figure src="/images/import-tr-step4.png" caption="Authorize access to Trello" alt="Authorize access to Trello" class="articlefigure" >}}
 
 5. Then you have to select which trello board want to import.
 
