@@ -24,7 +24,7 @@ thumbnail_home: "images/import-github.png"
 
 {{< figure src="/images/import-gh-step3.png" caption="Select importer" alt="Select importer" class="articlefigure" width="100%" >}}
 
-4. As soon as you select the github importer, you will be redirected to the GitHub authorization page, to allow Taiga to access to your repositories (during the next day). You have to click "Allow", to continue the process.
+4. As soon as you select the github importer, you will be redirected to the GitHub authorization page, to allow Taiga to access to your repositories (during the next day). You have to click "Authorize taigaio", to continue the process.
 
 {{< figure src="/images/import-gh-step4.png" caption="Authorize access to GitHub" alt="Authorize access to GitHub" class="articlefigure" width="100%" >}}
 
