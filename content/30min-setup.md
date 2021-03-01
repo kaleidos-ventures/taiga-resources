@@ -111,9 +111,12 @@ TAIGA_WEBSOCKETS_URL: "ws://localhost:9000"
 ```
 
 `TAIGA_SECRET_KEY` is the secret key of Taiga. Should be the same as this var in `taiga-back`, `taiga-events` and `taiga-protected`.
+
 `TAIGA_URL` is where this Taiga instance should be served. It should be the same as `TAIGA_SITES_SCHEME`://`TAIGA_SITES_DOMAIN`.
+
 `TAIGA_WEBSOCKETS_URL` is used to connect to the events. This should have the same value as `TAIGA_SITES_DOMAIN`, ie: ws://taiga.mycompany.com.
 
+> IMPORTANTE NOTICE: When you're configuring Taiga to run with HTTPS, you should configure `TAIGA_URL` with `https` and `TAIGA_WEBSOCKETS_URL` with `wss`.
 
 ### Session Settings
 
