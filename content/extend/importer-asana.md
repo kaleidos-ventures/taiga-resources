@@ -14,7 +14,7 @@ thumbnail_home: "images/import-asana.png"
 ***Disclaimer: Some Taiga product screenshots might refer to older Taiga releases. When in doubt, please follow the written instructions.***
 
 1. To start the importation project, you have to got to your project menu, and
-click on "Create Project" button.
+click on "New Project" button.
 
 {{< figure src="/images/import-asana-step1.png" caption="New project creation" alt="New project creation" class="articlefigure" >}}
 

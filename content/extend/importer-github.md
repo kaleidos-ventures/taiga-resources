@@ -12,7 +12,7 @@ thumbnail_home: "images/import-github.png"
 
 ### How I import a project from Github?
 
-1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
+1. To start the importation project, you have to got to your project menu, and click on "New Project" button.
 
 {{< figure src="/images/import-gh-step1.png" caption="New project creation" alt="New project creation" class="articlefigure" >}}
 
