@@ -61,7 +61,7 @@ It is important that you always use the latest Taiga release to perform Jira pro
 
 ### How do I import a project from Jira?
 
-1. To start the importation project, you have to got to your project menu, and click on "Create Project" button.
+1. To start the importation project, you have to got to your project menu, and click on "New Project" button.
 
 {{< figure src="/images/import-jr-step1.png" caption="New project creation" alt="New project creation" class="articlefigure" >}}
 
