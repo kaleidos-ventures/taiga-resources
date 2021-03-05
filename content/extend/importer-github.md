@@ -8,7 +8,26 @@ thumbnail: "images/import-github.png"
 thumbnail_home: "images/import-github.png"
 ---
 
-***Disclaimer: Some Taiga product screenshots might refer to older Taiga releases. When in doubt, please follow the written instructions.***
+***Disclaimer: Some Taiga product screenshots might refer to older Taiga or Github releases. When in doubt, please follow the written instructions.***
+
+### Suggested step before importing your project. Read this first!
+
+**Summary:** if you want to import team members too, make sure those team members are Taiga users already. A nice workaround is creating a dummy project and inviting them to it. taiga will take care of sending invites and you'll be able to track how many users are now part of Taiga before actually importing the project itself.
+
+When you import your project, you often want to also import your users and keep all the relations between the work items and the team members. Taiga's import project will first look for its team members, add them to the project and then proceed with the content itself.
+
+**If those users don't exist on that particular Taiga instance** (tree.taiga.io or your self-managed Taiga instance), the import process will still go ahead but **the link between content and users will be lost** and it won't be recovered even if you add those users *afterwards*.
+
+**If you need to keep the relationships between content and team members** (for example, such team member was assigned to that task or such comment was made by that team member), you need to make sure those team members already exist on that Taiga platform. You can achieve this by asking them to sign up themselves (using the same email address that identifies them on the source platform) or **creating a dummy project and invite them to it**. 
+
+On the top of your Taiga screen you have the "Projects" button. After you have created/selected a project, to invite a new team member go to SETTINGS>MEMBERS (on the sidebar). On the top there is the NEW MEMBER button. You can do this in batches of five team members each. You probably can ignore the different ROLES option here since this project is temporary.
+
+Taiga will send invites to all users that are not yet part of the platform and you will be able to track how many invites have been accepted. You can resend invites as much as you want.
+
+**Whenever you are happy with the number of people that were part of Taiga**, either by signing up or accepting your invitation, **you can proceed with a project import**. This way, you will be able to seamlessly start working on Taiga. After this, you can safely remove the dummy project since it probably doesn't provide any value any more.
+
+For more project customisation options, be sure to check [The Project Customisation Guide]({{< ref "/features/customisation.md" >}})
+
 
 ### How I import a project from Github?
 
