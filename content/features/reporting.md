@@ -1,6 +1,6 @@
 ---
 title: "Taiga reporting capabilities"
-date: 2021-02-12T07:27:41+02:00
+date: 2021-02-06T07:27:41+02:00
 draft: false
 slug: "reporting"
 order_home: 4
