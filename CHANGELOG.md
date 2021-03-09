@@ -1,8 +1,13 @@
 # Changelog
 
-## 6.0.5 (unreleased)
+## 6.0.6 (unreleased)
 
-- ...
+- Improve 30min-setup
+
+## 6.0.5 (2021-03-09)
+
+- Update importing images
+- Minor fixes
 
 ## 6.0.4 (2021-03-01)
 
