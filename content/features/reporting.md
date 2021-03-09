@@ -9,6 +9,7 @@ image: "images/issues.jpg"
 description: "Taiga's approach to reporting and visual management"
 categories:
   - "modules"
+  - "reporting"
 ---
 
 Taiga focuses on soft reporting across the entire platform plus convenient API and live CSV exports.
