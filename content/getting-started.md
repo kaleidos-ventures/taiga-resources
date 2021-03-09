@@ -11,6 +11,8 @@ Taiga will always try **to make things easy and intuitive for new users** but it
 
 There are two main use cases we need to cover. Project Admin and Project Team Member. The main difference between both is that **a Project Admin can change a project's settings**. Obviously, one can be a Project Admin on one or two projects and a Team Member on five others, but we will treat both onboarding needs separately.
 
+**Important:** If you're new to Taiga and would like **to invite your team** to the platform, you need to do so **after you have created a project**. Once you have created a project, you can go to SETTINGS>MEMBERS and add them. Invites will be sent by Taiga to all of them to join **both Taiga and your project**. If you invite team members that are already Taiga users, they will be immediately added to the project and they will get notified as well.
+
 ## As a Project Team Member
 
 Whether you got an invitation link or you signed in and were added to a project, the basic question here is, what's Taiga all about and how can I get my work done?
