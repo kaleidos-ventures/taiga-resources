@@ -244,6 +244,7 @@ Get these in your profile https://github.com/settings/apps or in your organizati
 
 **Note** `ENABLE_GITHUB_AUTH` and `GITHUB_CLIENT_ID` should have the same value in `taiga-back` and `taiga-front` services.
 
+**Service: taiga-back**
 ```
 ENABLE_GITHUB_AUTH: "True"
 GITHUB_API_CLIENT_ID: "github-api-client-id"
