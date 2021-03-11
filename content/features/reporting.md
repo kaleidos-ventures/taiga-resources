@@ -5,7 +5,7 @@ draft: false
 slug: "reporting"
 order_home: 4
 order: 3
-image: "images/issues.jpg"
+image: "images/taiga-reporting.png"
 description: "Taiga's approach to reporting and visual management"
 categories:
   - "modules"
