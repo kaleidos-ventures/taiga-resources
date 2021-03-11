@@ -76,36 +76,54 @@ copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
 ############################## navigation ###############################
 [menu]
 
+  # header menu
+
   [[menu.main]]
   name = "Blog"
   URL = "https://blog.taiga.io/"
   weight = 2
 
   [[menu.main]]
+  name = "Taiga.io"
+  URL = "https://taiga.io"
+  weight = 3
+
+  [[menu.main]]
   name = "Taiga"
   URL = "https://tree.taiga.io"
-  weight = 3
+  weight = 4
 
   [[menu.main]]
   name = "Technical Documentation"
   URL = "https://taigaio.github.io/taiga-doc/dist/"
-  weight = 4
+  weight = 5
 
   # footer menu
-  [[menu.footer]]
-  name = "Taiga"
-  URL = "https://tree.taiga.io"
-  weight = 1
 
   [[menu.footer]]
   name = "Blog"
   URL = "https://blog.taiga.io/"
+  weight = 1
+
+  [[menu.footer]]
+  name = "Taiga.io"
+  URL = "https://taiga.io"
   weight = 2
+
+  [[menu.footer]]
+  name = "Taiga"
+  URL = "https://tree.taiga.io"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Technical Documentation"
+  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  weight = 4
 
   [[menu.footer]]
   name = "Code of Conduct"
   URL = "https://www.taiga.io/code-of-conduct"
-  weight = 3
+  weight = 5
 
 ############################# social site ########################
 [[params.social]]
