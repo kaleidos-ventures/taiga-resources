@@ -1,5 +1,5 @@
 ---
-title: "Taiga reporting capabilities"
+title: "Taiga reporting capabilities for managing teams & projects"
 date: 2021-02-06T07:27:41+02:00
 draft: false
 slug: "reporting"
@@ -20,8 +20,8 @@ Taiga took a different approach right from the beginning. Instead of trying to p
 
 This soft reporting has two major advantages:
 
-It's there for the whole team provided they have a say in the project (their assigned role permissions would be a hint to this).
-It becomes part of the process and the associated cognitive load remains quite low.
+- It's there for the whole team provided they have a say in the project (their assigned role permissions would be a hint to this).
+- It becomes part of the process and the associated cognitive load remains quite low.
 
 OK, let's see how Taiga's soft reporting approach works.
 

@@ -1,10 +1,10 @@
 ---
-title: "Import/Export Projects"
+title: "Import/Export Taiga Projects"
 slug: import-export-projects
 date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
-  - "Extend Taiga"
+  - "Tool migration/import"
 thumbnail: "images/export.png"
 thumbnail_home: "images/export.png"
 ---

@@ -1,12 +1,14 @@
 ---
 title: "Trello Importer"
-date: 2020-10-05T11:27:09+02:00
+date: 2021-01-05T11:27:09+02:00
 draft: false
 categories:
-  - "Extend Taiga"
+  - "Tool migration/import"
 thumbnail: "images/import-trello.png"
 thumbnail_home: "images/import-trello.png"
 ---
+
+You can migrate from Trello to Taiga as your primary project management platform following these instructions carefully.
 
 ***Disclaimer: Some Taiga product screenshots might refer to older Taiga or Trello releases. When in doubt, please follow the written instructions.***
 
