@@ -1,18 +1,32 @@
 ---
-title: "Import/Export Projects"
+title: "Import/Export Taiga Projects"
 slug: import-export-projects
 date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
-  - "Extend Taiga"
+  - "Tool migration/import"
 thumbnail: "images/export.png"
 thumbnail_home: "images/export.png"
 ---
 
 Taiga import/export feature allows you to extract all your data from one Taiga instance and move it to another one.
 
+**Important. Read this!** These instructions **only cover Taiga to Taiga project migration**. Do not follow these guidelines to import projects from other project management tools.
 
-## Exporting a project
+The **only other project management tools** you can import projects from are **Trello, Jira, Asana and Github**.
+
+Check our separate documentation on how to import projects from these platforms:
+
+- Import from [Trello]({{< ref "importer-trello.md" >}})
+- Import from [Jira]({{< ref "importer-jira.md" >}})
+- Import from [Github]({{< ref "importer-github.md" >}})
+- Import from [Asana]({{< ref "importer-asana.md" >}})
+
+**Please DO NOT TRY to import from any other tool not listed above. It will only end up in errors and wasted time.**
+
+If you are importing from other Taiga instance, please continue reading.
+
+## Exporting a project from your existing Taiga instance
 
 To export a project and download the "dump file" you have to:
 
@@ -37,7 +51,7 @@ To export a project and download the "dump file" you have to:
 {{< figure src="/images/import-export-screenshot-6.png" caption="Dump content" alt="Dump content" class="articlefigure" >}}
 
 
-## Importing a project
+## Importing a project to your new Taiga instance
 
 > The project import in Taiga doesn't migrate users, only project data, if you want to keep the users relation with the project correctly, you have to create the users before you import the project. **Important**, the matching of users with the import data will be done through case-sensitive email addresses.
 

@@ -1,13 +1,17 @@
 ---
 title: "Asana Importer"
 slug: importer-asana
-date: 2020-01-21T06:27:09+02:00
+date: 2021-01-01T06:27:09+02:00
 draft: false
 categories:
-  - "Extend Taiga"
+  - "Tool migration/import"
 thumbnail: "images/import-asana.png"
 thumbnail_home: "images/import-asana.png"
 ---
+
+You can migrate from Asana to Taiga as your primary project management platform following these instructions carefully.
+
+***Disclaimer: Some Taiga product screenshots might refer to older Taiga or Asana releases. When in doubt, please follow the written instructions.***
 
 ### How I import a project from Asana?
 

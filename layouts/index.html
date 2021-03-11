@@ -9,11 +9,13 @@
         <article class="card featured-post">
           <div class="row no-gutters align-items-center">
             <div class="col-md-5">
+              <a href="{{ .Permalink }}">
               {{ if .Params.Thumbnail }}
               <img src="{{ .Params.Thumbnail | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
               {{ else }}
               <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
               {{ end }}
+              </a>
             </div>
             <div class="col-md-6 offset-md-1">
               <div class="card-body">
@@ -88,11 +90,13 @@
           {{ range sort (where .Site.RegularPages "Type" "featured") ".Params.order_home" }}
           <div class="col-md-6 mb-4">
             <article class="card">
+              <a href="{{ .Permalink }}">
               {{ if .Params.Thumbnail }}
               <img src="{{ .Params.Thumbnail | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
               {{ else }}
               <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
               {{ end }}
+              </a>
               <div class="card-body px-0">
                 {{ range .Params.Categories }}
                 <a href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}"

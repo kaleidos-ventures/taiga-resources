@@ -1,0 +1,18 @@
+<div class="col-md-6 mb-4">
+    <article class="card">
+        <a href="{{ .Permalink }}">
+        {{ if .Params.Thumbnail }}
+        <img src="{{ .Params.Thumbnail | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
+        {{ else }}
+        <img src="{{ .Params.Image | absURL }}" class="card-img-top" alt="{{ .Title | markdownify }}">
+        {{ end }}
+        </a>
+        <div class="card-body px-0">
+        <a href="{{ .Permalink }}" class="h5 d-block my-3">{{ .Title | markdownify }}</a>
+        <div class="mb-3 post-meta">
+        </div>
+        <p class="card-text">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-outline-primary">read more</a>
+        </div>
+    </article>
+</div>
