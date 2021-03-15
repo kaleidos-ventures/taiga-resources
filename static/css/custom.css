@@ -5,3 +5,7 @@ body {
 p, .paragraph {
   font-size: 16px;
 }
+
+.nav-item .nav-link{
+  text-transform: none;
+}
