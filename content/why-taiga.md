@@ -35,4 +35,4 @@ We could go on and on about some Taiga exclusive perks, like it being translated
 Sure you can! You have the option of export your project, package it, and take it elsewhere, or import it to any other Taiga instance, managed by you or by another service provider.
 
 
-You can [download Taiga](#) or register online for our [Free Trial](#).
+You can [download Taiga](https://resources.taiga.io/30min-setup/) or register online for our [Free Trial](https://www.taiga.io/trialsignup?landing_source=resources).
