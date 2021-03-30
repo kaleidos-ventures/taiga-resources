@@ -13,8 +13,8 @@ This is the easiest and **recommended** way to run Taiga in production. This doc
 
 Prior to start the installation, ensure you have installed:
 
-- **docker**
-- **docker-compose**
+- **docker**: version >= 17.09.0+
+- **docker-compose**: version >= 1.27.0+
 
 If you don't have docker installed, please follow installation instructions from docker.com: [https://docs.docker.com/engine/install/](https://docs.docker.com/engine/install/) Additionally, it's necessary to have familiarity with Docker, docker-compose and Docker repositories.
 
