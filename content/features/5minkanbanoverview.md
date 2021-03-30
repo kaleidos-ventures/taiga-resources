@@ -35,7 +35,7 @@ Finally, it's a good practice to define the *Work in progress Limit* or **WIP Li
 
 {{< figure src="/images/KANBAN_test12.jpg" caption="Project settings related to **WIP Limits**" alt="Project settings related to **WIP Limits**" width="100%" class="articlefigure" >}}
 
-You can adjust Kanban **WIP Limits** under SETTINGS > ATTRIBUTES > KANBAN POWER UPS.
+You can adjust Kanban **WIP Limits** under SETTINGS > ATTRIBUTES > KANBAN OPTIONS.
 
 This is the basic setup. You can now go to the Kanban module and start creating work items and moving them around as they progress in their lifecycle.
 
@@ -43,7 +43,7 @@ This is the basic setup. You can now go to the Kanban module and start creating 
 
 Some teams require advanced features for their Kanban boards. One of the most sought after is the Kanban swimlane. It consists on an independant section that can contain a separate set of work items. Taiga allows you to create as many Kanban swimlanes as you need, effectively distributing your work across different major categorizations. Some example of swimlanes usage are sub-teams, project modules, different priorities, etc.
 
-You can manage Kanban swimlanes under SETTINGS > ATTRIBUTES > KANBAN POWER UPS.
+You can manage Kanban swimlanes under SETTINGS > ATTRIBUTES > KANBAN OPTIONS.
 
 {{< figure src="/images/KANBAN_test05.jpg" caption="Kanban swimlanes configuration" alt="Kanban swimlanes configuration" width="100%" class="articlefigure" >}}
 

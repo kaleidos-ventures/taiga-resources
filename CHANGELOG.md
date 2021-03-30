@@ -4,6 +4,7 @@
 
 - Improve 30min-setup
 - Add minimum version for docker and docker-compose
+- Fix typo and image in kanban article
 
 ## 6.0.5 (2021-03-09)
 
