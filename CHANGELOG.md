@@ -1,7 +1,14 @@
 # Changelog
 
-## 6.0.6 (unreleased)
+## 6.0.7 (unreleased)
 
+- ...
+
+## 6.0.6 (2021-04-06)
+
+- Add some faqs
+- Improve documentation about imports
+- Add documentation about reporting in Taiga
 - Improve 30min-setup
 - Add minimum version for docker and docker-compose
 - Fix typo and image in kanban article
