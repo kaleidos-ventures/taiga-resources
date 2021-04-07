@@ -105,9 +105,9 @@ If you find some errors, or want to propose changes to improve readability, you 
 
 ## Translations
 
-We are ready now to accept your help translating Taiga. It's easy (and fun!): just access our team of translators with the link below, set up an account in Transifex and start contributing. Join us to make sure your language is covered! **[Help Taiga to translate content](https://www.transifex.com/taiga-agile-llc/taiga-back/ "Help Taiga to trasnlatecontent")**
+We are eager to get your help translating Taiga. It's easy (and fun!): just access our team of translators with the link below, set up an account in Weblate and start contributing. Join us to make sure your language is covered! **[Help Taiga to translate content](https://hosted.weblate.org/projects/taiga/ "Help Taiga to translate content")**
 
-**Localization Bugs**: Taiga use Transifex to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Transifex project](https://www.transifex.com/organization/taiga-agile-llc/) and start contributing.
+**Localization Bugs**: Taiga use Weblate to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Weblate project](https://hosted.weblate.org/projects/taiga/) and start contributing.
 
 ## UI enhancements
 
