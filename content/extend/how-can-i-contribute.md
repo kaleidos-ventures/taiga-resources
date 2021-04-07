@@ -54,7 +54,7 @@ One of our fellow Taiga developers will search, find and hunt it as soon as poss
 
 Usually, it takes less time to fix a bug if the developer knows how to find it. Thanks to that information, we'll be faster fixing any bug.
 
-**Localization Bugs**: Taiga use Transifex to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Transifex project](https://www.transifex.com/organization/taiga-agile-llc/) and start contributing.
+**Localization Bugs**: Taiga use Weblate to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Weblate project](https://hosted.weblate.org/projects/taiga/) and start contributing.
 
 ## Code patches, enhacements
 

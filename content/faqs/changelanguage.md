@@ -19,4 +19,4 @@ If the language is meant for Right-To-Left setup, it will also activate this mod
 
 Our text editor has support for Right-to-Left setup too, so you can combine both options as you please.
 
-To know more about Taiga's localisation efforts and language support, please visit our [Transifex page](https://www.transifex.com/taiga-agile-llc/public/).
+To know more about Taiga's localisation efforts and language support, please visit our [Weblate page](https://hosted.weblate.org/projects/taiga/).
