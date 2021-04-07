@@ -27,6 +27,9 @@ location = "NY, USA / Madrid, Spain"
 # copyright
 copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
 
+############################# google analytics ########################
+googleAnalytics = "UA-55192325-1"
+
 ########################## Twitter cards ###########################
 # title and description are taken from Meta data section
   twitterUsername = "@taigaio"
