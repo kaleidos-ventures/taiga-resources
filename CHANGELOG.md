@@ -1,8 +1,13 @@
 # Changelog
 
-## 6.0.7 (unreleased)
+## 6.0.8 (unreleased)
 
 - ...
+
+## 6.0.7 (2021-04-13)
+
+- Several typos
+- Update translations to weblate
 
 ## 6.0.6 (2021-04-06)
 
