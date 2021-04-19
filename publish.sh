@@ -9,11 +9,11 @@
 current_branch=`git rev-parse --abbrev-ref HEAD`
 
 git fetch \
-  && git checkout master \
+  && git checkout main \
   && git merge --ff-only origin/stable \
-  && git push origin master \
+  && git push origin main \
   && git checkout stable \
-  && git merge --ff-only origin/master \
+  && git merge --ff-only origin/main \
   && git push origin stable \
   && echo -e "The code has been merged to STABLE \033[1;32msuccessfully\033[0m" \
   || echo -e "There has been an \033[1;31error\033[0m"
