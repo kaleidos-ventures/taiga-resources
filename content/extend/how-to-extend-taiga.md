@@ -72,8 +72,8 @@ Taiga comes with a complete user system, but it's possible as well configure oth
 
 Taiga offers plugins to authenticate with widely used systems as Github and Gitlab. In [Taiga.io](https://taiga.io) you can use directly both of them. If you'd like to use them in your self-hosted instance, check the corresponding documentation to install and configure:
 
-- [Github](https://github.com/taigaio/taiga-contrib-github-auth)
-- [Gitlab](https://github.com/taigaio/taiga-contrib-gitlab-auth)
+- [Github](https://github.com/kaleidos-ventures/taiga-contrib-github-auth)
+- [Gitlab](https://github.com/kaleidos-ventures/taiga-contrib-gitlab-auth)
 
 Aside from the Taiga provided plugins, the community have developed and shared other authentication systems, as LDAP o Kerberos. You can check the complete list in our page of [community contributions]({{< ref "contributions" >}}).
 

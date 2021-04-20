@@ -20,9 +20,9 @@ If you don't have docker installed, please follow installation instructions from
 
 ## Getting started
 
-Clone [this repository](https://github.com/taigaio/taiga-docker).
+Clone [this repository](https://github.com/kaleidos-ventures/taiga-docker).
 
-[{{< figure src="/images/dockerrepo.png" caption="Screenshot of Taiga's docker repo" alt="Screenshot of Taiga's docker repo" width="100%" class="articlefigure"  >}}](https://github.com/taigaio/taiga-docker)
+[{{< figure src="/images/dockerrepo.png" caption="Screenshot of Taiga's docker repo" alt="Screenshot of Taiga's docker repo" width="100%" class="articlefigure"  >}}](https://github.com/kaleidos-ventures/taiga-docker)
 
 
 ```
@@ -330,7 +330,7 @@ In an advanced configuration you ignore the environment variables in **docker-co
 
 ### Map a config.py file
 
-From [taiga-back](https://github.com/taigaio/taiga-back) download the file **settings/config.py.prod.example** and rename it:
+From [taiga-back](https://github.com/kaleidos-ventures/taiga-back) download the file **settings/config.py.prod.example** and rename it:
 
 ```
 mv settings/config.py.prod.example settings/config.py
@@ -350,7 +350,7 @@ Map the file into **/taiga-back/settings/config.py**. Have in mind that you have
 
 ### Map a conf.json file
 
-From [taiga-front](https://github.com/taigaio/taiga-front) download the file **dist/config.example.json** and rename it:
+From [taiga-front](https://github.com/kaleidos-ventures/taiga-front) download the file **dist/config.example.json** and rename it:
 
 ```
 mv dist/config.example.json dist/config.json

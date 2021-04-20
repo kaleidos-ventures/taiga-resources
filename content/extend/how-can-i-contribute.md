@@ -28,7 +28,7 @@ Big features are also welcome but if you want to see your contributions included
 
 By contributing to Taiga Agile LLC., You accept and agree to the following terms and conditions for Your present and future Contributions submitted to Taiga Agile LLC. Except for the license granted herein to Taiga Agile LLC. and recipients of software distributed by Taiga Agile LLC., You reserve all right, title, and interest in and to Your Contributions.
 
-All Contributions are subject to the following [DCO + License terms](https://github.com/taigaio/taiga-back/blob/master/DCOLICENSE).
+All Contributions are subject to the following [DCO + License terms](https://github.com/kaleidos-ventures/taiga-back/blob/main/DCOLICENSE).
 
 ## Bug reports
 
@@ -37,14 +37,14 @@ Bugs are about code, but **not only about code**. You can find a bug in the UX, 
 - in [Taiga issues](https://tree.taiga.io/project/taiga/issues). **This is the preferred way**
 - in GitHub we have different projects with issues as well; you can create an issue in the corresponding repository:
 
-  - taiga-back: [taiga-back github issues](https://github.com/taigaio/taiga-back/issues)
-  - taiga-front: [taiga-front github issues](https://github.com/taigaio/taiga-front/issues)
-  - taiga-front-dist: [taiga-front-dist github issues](https://github.com/taigaio/taiga-front-dist/issues)
-  - taiga-events: [taiga-events github issues](https://github.com/taigaio/taiga-events/issues)
-  - taiga-protected: [taiga-protected github issues](https://github.com/taigaio/taiga-protected/issues)
-  - taiga-docker: [taiga-docker github issues](https://github.com/taigaio/taiga-docker/issues)
-  - taiga-doc: [taiga-doc github issues](https://github.com/taigaio/taiga-doc/issues)
-  - taiga-resources: [taiga-resources github issues](https://github.com/taigaio/taiga-resources/issues), which is the repository for this web.
+  - taiga-back: [taiga-back github issues](https://github.com/kaleidos-ventures/taiga-back/issues)
+  - taiga-front: [taiga-front github issues](https://github.com/kaleidos-ventures/taiga-front/issues)
+  - taiga-front-dist: [taiga-front-dist github issues](https://github.com/kaleidos-ventures/taiga-front-dist/issues)
+  - taiga-events: [taiga-events github issues](https://github.com/kaleidos-ventures/taiga-events/issues)
+  - taiga-protected: [taiga-protected github issues](https://github.com/kaleidos-ventures/taiga-protected/issues)
+  - taiga-docker: [taiga-docker github issues](https://github.com/kaleidos-ventures/taiga-docker/issues)
+  - taiga-doc: [taiga-doc github issues](https://github.com/kaleidos-ventures/taiga-doc/issues)
+  - taiga-resources: [taiga-resources github issues](https://github.com/kaleidos-ventures/taiga-resources/issues), which is the repository for this web.
 - send us an email to support@taiga.io if is a bug related to [tree.taiga.io](https://tree.taiga.io)
 - send us an email to security@taiga.io if is a **security bug**.
 
@@ -66,7 +66,7 @@ Besides, you'd probably like to make yourself confortable with the [development 
 
 ### Small Changes
 
-They can be crafted and submited to the [Github repositories](https://github.com/taigaio) as a _Pull Request_.
+They can be crafted and submited to the [Github repositories](https://github.com/kaleidos-ventures) as a _Pull Request_.
 
 ### Major Changes
 
@@ -100,8 +100,8 @@ Currently, we have authored three main documentation hubs:
 - **[Taiga Resources](https://resources.taiga.io)**: This page is intended to be the support reference page for the users.
 
 If you find some errors, or want to propose changes to improve readability, you can create issues or submit code changes to these repositories:
-- [Taiga documentation](https://github.com/taigaio/taiga-doc)
-- [Taiga resources](https://github.com/taigaio/taiga-resources)
+- [Taiga documentation](https://github.com/kaleidos-ventures/taiga-doc)
+- [Taiga resources](https://github.com/kaleidos-ventures/taiga-resources)
 
 ## Translations
 
