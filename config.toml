@@ -98,7 +98,7 @@ googleAnalytics = "UA-55192325-1"
 
   [[menu.main]]
   name = "Technical Documentation"
-  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  URL = "https://docs.taiga.io/"
   weight = 5
 
   # footer menu
@@ -120,7 +120,7 @@ googleAnalytics = "UA-55192325-1"
 
   [[menu.footer]]
   name = "Technical Documentation"
-  URL = "https://taigaio.github.io/taiga-doc/dist/"
+  URL = "https://docs.taiga.io/"
   weight = 4
 
   [[menu.footer]]

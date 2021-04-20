@@ -21,7 +21,7 @@ taiga-php and taiga-python are both excellent examples of how the API enables ne
 
 You can check all the [community contributions]({{< ref "contributions" >}}) which add functionalities over Taiga's.
 
-> The complete API is available at: [https://taigaio.github.io/taiga-doc/dist/api.html](https://taigaio.github.io/taiga-doc/dist/api.html)
+> The complete API is available at: [https://docs.taiga.io/api.html](https://docs.taiga.io/api.html)
 
 ## CSV reports
 
@@ -41,7 +41,7 @@ Currently, Taiga notifies the following events:
 - an issue is created, updated or deleted
 - a wiki page is created, updated or deleted
 
-Check the documentation to see the [detailed payload](https://taigaio.github.io/taiga-doc/dist/webhooks.html) for each notification.
+Check the documentation to see the [detailed payload](https://docs.taiga.io/webhooks.html) for each notification.
 
 ## Integrations
 
@@ -53,7 +53,7 @@ In Taiga you can easily configure and customise which events do you want to noti
 
 No matter if you're using [Taiga.io](https://taiga.io) or a self-hosted instance, you can use the Slack integration.
 
-Check the detailed documentation about installing and [configuring Slack](https://taigaio.github.io/taiga-doc/dist/integrations-slack.html)
+Check the detailed documentation about installing and [configuring Slack](https://docs.taiga.io/integrations-slack.html)
 
 ### Repositories
 
@@ -61,10 +61,10 @@ Repository integrations are the perfect way to merge product workflow with devel
 
 Currently Taiga offers, out of the box, integration with the main control version systems:
 
-- [Github](https://taigaio.github.io/taiga-doc/dist/integrations-github.html)
-- [Gitlab](https://taigaio.github.io/taiga-doc/dist/integrations-gitlab.html)
-- [Bitbucket](https://taigaio.github.io/taiga-doc/dist/integrations-bitbucket.html)
-- [Gogs](https://taigaio.github.io/taiga-doc/dist/integrations-gogs.html)
+- [Github](https://docs.taiga.io/integrations-github.html)
+- [Gitlab](https://docs.taiga.io/integrations-gitlab.html)
+- [Bitbucket](https://docs.taiga.io/integrations-bitbucket.html)
+- [Gogs](https://docs.taiga.io/integrations-gogs.html)
 
 ### Authorization
 
@@ -81,8 +81,8 @@ Aside from the Taiga provided plugins, the community have developed and shared o
 
 Being open source, Taiga is easily installed in your own self-hosted instances. Taiga offers to official ways to install Taiga:
 
-- Docker is the recommended way to install Taiga. It's a widely used technology, developer friendly and ready to be deployed in any cloud. It also comes with the main plugins and integrations ready to go. Check the official documentation on [how to install Taiga with Docker](https://taigaio.github.io/taiga-doc/dist/setup-production.html#setup-prod-with-docker).
-- You can always install Taiga from source code, installing all the different components. This is way to install Taiga if you have your own plugins or integrations. Check the official documentation on [how to install Taiga from source code](https://taigaio.github.io/taiga-doc/dist/setup-production.html#setup-prod-from-source-code).
+- Docker is the recommended way to install Taiga. It's a widely used technology, developer friendly and ready to be deployed in any cloud. It also comes with the main plugins and integrations ready to go. Check the official documentation on [how to install Taiga with Docker](https://docs.taiga.io/setup-production.html#setup-prod-with-docker).
+- You can always install Taiga from source code, installing all the different components. This is way to install Taiga if you have your own plugins or integrations. Check the official documentation on [how to install Taiga from source code](https://docs.taiga.io/setup-production.html#setup-prod-from-source-code).
 
 And on top of these, the community has shared other systems to deploy Taiga, based mainly on Ansible or Docker. You can check the complete list in our page of [community contributions]({{< ref "contributions" >}}). You can always develop your own recipes to deploy Taiga.
 
@@ -104,4 +104,4 @@ Check our documentation on how to import projects from other platforms:
 - Import from [Asana]({{< ref "importer-asana.md" >}})
 
 
-If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://taigaio.github.io/taiga-doc/dist/#importers).
+If you're using Taiga self-hosted, check the documentation on how to [configure different importers](https://docs.taiga.io/#importers).

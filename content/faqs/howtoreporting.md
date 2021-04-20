@@ -11,5 +11,5 @@ order: 5
 categories: ["reporting"]
 ---
 
-Taiga has both [built-in reporting capabilities]({{< ref "/features/reporting.md" >}}) and the possibility of exporting  [real-time live CSV links]({{< ref "/extend/csv-reports.md" >}}) to other reporting tools such as spreadsheets. Furthermore, [Taiga's API](https://taigaio.github.io/taiga-doc/dist/api.html) is available for more advanced and custom reporting integrations.
+Taiga has both [built-in reporting capabilities]({{< ref "/features/reporting.md" >}}) and the possibility of exporting  [real-time live CSV links]({{< ref "/extend/csv-reports.md" >}}) to other reporting tools such as spreadsheets. Furthermore, [Taiga's API](https://docs.taiga.io/api.html) is available for more advanced and custom reporting integrations.
 

@@ -62,7 +62,7 @@ Taiga will always be glad to receive code patches to update, fix or improve its 
 
 If you know how to improve our code base or you found a bug, a security vulnerability or a performance issue and you think you can solve it, we will be very happy to accept your pull-request. If your code requires considerable changes, we recommend you first  talk to us directly. We will find the best way to help. If you would like to implement it by yourself consider if it's a small or a big change.
 
-Besides, you'd probably like to make yourself confortable with the [development environment](http://taigaio.github.io/taiga-doc/dist/setup-development.html). If you find some problems, please let us know in our [mailing list](https://groups.google.co.uk/d/forum/taigaio).
+Besides, you'd probably like to make yourself confortable with the [development environment](http://docs.taiga.io/setup-development.html). If you find some problems, please let us know in our [mailing list](https://groups.google.co.uk/d/forum/taigaio).
 
 ### Small Changes
 
@@ -78,7 +78,7 @@ We have defined a concrete workflow for these changes:
 2. **Mentorship**: If accepted, Taiga team will help you, and a person from the team will be your contact in the development process. The Story will be visible in the [Taiga Kanban](https://tree.taiga.io/project/taiga/kanban).
 3. **User Experience**: The functionality will require some wireframes or ideas to be developed correctly. A good UX its an essential part of Taiga success. You should create a user experience proposal and the Taiga UX team will help you.
 4. **Design**: The design should respect the Taiga style. Try to reproduce other areas of the site. The taiga design team will review this proposal as well.
-5. **Development**: The next step is the development. Remember to add unit, integration and e2d tests as well as the new code. We have the API well documented too in [taiga-doc](http://taigaio.github.io/taiga-doc/dist/api.html).
+5. **Development**: The next step is the development. Remember to add unit, integration and e2d tests as well as the new code. We have the API well documented too in [taiga-doc](http://docs.taiga.io/api.html).
 6. **Pull request**: The last step it to create the Pull Reuqest. Remember to add a good description and screenshots are welcome too. Once the pull request is done, someone else from the team will review the code to ensure that it fits with the good practices and styles. If it does, the PR will be merged and will be on the next Taiga release.
 
 > Don't forget to add your name to `AUTHORS.rst` file!
@@ -95,8 +95,8 @@ Taiga supports contrib plugins to add or overwrite some functionalities. You can
 
 Currently, we have authored three main documentation hubs:
 
-- **[API](https://taigaio.github.io/taiga-doc/dist/api.html)**: Our API documentation and reference for developing from Taiga API.
-- **[Documentation](https://taigaio.github.io/taiga-doc/dist/)**: If you need to install Taiga on your own server, this is the place to find some guides.
+- **[API](https://docs.taiga.io/api.html)**: Our API documentation and reference for developing from Taiga API.
+- **[Documentation](https://docs.taiga.io/)**: If you need to install Taiga on your own server, this is the place to find some guides.
 - **[Taiga Resources](https://resources.taiga.io)**: This page is intended to be the support reference page for the users.
 
 If you find some errors, or want to propose changes to improve readability, you can create issues or submit code changes to these repositories:
