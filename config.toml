@@ -25,7 +25,7 @@ description = "From Getting Started to How to Extend our agile project managemen
 email = "info@taiga.io"
 location = "NY, USA / Madrid, Spain"
 # copyright
-copyright = "| &copy; Copyright 2020 Taiga Agile LLC. |"
+copyright = "| &copy; Copyright 2021 Kaleidos Ventures SL. |"
 
 ############################# google analytics ########################
 googleAnalytics = "UA-55192325-1"

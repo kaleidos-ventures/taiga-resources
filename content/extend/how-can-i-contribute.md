@@ -26,7 +26,7 @@ Big features are also welcome but if you want to see your contributions included
 
 > Contributing to Taiga by adding code to its repositories (typically a Pull Request) implies acceptance of the DCO and License terms.
 
-By contributing to Taiga Agile LLC., You accept and agree to the following terms and conditions for Your present and future Contributions submitted to Taiga Agile LLC. Except for the license granted herein to Taiga Agile LLC. and recipients of software distributed by Taiga Agile LLC., You reserve all right, title, and interest in and to Your Contributions.
+By contributing to Kaleidos Ventures SL., You accept and agree to the following terms and conditions for Your present and future Contributions submitted to Kaleidos Ventures SL. Except for the license granted herein to Kaleidos Ventures SL. and recipients of software distributed by Kaleidos Ventures SL., You reserve all right, title, and interest in and to Your Contributions.
 
 All Contributions are subject to the following [DCO + License terms](https://github.com/kaleidos-ventures/taiga-back/blob/main/DCOLICENSE).
 
