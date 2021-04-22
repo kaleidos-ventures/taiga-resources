@@ -35,7 +35,7 @@ There are many different ways to contribute to Taiga's platform, from patches, t
 
 ## Code of Conduct
 
-Help us keep the Taiga Community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/taigaio/code-of-conduct/blob/master/CODE_OF_CONDUCT.md).
+Help us keep the Taiga Community open and inclusive. Please read and follow our [Code of Conduct](https://github.com/kaleidos-ventures/code-of-conduct/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
