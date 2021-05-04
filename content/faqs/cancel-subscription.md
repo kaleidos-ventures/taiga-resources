@@ -11,4 +11,4 @@ order: 5
 categories: null
 ---
 
-Yes, you can cancel at any time. Taiga.io plans are paid monthly or yearly, so if you cancel, once you do so, the plan will run to the end of the period and not renew. Partial refunds for unused subscription term are available upon request.
+Yes, you can cancel at any time. Taiga.io plans are paid monthly or yearly, so if you cancel, once you do so, the plan will run to the end of the period and not renew. 
