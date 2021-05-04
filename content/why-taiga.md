@@ -28,7 +28,7 @@ After all, Taiga is agile project management made easy, intuitive and effective.
 
 We could go on and on about some Taiga exclusive perks, like it being translated into 20+ languages, enjoying a vibrant worldwide community, an amazing API or the fact that it allows for Scrum, KANBAN or a simple ticketing system. But what makes Taiga so special **is the team behind it**, a diverse and joyful bunch of people, determined to make sure that wherever you are, whatever you're doing, our mission is to make sure you get to enjoy any project's journey. Enjoy your visit to the Taiga!
 
-{{< figure src="/images/whytaiga_test02.jpg" caption="Taiga's core team" alt="Taiga's core team" width="100%" class="articlefigure"  >}}
+{{< figure src="/images/whytaiga_test03.jpg" caption="Taiga's core team" alt="Taiga's core team" width="100%" class="articlefigure"  >}}
 
 ### What if I stop loving you? Can I take my data and go?
 
