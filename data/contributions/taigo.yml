@@ -1,0 +1,13 @@
+title: "Taigo"
+author: "Kristof Daja"
+github_author: "@theriverman"
+license: "MIT"
+description: "Taigo is a Go wrapper used to handle the Taiga.io API easily"
+contribution_url: "https://github.com/theriverman/taigo"
+created_date: 2020-09-18T13:37:00+01:00
+last_updated_date: 2021-03-18T13:37:00+01:00
+integrated: false
+compatibility: ["taiga6"]
+contribution_tags: ["API", "integration", "go", "golang"]
+url: "/extend/contributions/#taigo"
+anchor: "taigo"
