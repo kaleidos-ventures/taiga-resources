@@ -390,3 +390,16 @@ server {
   }
 }
 ```
+## Update Taiga's docker installation
+
+To find more information on how to update Taiga's docker installation go [here](update-taiga-docker.md).
+
+## Backup your data in Taiga's docker installation
+
+Taiga data is, by default configuration, saved inside Docker volumes. Docker doesn't provide any command to backup volumes and you have to use temporary containers with a bind mount to create backups. 
+
+If you're interested in backing up and restoring Taiga's out of the box installation using volumes you can read more about the process [here](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes).
+
+Bind mounts are much easier to backup since they can be zipped on ad-hoc basis, rsynced to a network share regulary using a cronjob or just saved to your desktop via FTP manually before the next big update in case something breaks. 
+
+If you are in need of a simpler solution head [here](simple-taiga-backup.md) to find out how to backup and restore your Taiga data using bind mounts.
