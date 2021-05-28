@@ -192,3 +192,16 @@ On Taiga PM you can read about some of the features of Taiga 5
 - **Last updated at**: 2018-12-01
 - **Compatible with**: taiga5
 - **Tags**: tutorial
+
+{{< break_line >}}
+
+### Taigo
+
+Taigo is a Go wrapper used to handle the Taiga.io API easily
+
+- **Author**: [theriverman](https://github.com/theriverman)
+- **License**: MIT
+- **URL**: [https://github.com/theriverman/taigo](https://github.com/theriverman/taigo)
+- **Last updated at**: 2021-03-18
+- **Compatible with**: taiga6
+- **Tags**: API, integration, go, golang
