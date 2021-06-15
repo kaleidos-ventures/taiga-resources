@@ -62,9 +62,9 @@ Taiga will always be glad to receive code patches to update, fix or improve its 
 
 If you know how to improve our code base or you found a bug, a security vulnerability or a performance issue and you think you can solve it, we will be very happy to accept your contribution.
 
-You probably want to make yourself comfortable with the development environment first, but we have defined a concrete workflow for these kinds of contributions:
+You probably want to make yourself comfortable with the [development environment](http://docs.taiga.io/setup-development.html) first, but we have defined a concrete workflow for these kinds of contributions:
 
-1. **It’s essential to have an issue to associate your PR with***, so if it does not exist, you will have to create it in Taiga (preferably) or in GitHub.
+1. **It’s essential to have an issue to associate your PR with**, so if it does not exist, you will have to create it in [Taiga](https://tree.taiga.io/project/taiga/issues) (preferably) or in GitHub.
 
    This issue should have a complete description of the functionality you’d like to develop or the bug you intend to solve, how it should work and for which profiles.
 2. **In the issue, let us know your intention to work on it**, and we will contact you to determine the priority and needs. 
