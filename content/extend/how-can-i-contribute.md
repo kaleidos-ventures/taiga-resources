@@ -70,7 +70,7 @@ You probably want to make yourself comfortable with the [development environment
 2. **In the issue, let us know your intention to work on it**, and we will contact you to determine the priority and needs. 
 
    The functionality might require some brainstorming to be developed correctly. A good code and UI are essential part of Taiga success. If the issue requires it, the Taiga team will participate in its development with you, providing the necessary designs, wireframes or code suggestions.
-3. The last step it to **create the Pull Request**. Remember to add some tests, a good description and screenshots are welcome too. 
+3. The last step is to **create the Pull Request**. Remember to add some tests, a good description and screenshots are welcome too. 
 
    Once the pull request is done, someone else from the team will review the code to ensure that it fits with the good practices and styles. If it does, the PR will be merged and will be on the next Taiga release.
 
