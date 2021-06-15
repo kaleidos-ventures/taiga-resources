@@ -19,8 +19,7 @@ There are many different ways to contribute to Taiga's development, just find th
 
 All of these ways may affect the API, the UI, language localization... or other parts of Taiga. There isn't a single way to contribute, and we'll be happy to help you with your contributions.
 
-Big features are also welcome but if you want to see your contributions included in Taiga codebase we strongly recommend you start by initiating a chat through our [mailing list](https://groups.google.co.uk/d/forum/taigaio).
-
+Big features are also welcome but if you want to see your contributions included in Taiga codebase we strongly recommend you [create an issue in Taiga](https://tree.taiga.io/project/taiga/issues).
 
 ## Developer Certificate of Origin + License
 
@@ -101,9 +100,3 @@ If you find some errors, or want to propose changes to improve readability, you 
 We are eager to get your help translating Taiga. It's easy (and fun!): just access our team of translators with the link below, set up an account in Weblate and start contributing. Join us to make sure your language is covered! **[Help Taiga to translate content](https://hosted.weblate.org/projects/taiga/ "Help Taiga to translate content")**
 
 **Localization Bugs**: Taiga use Weblate to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Weblate project](https://hosted.weblate.org/projects/taiga/) and start contributing.
-
-## UI enhancements
-
-Taiga is made for developers and designers. We care enormously about UI because usability and design are both critical aspects of the Taiga experience.
-
-If you have some ideas to make Taiga UI better, we will love to receive your feedback. Please send us your enhancement, with the reason and, if possible, an example. Our design and UX team will review your proposal as soon as possible. We recommend you to use our [mailing list](https://groups.google.co.uk/d/forum/taigaio) so we can have a lot of different opinions and debate.
