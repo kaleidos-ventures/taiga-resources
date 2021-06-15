@@ -60,26 +60,19 @@ Usually, it takes less time to fix a bug if the developer knows how to find it. 
 
 Taiga will always be glad to receive code patches to update, fix or improve its code.
 
-If you know how to improve our code base or you found a bug, a security vulnerability or a performance issue and you think you can solve it, we will be very happy to accept your pull-request. If your code requires considerable changes, we recommend you first  talk to us directly. We will find the best way to help. If you would like to implement it by yourself consider if it's a small or a big change.
+If you know how to improve our code base or you found a bug, a security vulnerability or a performance issue and you think you can solve it, we will be very happy to accept your contribution.
 
-Besides, you'd probably like to make yourself confortable with the [development environment](http://docs.taiga.io/setup-development.html). If you find some problems, please let us know in our [mailing list](https://groups.google.co.uk/d/forum/taigaio).
+You probably want to make yourself comfortable with the development environment first, but we have defined a concrete workflow for these kinds of contributions:
 
-### Small Changes
+1. **It’s essential to have an issue to associate your PR with***, so if it does not exist, you will have to create it in Taiga (preferably) or in GitHub.
 
-They can be crafted and submited to the [Github repositories](https://github.com/kaleidos-ventures) as a _Pull Request_.
+   This issue should have a complete description of the functionality you’d like to develop or the bug you intend to solve, how it should work and for which profiles.
+2. **In the issue, let us know your intention to work on it**, and we will contact you to determine the priority and needs. 
 
-### Major Changes
+   The functionality will require some wireframes or ideas to be developed correctly. A good UX its an essential part of Taiga success. If the issue requires it, the Taiga team will participate in its development with you, providing the necessary designs and wireframes.
+3. The last step it to **create the Pull Request**. Remember to add some tests, a good description and screenshots are welcome too. 
 
-Before contributing with a major change to Taiga, it should be discussed first with the Taiga Team so that we can better coordinate our efforts, prevent duplication of work, and help you to craft the change so that it is successfully accepted into the project. Please, contact us in the [mailing list](https://groups.google.co.uk/d/forum/taigaio) or via [support@taiga.io](Support email).
-
-We have defined a concrete workflow for these changes:
-
-1. **User Story**: Send us a complete description of the functionality you'd like to develop, how it should work, for which profiles, as if you were writing a User Story. Please include some ideas of what would be a definition of Done of the User Story. The team will review it, decide whether or not it could make it into Taiga Core. If not, you can always write a plugin.
-2. **Mentorship**: If accepted, Taiga team will help you, and a person from the team will be your contact in the development process. The Story will be visible in the [Taiga Kanban](https://tree.taiga.io/project/taiga/kanban).
-3. **User Experience**: The functionality will require some wireframes or ideas to be developed correctly. A good UX its an essential part of Taiga success. You should create a user experience proposal and the Taiga UX team will help you.
-4. **Design**: The design should respect the Taiga style. Try to reproduce other areas of the site. The taiga design team will review this proposal as well.
-5. **Development**: The next step is the development. Remember to add unit, integration and e2d tests as well as the new code. We have the API well documented too in [taiga-doc](http://docs.taiga.io/api.html).
-6. **Pull request**: The last step it to create the Pull Reuqest. Remember to add a good description and screenshots are welcome too. Once the pull request is done, someone else from the team will review the code to ensure that it fits with the good practices and styles. If it does, the PR will be merged and will be on the next Taiga release.
+   Once the pull request is done, someone else from the team will review the code to ensure that it fits with the good practices and styles. If it does, the PR will be merged and will be on the next Taiga release.
 
 > Don't forget to add your name to `AUTHORS.rst` file!
 
