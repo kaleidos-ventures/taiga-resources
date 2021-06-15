@@ -56,7 +56,7 @@ Usually, it takes less time to fix a bug if the developer knows how to find it. 
 
 **Localization Bugs**: Taiga use Weblate to manage the i18n files so don't submit a pull request to those files (except -en.json). To fix a translation, just access our team of translators, set up an account in the [Taiga Weblate project](https://hosted.weblate.org/projects/taiga/) and start contributing.
 
-## Code patches, enhacements
+## Code patches, enhancements
 
 Taiga will always be glad to receive code patches to update, fix or improve its code.
 
@@ -82,7 +82,7 @@ Thanks a lot! It is really great that we could make Taiga better with the help o
 
 ## Contrib Plugins
 
-Taiga supports contrib plugins to add or overwrite some functionalities. You can create your own contribs and share the the community or use any of the [contrib plugins]({{< ref "contributions" >}}).
+Taiga supports contrib plugins to add or overwrite some functionalities. You can create your own contribs and share with the community or use any of the existing [contrib plugins]({{< ref "contributions" >}}).
 
 ## Documentation improvements
 
