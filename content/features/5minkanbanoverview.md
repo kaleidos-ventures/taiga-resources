@@ -41,7 +41,7 @@ This is the basic setup. You can now go to the Kanban module and start creating 
 
 ### Kanban swimlanes
 
-Some teams require advanced features for their Kanban boards. One of the most sought after is the Kanban swimlane. It consists on an independant section that can contain a separate set of work items. Taiga allows you to create as many Kanban swimlanes as you need, effectively distributing your work across different major categorizations. Some example of swimlanes usage are sub-teams, project modules, different priorities, etc.
+Some teams require advanced features for their Kanban boards. One of the most sought after is the Kanban swimlane. It consists of an independent section that can contain a separate set of work items. Taiga allows you to create as many Kanban swimlanes as you need, effectively distributing your work across different major categorizations. Some example of swimlanes usage are sub-teams, project modules, different priorities, etc.
 
 You can manage Kanban swimlanes under SETTINGS > ATTRIBUTES > KANBAN OPTIONS.
 
