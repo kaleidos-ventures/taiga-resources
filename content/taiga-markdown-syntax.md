@@ -196,6 +196,16 @@ See a complete list of emoticons at this [Emoji Cheatsheet](http://www.emoji-che
     3. burper
 *   Cunning
 
+**Checkboxes**
+
+Add dashes ( - ) and brackets with a space ( \[ \] ) in front of an item. Add an x in between the brackets to show it as selected.
+
+```
+- [x] Item 1
+- [ ] Item 2
+- [ ] Item 3
+```
+
 ### Tables
 
 This is a table:
