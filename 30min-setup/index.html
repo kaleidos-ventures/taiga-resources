@@ -46,20 +46,22 @@ RABBITMQ_DEFAULT_VHOST: taiga
 </code></pre><p><strong>Service: taiga-front</strong></p><pre><code>PUBLIC_REGISTER_ENABLED: &quot;true&quot;
 </code></pre><p>If you want to allow a public register, configure this variable to &ldquo;True&rdquo;. By default is &ldquo;False&rdquo;. Should be the same as this var in <code>taiga-front</code> and <code>taiga-back</code>.</p><p><strong>Important</strong>: Taiga (in its default configuration) disables both Gitlab or Github oauth buttons whenever the public registration option hasn&rsquo;t been activated. To be able to use Github/ Gitlab login/registration, make sure you have public registration activated on your Taiga instance.</p><h3 id=slack-settings>Slack Settings</h3><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_SLACK: &quot;True&quot;
 </code></pre><p><strong>Service: taiga-front</strong></p><pre><code>ENABLE_SLACK: &quot;true&quot;
-</code></pre><p>Enable Slack integration in your Taiga instance. By default is &ldquo;False&rdquo;. Should have the same value as this variable in <code>taiga-front</code> and <code>taiga-back</code>.</p><h3 id=github-settings>Github settings</h3><p>Used for login with Github.
-Get these in your profile <a href=https://github.com/settings/apps>https://github.com/settings/apps</a> or in your organization profile <a href=https://github.com/organizations/%7BORGANIZATION-SLUG%7D/settings/applications>https://github.com/organizations/{ORGANIZATION-SLUG}/settings/applications</a></p><p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_GITHUB_AUTH: &quot;True&quot;
-GITHUB_API_CLIENT_ID: &quot;github-api-client-id&quot;
-GITHUB_API_CLIENT_SECRET: &quot;github-api-client-secret&quot;
+</code></pre><p>Enable Slack integration in your Taiga instance. By default is &ldquo;False&rdquo;. Should have the same value as this variable in <code>taiga-front</code> and <code>taiga-back</code>.</p><h3 id=github-settings>Github settings</h3><p>Used for login with Github.</p><p>Follow the <a href=https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app>documentation</a> in Github, when save application Github displays the ID and Secret.</p><p>Set variables in docker-compose.yml:</p><p><strong>Note</strong> <code>ENABLE_GITHUB_AUTH</code> and <code>GITHUB_API_CLIENT_ID / GITHUB_CLIENT_ID</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_GITHUB_AUTH: &quot;True&quot;
+GITHUB_API_CLIENT_ID: &quot;github-client-id&quot;
+GITHUB_API_CLIENT_SECRET: &quot;github-client-secret&quot;
+PUBLIC_REGISTER_ENABLED: &quot;True&quot;
 </code></pre><p><strong>Service: taiga-front</strong></p><pre><code>ENABLE_GITHUB_AUTH: &quot;true&quot;
-GITHUB_API_CLIENT_ID: &quot;github-api-client-id&quot;
-</code></pre><h3 id=gitlab-settings>Gitlab settings</h3><p>Used for login with GitLab.
-Get these in your profile https://{YOUR-GITLAB}/profile/applications or in your organization profile https://{YOUR-GITLAB}/admin/applications</p><p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_GITLAB_AUTH: &quot;True&quot;
-GITLAB_API_CLIENT_ID: &quot;gitlab-api-client-id&quot;
-GITLAB_API_CLIENT_SECRET: &quot;gitlab-api-client-secret&quot;
+GITHUB_API_CLIENT_ID: &quot;github-client-id&quot;
+PUBLIC_REGISTER_ENABLED: &quot;true&quot;
+</code></pre><h3 id=gitlab-settings>Gitlab settings</h3><p>Used for login with GitLab.</p><p>Follow the <a href=https://docs.gitlab.com/ee/integration/oauth_provider.html>documentation</a> in Gitlab, when save application GitLab displays the ID and Secret.</p><p>Set variables in docker-compose.yml:</p><p><strong>Note</strong> <code>ENABLE_GITLAB_AUTH</code>, <code>GITLAB_API_CLIENT_ID / GITLAB_CLIENT_ID</code> and <code>GITLAB_URL</code> should have the same value in <code>taiga-back</code> and <code>taiga-front</code> services.</p><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_GITLAB_AUTH: &quot;True&quot;
+GITLAB_API_CLIENT_ID: &quot;gitlab-client-id&quot;
+GITLAB_API_CLIENT_SECRET: &quot;gitlab-client-secret&quot;
 GITLAB_URL: &quot;gitlab-url&quot;
+PUBLIC_REGISTER_ENABLED: &quot;True&quot;
 </code></pre><p><strong>Service: taiga-front</strong></p><pre><code>ENABLE_GITLAB_AUTH: &quot;true&quot;
 GITLAB_CLIENT_ID: &quot;gitlab-client-id&quot;
 GITLAB_URL: &quot;gitlab-url&quot;
+PUBLIC_REGISTER_ENABLED: &quot;true&quot;
 </code></pre><h3 id=github-importer>Github Importer</h3><p><strong>Service: taiga-back</strong></p><pre><code>ENABLE_GITHUB_IMPORTER: &quot;True&quot;
 GITHUB_IMPORTER_CLIENT_ID: &quot;client-id-from-github&quot;
 GITHUB_IMPORTER_CLIENT_SECRET: &quot;client-secret-from-github&quot;
