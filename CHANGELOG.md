@@ -3,6 +3,7 @@
 ## 6.3.0 (unreleased)
 
 - Add checkboxes to the markdown syntax help
+- Improve documentation about login with Github and Gitlab
 
 ## 6.2.1 (2021-06-22)
 
