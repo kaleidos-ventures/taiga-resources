@@ -10,9 +10,9 @@ order: 1
 # taxonomies
 categories: null
 ---
-There are important considerations governing the [Affero GPL license](http://www.gnu.org/licenses/agpl-3.0.html) in use by Taiga. Please be sure you are familiar with your rights and obligations before starting to work on the Taiga code.
+There are important considerations governing the Mozilla Public License](https://www.mozilla.org/en-US/MPL/) in use by Taiga. Please be sure you are familiar with your rights and obligations before starting to work on the Taiga code.
 
-Since the open source license covering Taiga is AGPL, you can freely clone/fork the repo and make any modifications you want. Just remember the basic condition that the Affero GPL brings to the table: any Taiga instance must easily provide to all users a link to the source code that is running that particular Taiga service.
+Since the open source license covering Taiga is MPL 2.0, you can freely clone/fork the repo and make any modifications you want. Just remember the basic condition that the MPL brings to the table: any Taiga instance must easily provide to all users a link to the source code that is running that particular Taiga service. See related MPLS FAQs [Q8](https://www.mozilla.org/en-US/MPL/2.0/FAQ/#distribute-my-binaries) and [Q9](https://www.mozilla.org/en-US/MPL/2.0/FAQ/#distribute-modified-source).
 
 If you don't make any changes to the code, the link is pretty simple, it's just a link to [Taiga's github page](https://github.com/kaleidos-ventures). But if you intend to make adaptations or changes, you must provide a (de-facto) zero-cost way to obtain the complete modified source code. The easiest way would be to fork the repo on github and point your users to that forked repo (you can place that link in the documentation somewhere).
 
@@ -20,6 +20,7 @@ Our repo is quickly evolving so we suggest you keep careful track of our changes
 
 Your needs will dictate which option suits you better.
 
-Please read the [AGPL 3.0 license](http://www.gnu.org/licenses/agpl-3.0.html) covering Taiga.
+Please read the [Mozilla Public License](https://www.mozilla.org/en-US/MPL/) covering Taiga.
 
 If you would like to discuss specific dual-licensing with us, contact us a support@taiga.io.
+**Note:** we moved from AGPL 3.0 to MPL 2.0 because it gave us more control over the Taiga trademark and lessened the restrictions to redistribute modified code while still making sure people get informed about Taiga code's presence in any derivative work.
