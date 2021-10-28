@@ -11,4 +11,4 @@ order: 7
 categories: null
 ---
 
-As an project admin or owner, you can access the Project Settings and delete a project. To do this, simply access SETTINGS on your selected project and click on the **Delete this project** link. You will be asked for confirmation. Before doing this, you might want to backup your project locally. To do that, go to SETTINGS>EXPORT and click on the EXPORT button. You will receive an email with a link to download a compressed project file. You can reimport this file during a project creation wizard.
+As an project admin or owner, you can access the Project Settings and delete a project. To do this, simply access SETTINGS on your selected project and click on the **Delete this project** link. You will be asked for confirmation. Before doing this, you might want to backup your project locally. To do that, go to SETTINGS > EXPORT and click on the EXPORT button. You will receive an email with a link to download a compressed project file. You can reimport this file during a project creation wizard.
