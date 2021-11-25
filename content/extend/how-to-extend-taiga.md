@@ -3,7 +3,7 @@ title: "How To Extend Taiga"
 date: 2020-10-05T11:27:09+02:00
 draft: false
 categories:
-  - "extend taiga"
+  - "Extend taiga"
 thumbnail: "images/extend-taiga.png"
 thumbnail_home: "images/contributions.png"
 ---
@@ -43,6 +43,10 @@ Currently, Taiga notifies the following events:
 - a wiki page is created, updated or deleted
 
 Check the documentation to see the [detailed payload](https://docs.taiga.io/webhooks.html) for each notification.
+
+## Zapier integration
+
+If you don't have programming experience to use our [API](https://docs.taiga.io/api.html) we can recommend using our integration with [Zapier]({{< ref "zapier.md" >}}). Zapier is a tool that allows you to connect Taiga with other tools or with Taiga itself using visual workflows. Go [here]({{< ref "zapier.md" >}}) for more info on our Zapier integration.
 
 ## Integrations
 

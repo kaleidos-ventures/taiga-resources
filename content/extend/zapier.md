@@ -11,7 +11,7 @@ thumbnail: "images/contributions-thumbnail.png"
 thumbnail_home: "images/contributions.png"
 ---
 
-If you don't have programming experience to use our [API](https://docs.taiga.io/api.html) we can recommend using our integration with [Zapier](https://zapier.com/apps/taiga/integrations). Zapier is a tool that allows you to connect Taiga with other tools or with Taiga itself using visual workflows. Go [here](https://zapier.com/apps/taiga/integrations) for more info on our Zapier integration.
+If you don't have programming experience to use our [API](https://docs.taiga.io/api.html) we can recommend using our integration with [Zapier](https://zapier.com/apps/taiga/integrations). Zapier is a tool that allows you to connect Taiga with other tools or with Taiga itself using visual workflows. Go to this [Zapier Taiga landing](https://zapier.com/apps/taiga/integrations) for more info on our Zapier integration.
  
 ### Create Taiga automations and/or connect Taiga to hundreds of other apps with Zapier
 
