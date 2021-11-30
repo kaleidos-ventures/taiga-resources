@@ -103,7 +103,11 @@
 $ git checkout stable
 </code></pre><h2 id=start-the-application>Start the application</h2>
 <pre tabindex=0><code>$ ./launch-all.sh
-</code></pre><p>After some instants, when the application is started you can proceed to create the superuser with the following script:</p>
+</code></pre><figure class=articlefigure><img src=/images/docker-up.png alt="What you want to see in the console" width=100%><figcaption>
+<p>What you want to see in the console</p>
+</figcaption>
+</figure>
+<p>After some instants, when the application is started you can proceed to create the superuser with the following script:</p>
 <pre tabindex=0><code>$ ./taiga-manage.sh createsuperuser
 </code></pre><p>The <code>taiga-manage.sh</code> script lets launch manage.py commands on the
 back instance:</p>
@@ -268,11 +272,7 @@ TRELLO_IMPORTER_API_KEY: &quot;api-key-from-trello&quot;
 TRELLO_IMPORTER_SECRET_KEY: &quot;secret-key-from-trello&quot;
 </code></pre><p><strong>Service: taiga-front</strong></p>
 <pre tabindex=0><code>ENABLE_TRELLO_IMPORTER: &quot;true&quot;
-</code></pre><figure class=articlefigure><img src=/images/docker-up.png alt="What you want to see in the console" width=100%><figcaption>
-<p>What you want to see in the console</p>
-</figcaption>
-</figure>
-<h2 id=advanced-configuration>Advanced configuration</h2>
+</code></pre><h2 id=advanced-configuration>Advanced configuration</h2>
 <p>In an advanced configuration you ignore the environment variables in <strong>docker-compose.yml</strong> or <strong>docker-compose-inits.yml</strong>.</p>
 <h3 id=map-a-configpy-file>Map a config.py file</h3>
 <p>From <a href=https://github.com/kaleidos-ventures/taiga-back>taiga-back</a> download the file <strong>settings/config.py.prod.example</strong> and rename it:</p>
