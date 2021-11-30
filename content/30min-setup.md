@@ -38,6 +38,9 @@ $ git checkout stable
 $ ./launch-all.sh
 ```
 
+{{< figure src="/images/docker-up.png" caption="What you want to see in the console" alt="What you want to see in the console" width="100%" class="articlefigure"  >}}
+
+
 After some instants, when the application is started you can proceed to create the superuser with the following script:
 
 ```
@@ -350,7 +353,6 @@ TRELLO_IMPORTER_SECRET_KEY: "secret-key-from-trello"
 ENABLE_TRELLO_IMPORTER: "true"
 ```
 
-{{< figure src="/images/docker-up.png" caption="What you want to see in the console" alt="What you want to see in the console" width="100%" class="articlefigure"  >}}
 
 ## Advanced configuration
 
