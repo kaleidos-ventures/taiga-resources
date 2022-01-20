@@ -1,14 +1,14 @@
 # Changelog
 
-## 6.5.0 (unreleased)
+## 6.6.0 (Unreleased)
 
-- Serve Taiga in subpath
+- ...
 
-## 6.4.0 (unreleased)
+## 6.5.0 (2022-01-24)
 
-- Serve Taiga in subpath
+- Compatible with Taiga 6.5.0
 
-## 6.4.0 (unreleased)
+## 6.4.0 (2021-09-06)
 
 - Serve Taiga in subpath
 
