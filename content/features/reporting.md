@@ -16,7 +16,7 @@ Taiga focuses on soft reporting across the entire platform plus convenient API a
 
 When you think about reporting, you almost inevitably visualise charts and progress bars, shiny metrics that provide you with a feeling that you have everything under control.
 
-Taiga took a different approach right from the beginning. Instead of trying to please everyone with a reporting module, we decided to allow teams to use their favourite reporting tool and integrate it with Taiga's API or Live CSV exports and instead focus on soft reporting across the entire platform.
+Taiga took a different approach right from the beginning. Instead of trying to please everyone with a reporting module, we decided to allow teams to use their favourite reporting tool and integrate it with [Taiga's API](https://resources.taiga.io/extend/how-to-extend-taiga/) or [Live CSV exports](https://resources.taiga.io/extend/csv-reports/) and instead focus on soft reporting across the entire platform.
 
 This soft reporting has two major advantages:
 
